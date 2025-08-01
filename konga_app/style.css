@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-nav{
+    background-color: rgb(247, 238, 235);
+    font-size: 30px;
+    margin: 1px;
+}
+.first-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.first-nav ul li a img{
+    width: 50%;
+
+}
+
+.first-nav ul li{
+    list-style: none;
+}
+
+.cart{
+    background-color: blueviolet;
+}
+.cart, a img{
+    width: 10%;
+
+}
+
+.second-nav{
+    display: flex;
+    background-color: blanchedalmond;
+}
+
+.logo a img{
+    width: 50%;
+    padding: 5px 0px 0px 10px;
+}
+.nav-item li{
+    display: flex;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
