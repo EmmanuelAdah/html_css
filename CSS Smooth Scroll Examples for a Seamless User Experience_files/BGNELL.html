@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/BGNELL?height=450&theme-id=1&slug-hash=BGNELL&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen Embed - Scroll List Animation</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Bhmhcae7DnWWr6fD4aZjjvNi9vXwgycmkphspsfher2QoKZtg_3g7PEypqVXMcxjAmKO650jtcm-ENPs0IZZKg">
+
+  <link rel="stylesheet" href="./embed-50c8e30c86cf654903ac612e1633eecabbabaf25cd1efaeaee3733dd9834c822.css" media="all">
+
+  <style>
+    .hide {
+      display: none !important;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./highcontrast-dark-47187de4142cc38f6f5a1e9f846225ded7136f4761bf6a3ec0ed89c8ce9b7382.css" media="all">
+
+  <link rel="stylesheet" href="./maVRwd.css">
+</head>
+
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body results-active split-output static">
+
+  <nav class="embed-nav group" id="embed-nav">
+
+  <ul class="code-types">
+
+
+        <li class="code-type">
+          <a id="html-link" href="https://codepen.io/anon/embed/BGNELL?height=450&amp;theme-id=1&amp;slug-hash=BGNELL&amp;default-tab=result#html-box" role="button" aria-pressed="true" class="active">
+              Pug
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="css-link" href="https://codepen.io/anon/embed/BGNELL?height=450&amp;theme-id=1&amp;slug-hash=BGNELL&amp;default-tab=result#css-box" role="button" aria-pressed="false" class="">
+              SCSS
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="js-link" href="https://codepen.io/anon/embed/BGNELL?height=450&amp;theme-id=1&amp;slug-hash=BGNELL&amp;default-tab=result#js-box" role="button" aria-pressed="false" class="">
+              JS
+          </a>
+        </li>
+
+
+  </ul>
+
+  <ul class="result-button-list">
+    <li class="results results-type">
+      <a id="result-link" href="https://codepen.io/anon/embed/BGNELL?height=450&amp;theme-id=1&amp;slug-hash=BGNELL&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+        Result
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/anon/embed/BGNELL?height=450&amp;theme-id=1&amp;slug-hash=BGNELL&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+    </li>
+  </ul>
+
+
+    <div class="logo-wrap" id="edit-area">
+
+        <a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/JavaScriptJunkie/pen/BGNELL" title="Edit on CodePen">
+            <div class="large-logo">
+    <span id="edit-on-text" class="open-on">EDIT ON</span>
+    <svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+  <path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+  </div>
+  <div class="box-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+  <path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+  </div>
+        </a>
+
+    
+    </div>
+
+
+</nav>
+
+
+  <div id="output" data-border-style="thin" data-header="true">
+
+
+
+        <div id="html-box" class="code-wrap code-box box active" role="region" aria-label="HTML">
+
+
+          <pre tabindex="0"><code data-lang="pug" id="actual-html-code" class=" cm-s-default"><span class="cm-qualifier">.wrapper</span>
+<span class="cm-indent">  </span><span class="cm-qualifier">.scroll-list</span>
+<span class="cm-indent">    </span><span class="cm-qualifier">.scroll-list__wrp</span><span class="cm-qualifier">.js-scroll-content</span><span class="cm-qualifier">.js-scroll-list</span>
+<span class="cm-indent">      </span><span class="cm-keyword">- for</span><span class="cm-variable"> (i = 0; i &lt;= 55; i++)</span>
+<span class="cm-indent">        </span><span class="cm-qualifier">.scroll-list__item</span><span class="cm-qualifier">.js-scroll-list-item</span></code></pre>
+
+            <a href="https://codepen.io/anon/embed/BGNELL?height=450&amp;theme-id=1&amp;slug-hash=BGNELL&amp;default-tab=result#0" id="view-html-compiled-button" class="action-button bottom right view-compiled-button" data-type="html">
+              View Compiled
+            </a>
+        </div>
+
+
+
+        <div id="css-box" class="code-wrap code-box box" role="region" aria-label="CSS">
+
+
+          <pre tabindex="0"><code data-lang="text/x-scss" id="actual-css-code" class=" cm-s-default"><span class="cm-def">@import</span> <span class="cm-variable cm-callee">url</span>(<span class="cm-string">'https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=latin-ext'</span>);
+
+<span class="cm-tag">html</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">overflow-x</span>: <span class="cm-atom">hidden</span> <span class="cm-keyword">!important</span>;
+}
+
+<span class="cm-tag">body</span> {
+  <span class="cm-property">font-family</span>: <span class="cm-string">'Roboto'</span>, <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-number">16px</span>;
+  <span class="cm-property">background</span>: <span class="cm-atom">#f2f7fd</span>;
+}
+
+<span class="cm-tag">a</span>, <span class="cm-tag">a</span>:<span class="cm-variable-3">hover</span> {
+  <span class="cm-property">text-decoration</span>: <span class="cm-atom">none</span>;
+}
+
+* {
+  <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>;
+}
+
+<span class="cm-qualifier">.wrapper</span> {
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">min-height</span>: <span class="cm-number">100vh</span>;
+  <span class="cm-comment">//background-color: #FA8BFF;</span>
+  <span class="cm-comment">//background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);</span>
+  <span class="cm-comment">//background-image: linear-gradient(45deg, #d4145a, #fbb03b);</span>
+     <span class="cm-property">background-image</span>: <span class="cm-variable cm-callee">linear-gradient</span>(<span class="cm-number">-225deg</span>, <span class="cm-atom">#231557</span> <span class="cm-number">0%</span>, <span class="cm-atom">#44107A</span> <span class="cm-number">29%</span>, <span class="cm-atom">#FF1361</span> <span class="cm-number">67%</span>, <span class="cm-atom">#fa9b48</span> <span class="cm-number">100%</span>);
+}
+
+<span class="cm-qualifier">.scroll-list</span> {
+  <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">max-width</span>: <span class="cm-number">700px</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">25px</span>;
+  <span class="cm-property">margin-top</span>: <span class="cm-number">50px</span>;
+  <span class="cm-property">margin-left</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">margin-right</span>: <span class="cm-atom">auto</span>;
+
+  <span class="cm-def">@media</span> <span class="cm-attribute">screen</span> <span class="cm-keyword">and</span> (<span class="cm-property">max-width</span>: <span class="cm-number">768px</span>) {
+    <span class="cm-property">margin-top</span>: <span class="cm-number">20px</span>
+  }
+  
+  &amp;<span class="cm-tag">__wrp</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">700px</span>;
+    <span class="cm-property">overflow</span>: <span class="cm-atom">auto</span>;
+    <span class="cm-property">padding</span>: <span class="cm-number">50px</span>;
+ <span class="cm-property">box-shadow</span>: <span class="cm-number">0px</span> <span class="cm-number">7px</span> <span class="cm-number">46px</span> <span class="cm-number">0px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">41</span>, <span class="cm-number">53</span>, <span class="cm-number">108</span>, <span class="cm-number">0.45</span>);
+    <span class="cm-property">background</span>: <span class="cm-atom">#4b1079</span>;
+    <span class="cm-property">background</span>: <span class="cm-atom">#4b1079</span>;
+    <span class="cm-property">margin-bottom</span>: <span class="cm-number">15px</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">background-image</span>: <span class="cm-variable cm-callee">linear-gradient</span>(<span class="cm-number">147deg</span>, <span class="cm-atom">#6e0777</span> <span class="cm-number">0%</span>, <span class="cm-atom">#380c70</span> <span class="cm-number">74%</span>);
+    <span class="cm-qualifier">.scrollbar-track</span> {
+      <span class="cm-property">display</span>: <span class="cm-atom">none</span><span class="cm-keyword">!important</span>;
+    }
+
+    <span class="cm-def">@media</span> <span class="cm-attribute">screen</span> <span class="cm-keyword">and</span> (<span class="cm-property">max-width</span>: <span class="cm-number">768px</span>) {
+      <span class="cm-property">padding</span>: <span class="cm-number">25px</span>;
+    }
+
+  }
+
+  &amp;<span class="cm-tag">__item</span> {
+    <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+    <span class="cm-property">height</span>: <span class="cm-number">155px</span>;
+    <span class="cm-property">display</span>: <span class="cm-atom">block</span>;
+    <span class="cm-property">margin-bottom</span>: <span class="cm-number">15px</span>;
+    <span class="cm-property">border-radius</span>: <span class="cm-number">8px</span>;
+    <span class="cm-property">background-image</span>: <span class="cm-variable cm-callee">linear-gradient</span>(<span class="cm-number">147deg</span>, <span class="cm-atom">#ff7c34</span> <span class="cm-number">0%</span>, <span class="cm-atom">#c31269</span> <span class="cm-number">74%</span>);
+    <span class="cm-property">transition</span>: <span class="cm-atom">all</span> <span class="cm-number">.35s</span> <span class="cm-atom">ease-in-out</span>;
+    <span class="cm-property">opacity</span>: <span class="cm-number">0</span>;
+    <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">0.7</span>);
+    <span class="cm-property">box-shadow</span>: <span class="cm-number">0px</span> <span class="cm-number">7px</span> <span class="cm-number">16px</span> <span class="cm-number">0px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">41</span>,<span class="cm-number">53</span>,<span class="cm-number">108</span>,<span class="cm-number">0.25</span>);
+
+    &amp;<span class="cm-qualifier">.item-hide</span> {
+      <span class="cm-property">opacity</span>: <span class="cm-number">0</span>;
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">.7</span>);
+    }
+
+    &amp;<span class="cm-qualifier">.item-focus</span> {
+      <span class="cm-property">opacity</span>: <span class="cm-number">1</span>;
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+    }
+
+    &amp;<span class="cm-qualifier">.item-next</span> {
+      <span class="cm-property">opacity</span>: <span class="cm-number">1</span>;
+      <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+
+      &amp; + <span class="cm-qualifier">.scroll-list__item</span> {
+        <span class="cm-property">opacity</span>: <span class="cm-number">1</span>;
+        <span class="cm-property">transform</span>: <span class="cm-variable cm-callee">scale</span>(<span class="cm-number">1</span>);
+      }
+
+    }
+
+    &amp;:<span class="cm-variable-3">last-child</span> {
+      <span class="cm-property">margin-bottom</span>: <span class="cm-number">155px</span>;
+    }
+
+    <span class="cm-comment">//@media screen and (max-width: 768px) {</span>
+    <span class="cm-comment">//  width: 450px;</span>
+    <span class="cm-comment">//  margin-bottom: 0;</span>
+    <span class="cm-comment">//  margin-right: 15px;</span>
+    <span class="cm-comment">//  flex-shrink: 0;</span>
+    <span class="cm-comment">//  opacity: 1 !important;</span>
+    <span class="cm-comment">//  transform: none!important;</span>
+    <span class="cm-comment">//</span>
+    <span class="cm-comment">//  &amp;:last-child {</span>
+    <span class="cm-comment">//    margin-bottom: 0;</span>
+    <span class="cm-comment">//    margin-right: 50px;</span>
+    <span class="cm-comment">//  }</span>
+    <span class="cm-comment">//</span>
+    <span class="cm-comment">//}</span>
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</code></pre>
+
+            <a href="https://codepen.io/anon/embed/BGNELL?height=450&amp;theme-id=1&amp;slug-hash=BGNELL&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+              View Compiled
+            </a>
+        </div>
+
+
+
+        <div id="js-box" class="code-wrap code-box box" role="region" aria-label="JS">
+
+
+          <pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-variable">$</span>(<span class="cm-variable">document</span>).<span class="cm-property">ready</span>(<span class="cm-keyword">function</span> () {
+  <span class="cm-keyword">var</span> <span class="cm-def">Scrollbar</span> <span class="cm-operator">=</span> <span class="cm-variable">window</span>.<span class="cm-property">Scrollbar</span>;
+
+  <span class="cm-variable-2">Scrollbar</span>.<span class="cm-property">use</span>(<span class="cm-variable">window</span>.<span class="cm-property">OverscrollPlugin</span>);
+
+  <span class="cm-keyword">var</span> <span class="cm-def">customScroll</span> <span class="cm-operator">=</span> <span class="cm-variable-2">Scrollbar</span>.<span class="cm-property">init</span>(<span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">'.js-scroll-list'</span>), {
+    <span class="cm-property">plugins</span>: {
+      <span class="cm-property">overscroll</span>: <span class="cm-atom">true</span>
+    }
+  });
+
+  <span class="cm-keyword">var</span> <span class="cm-def">listItem</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">'.js-scroll-list-item'</span>);
+
+  <span class="cm-variable-2">listItem</span>.<span class="cm-property">eq</span>(<span class="cm-number">0</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'item-focus'</span>);
+  <span class="cm-variable-2">listItem</span>.<span class="cm-property">eq</span>(<span class="cm-number">1</span>).<span class="cm-property">addClass</span>(<span class="cm-string">'item-next'</span>);
+
+  <span class="cm-variable-2">customScroll</span>.<span class="cm-property">addListener</span>(<span class="cm-keyword">function</span> (<span class="cm-def">status</span>) {
+
+    <span class="cm-keyword">var</span> <span class="cm-def">$content</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">'.js-scroll-content'</span>);
+
+    <span class="cm-keyword">var</span> <span class="cm-def">viewportScrollDistance</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;
+
+
+    <span class="cm-variable-2">viewportScrollDistance</span> <span class="cm-operator">=</span> <span class="cm-variable-2">status</span>.<span class="cm-property">offset</span>.<span class="cm-property">y</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">viewportHeight</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$content</span>.<span class="cm-property">height</span>();
+    <span class="cm-keyword">var</span> <span class="cm-def">listHeight</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">$listItems</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$content</span>.<span class="cm-property">find</span>(<span class="cm-string">'.js-scroll-list-item'</span>);
+    <span class="cm-keyword">for</span> (<span class="cm-keyword">var</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable-2">$listItems</span>.<span class="cm-property">length</span>; <span class="cm-variable-2">i</span><span class="cm-operator">++</span>) {
+      <span class="cm-variable-2">listHeight</span> <span class="cm-operator">+=</span> <span class="cm-variable">$</span>(<span class="cm-variable-2">$listItems</span>[<span class="cm-variable-2">i</span>]).<span class="cm-property">height</span>();
+    }
+
+    <span class="cm-keyword">var</span> <span class="cm-def">top</span> <span class="cm-operator">=</span> <span class="cm-variable-2">status</span>.<span class="cm-property">offset</span>.<span class="cm-property">y</span>;
+    <span class="cm-comment">// console.log(top);</span>
+    <span class="cm-keyword">var</span> <span class="cm-def">visibleCenterVertical</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;
+    <span class="cm-variable-2">visibleCenterVertical</span> <span class="cm-operator">=</span> <span class="cm-variable-2">top</span>;
+
+    <span class="cm-keyword">var</span> <span class="cm-def">parentTop</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">$lis</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">'.js-scroll-list-item'</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">$focusLi</span>;
+    <span class="cm-keyword">for</span> (<span class="cm-keyword">var</span> <span class="cm-def">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> <span class="cm-operator">&lt;</span> <span class="cm-variable-2">$lis</span>.<span class="cm-property">length</span>; <span class="cm-variable-2">i</span><span class="cm-operator">++</span>) {
+      <span class="cm-keyword">var</span> <span class="cm-def">$li</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-variable-2">$lis</span>[<span class="cm-variable-2">i</span>]);
+      <span class="cm-keyword">var</span> <span class="cm-def">liTop</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$li</span>.<span class="cm-property">position</span>().<span class="cm-property">top</span>;
+      <span class="cm-keyword">var</span> <span class="cm-def">liRelTop</span> <span class="cm-operator">=</span> <span class="cm-variable-2">liTop</span> <span class="cm-operator">-</span> <span class="cm-variable-2">parentTop</span>;
+
+      <span class="cm-keyword">var</span> <span class="cm-def">distance</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;
+      <span class="cm-keyword">var</span> <span class="cm-def">distance</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">abs</span>(<span class="cm-variable-2">top</span> <span class="cm-operator">-</span> <span class="cm-variable-2">liRelTop</span>);
+      <span class="cm-keyword">var</span> <span class="cm-def">maxDistance</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-string">'.js-scroll-content'</span>).<span class="cm-property">height</span>() <span class="cm-operator">/</span> <span class="cm-number">2</span>;
+      <span class="cm-keyword">var</span> <span class="cm-def">distancePercent</span> <span class="cm-operator">=</span> <span class="cm-variable-2">distance</span> <span class="cm-operator">/</span> (<span class="cm-variable-2">maxDistance</span> <span class="cm-operator">/</span> <span class="cm-number">100</span>);
+
+
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">liRelTop</span> <span class="cm-operator">+</span> <span class="cm-variable-2">$li</span>.<span class="cm-property">parent</span>().<span class="cm-property">scrollTop</span>() <span class="cm-operator">&gt;</span> <span class="cm-variable-2">top</span>) {
+        <span class="cm-keyword">if</span> (<span class="cm-operator">!</span><span class="cm-variable-2">$li</span>.<span class="cm-property">hasClass</span>(<span class="cm-string">'item-focus'</span>)) {
+          <span class="cm-variable-2">$li</span>.<span class="cm-property">prev</span>().<span class="cm-property">addClass</span>(<span class="cm-string">'item-hide'</span>);
+          <span class="cm-variable-2">$lis</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'item-focus'</span>);
+          <span class="cm-variable-2">$lis</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'item-next'</span>);
+        }
+        <span class="cm-variable-2">$li</span>.<span class="cm-property">removeClass</span>(<span class="cm-string">'item-hide'</span>);
+        <span class="cm-variable-2">$li</span>.<span class="cm-property">addClass</span>(<span class="cm-string">'item-focus'</span>);
+        <span class="cm-variable-2">$li</span>.<span class="cm-property">next</span>().<span class="cm-property">addClass</span>(<span class="cm-string">'item-next'</span>);
+        <span class="cm-keyword">break</span>;
+      }
+    }
+  });
+
+});</code></pre>
+
+        </div>
+
+
+
+    <div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+
+  <iframe allow="accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; serial *; vr *; web-share *; xr-spatial-tracking *" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Scroll List Animation" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for Scroll List Animation" data-src="https://codepen.io/JavaScriptJunkie/fullembedgrid/BGNELL?animations=run&amp;type=embed" src="./BGNELL(1).html">
+  </iframe>
+
+
+</div>
+
+
+    <div id="about-box">
+
+  <div class="about-container">
+
+
+    <div class="about-user">
+
+        <a href="https://codepen.io/JavaScriptJunkie" target="_blank" rel="noopener"><img src="./default(1).png" loading="lazy" alt="" class="about-image"></a>
+
+      <div class="about-user-info">
+
+
+        <p>
+          This Pen is owned by <a href="https://codepen.io/JavaScriptJunkie" target="_blank" rel="noopener">Muhammed Erdem</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+
+        </p>
+
+        <p>
+          <a href="https://codepen.io/JavaScriptJunkie" target="_blank" rel="noopener" class="about-user-more">
+          See more by @JavaScriptJunkie on CodePen
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+    <div id="resources-box" class="resources-box">
+
+  <h3>External CSS</h3>
+    <p>
+      This Pen doesn't use any external CSS resources.
+    </p>
+
+  <h3>External JavaScript</h3>
+    <ol class="list-of-resources">
+        <li>
+          <a href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js</a>
+        </li>
+        <li>
+          <a href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js</a>
+        </li>
+        <li>
+          <a href="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/plugins/overscroll.js" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/plugins/overscroll.js</a>
+        </li>
+    </ol>
+
+</div>
+
+
+  </div>
+
+    <footer class="embed-footer" id="embed-footer">
+
+    <button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+      Resources
+    </button>
+
+    <ul class="scaling-choices bottom right">
+  <li><button class="action-button" id="zoom-button-1">1×</button></li>
+  <li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+  <li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+
+<button id="rerun-button" class="action-button rerun-button bottom right">
+  Rerun
+</button>
+
+  </footer>
+
+
+
+  <script nonce="">
+    __processedPen = {"html":"&lt;div class=&quot;wrapper&quot;&gt;\n  &lt;div class=&quot;scroll-list&quot;&gt;\n    &lt;div class=&quot;scroll-list__wrp js-scroll-content js-scroll-list&quot;&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n      &lt;div class=&quot;scroll-list__item js-scroll-list-item&quot;&gt;&lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;","css":"@import url(&quot;https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=latin-ext&quot;);\nhtml {\n  position: relative;\n  overflow-x: hidden !important;\n}\n\nbody {\n  font-family: &quot;Roboto&quot;, sans-serif;\n  font-size: 16px;\n  background: #f2f7fd;\n}\n\na, a:hover {\n  text-decoration: none;\n}\n\n* {\n  box-sizing: border-box;\n}\n\n.wrapper {\n  display: flex;\n  align-items: center;\n  min-height: 100vh;\n  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #fa9b48 100%);\n}\n\n.scroll-list {\n  width: 100%;\n  max-width: 700px;\n  padding: 25px;\n  margin-top: 50px;\n  margin-left: auto;\n  margin-right: auto;\n}\n@media screen and (max-width: 768px) {\n  .scroll-list {\n    margin-top: 20px;\n  }\n}\n.scroll-list__wrp {\n  width: 100%;\n  height: 700px;\n  overflow: auto;\n  padding: 50px;\n  box-shadow: 0px 7px 46px 0px rgba(41, 53, 108, 0.45);\n  background: #4b1079;\n  background: #4b1079;\n  margin-bottom: 15px;\n  border-radius: 8px;\n  background-image: linear-gradient(147deg, #6e0777 0%, #380c70 74%);\n}\n.scroll-list__wrp .scrollbar-track {\n  display: none !important;\n}\n@media screen and (max-width: 768px) {\n  .scroll-list__wrp {\n    padding: 25px;\n  }\n}\n.scroll-list__item {\n  width: 100%;\n  height: 155px;\n  display: block;\n  margin-bottom: 15px;\n  border-radius: 8px;\n  background-image: linear-gradient(147deg, #ff7c34 0%, #c31269 74%);\n  transition: all 0.35s ease-in-out;\n  opacity: 0;\n  transform: scale(0.7);\n  box-shadow: 0px 7px 16px 0px rgba(41, 53, 108, 0.25);\n}\n.scroll-list__item.item-hide {\n  opacity: 0;\n  transform: scale(0.7);\n}\n.scroll-list__item.item-focus {\n  opacity: 1;\n  transform: scale(1);\n}\n.scroll-list__item.item-next {\n  opacity: 1;\n  transform: scale(1);\n}\n.scroll-list__item.item-next + .scroll-list__item {\n  opacity: 1;\n  transform: scale(1);\n}\n.scroll-list__item:last-child {\n  margin-bottom: 155px;\n}","js":"$(document).ready(function () {\n  var Scrollbar = window.Scrollbar;\n\n  Scrollbar.use(window.OverscrollPlugin);\n\n  var customScroll = Scrollbar.init(document.querySelector(&#39;.js-scroll-list&#39;), {\n    plugins: {\n      overscroll: true } });\n\n\n\n  var listItem = $(&#39;.js-scroll-list-item&#39;);\n\n  listItem.eq(0).addClass(&#39;item-focus&#39;);\n  listItem.eq(1).addClass(&#39;item-next&#39;);\n\n  customScroll.addListener(function (status) {\n\n    var $content = $(&#39;.js-scroll-content&#39;);\n\n    var viewportScrollDistance = 0;\n\n\n    viewportScrollDistance = status.offset.y;\n    var viewportHeight = $content.height();\n    var listHeight = 0;\n    var $listItems = $content.find(&#39;.js-scroll-list-item&#39;);\n    for (var i = 0; i &lt; $listItems.length; i++) {if (window.CP.shouldStopExecution(0)) break;\n      listHeight += $($listItems[i]).height();\n    }window.CP.exitedLoop(0);\n\n    var top = status.offset.y;\n    // console.log(top);\n    var visibleCenterVertical = 0;\n    visibleCenterVertical = top;\n\n    var parentTop = 1;\n    var $lis = $(&#39;.js-scroll-list-item&#39;);\n    var $focusLi;\n    for (var i = 0; i &lt; $lis.length; i++) {if (window.CP.shouldStopExecution(1)) break;\n      var $li = $($lis[i]);\n      var liTop = $li.position().top;\n      var liRelTop = liTop - parentTop;\n\n      var distance = 0;\n      var distance = Math.abs(top - liRelTop);\n      var maxDistance = $(&#39;.js-scroll-content&#39;).height() / 2;\n      var distancePercent = distance / (maxDistance / 100);\n\n\n      if (liRelTop + $li.parent().scrollTop() &gt; top) {\n        if (!$li.hasClass(&#39;item-focus&#39;)) {\n          $li.prev().addClass(&#39;item-hide&#39;);\n          $lis.removeClass(&#39;item-focus&#39;);\n          $lis.removeClass(&#39;item-next&#39;);\n        }\n        $li.removeClass(&#39;item-hide&#39;);\n        $li.addClass(&#39;item-focus&#39;);\n        $li.next().addClass(&#39;item-next&#39;);\n        break;\n      }\n    }window.CP.exitedLoop(1);\n  });\n\n});"};
+    __preprocessors = {
+      "html": "pug",
+      "css": "scss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "Pug",
+      "css": "SCSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+
+  <script src="./embed-d492f8b0f63f0a8ba679c9cd0a2fffbaa24504a7928435ba1bfc1859f904e02b.js.download"></script>
+
+
+<script nonce="">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='WHLV/4JXXoI=';d.innerHTML="window.__CF$cv$params={r:'96b8045ca860cef8',t:'MTc1NDU4Mjc0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='WHLV/4JXXoI=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(4).html"></iframe>
+
+</body></html>

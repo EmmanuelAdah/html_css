@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://cdpn.io/nathantaylor/fullembedgrid/XMXQrK?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>RGB Channel Split  Scroll Effect</title>
+
+    <link rel="canonical" href="https://codepen.io/nathantaylor/pen/XMXQrK">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./normalize-5.0.0.min.css">
+
+  
+  
+<style>
+html {
+  font-size: 1vh;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  color: white;
+  font-size: 2rem;
+}
+
+.section {
+  height: 100vh;
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: calc(50% - 25rem);
+  left: calc(50% - 25rem);
+  width: 50rem;
+  height: 50rem;
+  overflow: hidden;
+}
+.center.full {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.center.one .r, .center.one .g, .center.one .b {
+  background-image: url(http://unsplash.it/g/600/600?image=495);
+}
+.center.two .r, .center.two .g, .center.two .b {
+  background-image: url(http://unsplash.it/g/800/600?image=781);
+}
+.center.three .r, .center.three .g, .center.three .b {
+  background-image: url(http://unsplash.it/g/600/600?image=942);
+}
+.center.four .r, .center.four .g, .center.four .b {
+  background-image: url(http://unsplash.it/g/800/600?image=363);
+}
+.center.five .r, .center.five .g, .center.five .b {
+  background-image: url(http://unsplash.it/g/600/600?image=396);
+}
+.center .r, .center .g, .center .b {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-size: cover;
+  mix-blend-mode: screen;
+  background-blend-mode: darken;
+}
+.center .r {
+  background-color: red;
+}
+.center .g {
+  background-color: lime;
+}
+.center .b {
+  background-color: blue;
+}
+
+.sig {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 100;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no">
+  <div class="section">
+  <div class="center one" style="transform: translateY(5.42478e-34px);">
+    <div class="r" style="transform: translateY(-8.13717e-34px);"></div>
+    <div class="g" style="transform: translateY(-5.42478e-34px);"></div>
+    <div class="b" style="transform: translateY(-2.71239e-34px);"></div>
+  </div>
+</div>
+<div class="section">
+  <div class="center full two" style="transform: translateY(5.42478e-34px);">
+    <div class="r" style="transform: translateY(-8.13717e-34px);"></div>
+    <div class="g" style="transform: translateY(-5.42478e-34px);"></div>
+    <div class="b" style="transform: translateY(-2.71239e-34px);"></div>
+  </div>
+</div>
+<div class="section">
+  <div class="center three" style="transform: translateY(5.42478e-34px);">
+    <div class="r" style="transform: translateY(-8.13717e-34px);"></div>
+    <div class="g" style="transform: translateY(-5.42478e-34px);"></div>
+    <div class="b" style="transform: translateY(-2.71239e-34px);"></div>
+  </div>
+</div>
+<div class="section">
+  <div class="center full four" style="transform: translateY(5.42478e-34px);">
+    <div class="r" style="transform: translateY(-8.13717e-34px);"></div>
+    <div class="g" style="transform: translateY(-5.42478e-34px);"></div>
+    <div class="b" style="transform: translateY(-2.71239e-34px);"></div>
+  </div>
+</div>
+<div class="section">
+  <div class="center five" style="transform: translateY(5.42478e-34px);">
+    <div class="r" style="transform: translateY(-8.13717e-34px);"></div>
+    <div class="g" style="transform: translateY(-5.42478e-34px);"></div>
+    <div class="b" style="transform: translateY(-2.71239e-34px);"></div>
+  </div>
+</div><a class="sig" href="http://nathan.tokyo/" target="_blank">NATHAN.TOKYO</a>
+  <script src="./jquery.min(4).js.download"></script>
+      <script id="rendered-js">
+let speed = 300;
+let amount = 30;
+
+let scroll = 0;
+let smooth = 0;
+let diff = 0;
+
+$(document).on('scroll', event => {
+  scroll = $(window).scrollTop();
+});
+
+let oldTime = null;
+let delta = 0;
+
+const animate = t => {
+  if (oldTime)
+  delta = t - oldTime;
+  smooth += (scroll - smooth) * delta / speed;
+  diff = scroll - smooth;
+
+  let translateCenter = diff * -2 / amount;
+  let translateRed = diff * 3 / amount;
+  let translateGreen = diff * 2 / amount;
+  let translateBlue = diff * 1 / amount;
+
+  $('.center').css('transform', 'translateY(' + translateCenter + 'px)');
+  $('.r').css('transform', 'translateY(' + translateRed + 'px)');
+  $('.g').css('transform', 'translateY(' + translateGreen + 'px)');
+  $('.b').css('transform', 'translateY(' + translateBlue + 'px)');
+
+  oldTime = t;
+  requestAnimationFrame(animate);
+};
+
+requestAnimationFrame(animate);
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

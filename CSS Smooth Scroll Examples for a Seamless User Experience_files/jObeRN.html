@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/jObeRN?height=450&theme-id=1&slug-hash=jObeRN&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen Embed - Smooth scroll</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="vXe8ZnuodsKLbssIzLci0Vap7K66c1pBncHCvNyox0yaue-iTi_zrEVMllM2oNJcUg3OMBOn28o-DQygwvMbeQ">
+
+  <link rel="stylesheet" href="./embed-50c8e30c86cf654903ac612e1633eecabbabaf25cd1efaeaee3733dd9834c822.css" media="all">
+
+  <style>
+    .hide {
+      display: none !important;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./highcontrast-dark-47187de4142cc38f6f5a1e9f846225ded7136f4761bf6a3ec0ed89c8ce9b7382.css" media="all">
+
+  <link rel="stylesheet" href="./maVRwd.css">
+</head>
+
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+
+  <nav class="embed-nav group" id="embed-nav">
+
+  <ul class="code-types">
+
+
+        <li class="code-type">
+          <a id="html-link" href="https://codepen.io/anon/embed/jObeRN?height=450&amp;theme-id=1&amp;slug-hash=jObeRN&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+              HTML
+          </a>
+        </li>
+
+
+
+
+        <li class="code-type">
+          <a id="js-link" href="https://codepen.io/anon/embed/jObeRN?height=450&amp;theme-id=1&amp;slug-hash=jObeRN&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+              JS
+          </a>
+        </li>
+
+
+  </ul>
+
+  <ul class="result-button-list">
+    <li class="results results-type">
+      <a id="result-link" href="https://codepen.io/anon/embed/jObeRN?height=450&amp;theme-id=1&amp;slug-hash=jObeRN&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+        Result
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/anon/embed/jObeRN?height=450&amp;theme-id=1&amp;slug-hash=jObeRN&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+    </li>
+  </ul>
+
+
+    <div class="logo-wrap" id="edit-area">
+
+        <a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/rleve/pen/jObeRN" title="Edit on CodePen">
+            <div class="large-logo">
+    <span id="edit-on-text" class="open-on">EDIT ON</span>
+    <svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+  <path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+  </div>
+  <div class="box-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+  <path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+  </div>
+        </a>
+
+    
+    </div>
+
+
+</nav>
+
+
+  <div id="output" data-border-style="thin" data-header="true">
+
+
+
+        <div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+
+
+          <pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span> <span class="cm-attribute">lang</span>=<span class="cm-string">"en"</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">"utf-8"</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>Smooth Scroll - A simple vanilla JS script to animate scrolling to anchor links.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>
+    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">name</span>=<span class="cm-string">"viewport"</span> <span class="cm-attribute">content</span>=<span class="cm-string">"width=device-width, initial-scale=1.0"</span><span class="cm-tag cm-bracket">&gt;</span>
+
+    <span class="cm-comment">&lt;!-- HTML5 Shim for IE --&gt;</span>
+    <span class="cm-comment">&lt;!--[if IE]&gt;</span>
+        <span class="cm-comment">&lt;script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;</span>
+    <span class="cm-comment">&lt;![endif]--&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">body</span> <span class="cm-attribute">id</span>=<span class="cm-string">"top"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">section</span> <span class="cm-attribute">style</span>=<span class="cm-string">"width: 88%; max-width: 40em; margin-left: auto; margin-right: auto;"</span><span class="cm-tag cm-bracket">&gt;</span>
+
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span> <span class="cm-attribute">style</span>=<span class="cm-string">"text-align: center; font-size: 3em;"</span><span class="cm-tag cm-bracket">&gt;</span>Smooth Scroll<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>
+      <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">style</span>=<span class="cm-string">"text-align: center; font-size: 1.5em;"</span><span class="cm-tag cm-bracket">&gt;</span>A simple vanilla JS script to animate scrolling to anchor links.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"scroll"</span> <span class="cm-attribute">data-speed</span>=<span class="cm-string">"2000"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#bazinga"</span><span class="cm-tag cm-bracket">&gt;</span>Bazinga<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span> <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"scroll"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#booya"</span><span class="cm-tag cm-bracket">&gt;</span>Booya<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+            .<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>
+            .<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>
+            .<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">id</span>=<span class="cm-string">"bazinga"</span><span class="cm-tag cm-bracket">&gt;</span>Bazinga!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+            .<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>
+            .<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>
+            .<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>.
+        <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">id</span>=<span class="cm-string">"booya"</span><span class="cm-tag cm-bracket">&gt;</span>Booya!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+        <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">class</span>=<span class="cm-string">"scroll"</span> <span class="cm-attribute">data-speed</span>=<span class="cm-string">"2000"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#top"</span><span class="cm-tag cm-bracket">&gt;</span>Back to the top<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+
+  <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">section</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span>
+</code></pre>
+
+        </div>
+
+
+
+
+
+        <div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+
+
+          <pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default">(<span class="cm-keyword">function</span>() {
+
+     <span class="cm-string">'use strict'</span>;
+
+    <span class="cm-comment">// Feature Test</span>
+    <span class="cm-keyword">if</span> ( <span class="cm-string">'querySelector'</span> <span class="cm-keyword">in</span> <span class="cm-variable">document</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-string">'addEventListener'</span> <span class="cm-keyword">in</span> <span class="cm-variable">window</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">Array</span>.<span class="cm-property">prototype</span>.<span class="cm-property">forEach</span> ) {
+
+        <span class="cm-comment">// Function to animate the scroll</span>
+        <span class="cm-keyword">var</span> <span class="cm-def">smoothScroll</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span> (<span class="cm-def">anchor</span>, <span class="cm-def">duration</span>) {
+
+            <span class="cm-comment">// Calculate how far and how fast to scroll</span>
+            <span class="cm-keyword">var</span> <span class="cm-def">startLocation</span> <span class="cm-operator">=</span> <span class="cm-variable">window</span>.<span class="cm-property">pageYOffset</span>;
+            <span class="cm-keyword">var</span> <span class="cm-def">endLocation</span> <span class="cm-operator">=</span> <span class="cm-variable-2">anchor</span>.<span class="cm-property">offsetTop</span>;
+            <span class="cm-keyword">var</span> <span class="cm-def">distance</span> <span class="cm-operator">=</span> <span class="cm-variable-2">endLocation</span> <span class="cm-operator">-</span> <span class="cm-variable-2">startLocation</span>;
+            <span class="cm-keyword">var</span> <span class="cm-def">increments</span> <span class="cm-operator">=</span> <span class="cm-variable-2">distance</span><span class="cm-operator">/</span>(<span class="cm-variable-2">duration</span><span class="cm-operator">/</span><span class="cm-number">16</span>);
+            <span class="cm-keyword">var</span> <span class="cm-def">stopAnimation</span>;
+
+            <span class="cm-comment">// Scroll the page by an increment, and check if it's time to stop</span>
+            <span class="cm-keyword">var</span> <span class="cm-def">animateScroll</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span> () {
+                <span class="cm-variable">window</span>.<span class="cm-property">scrollBy</span>(<span class="cm-number">0</span>, <span class="cm-variable-2">increments</span>);
+                <span class="cm-variable-2">stopAnimation</span>();
+            };
+
+            <span class="cm-comment">// If scrolling down</span>
+            <span class="cm-keyword">if</span> ( <span class="cm-variable-2">increments</span> <span class="cm-operator">&gt;=</span> <span class="cm-number">0</span> ) {
+                <span class="cm-comment">// Stop animation when you reach the anchor OR the bottom of the page</span>
+                <span class="cm-variable-2">stopAnimation</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span> () {
+                    <span class="cm-keyword">var</span> <span class="cm-def">travelled</span> <span class="cm-operator">=</span> <span class="cm-variable">window</span>.<span class="cm-property">pageYOffset</span>;
+                    <span class="cm-keyword">if</span> ( (<span class="cm-variable-2">travelled</span> <span class="cm-operator">&gt;=</span> (<span class="cm-variable-2">endLocation</span> <span class="cm-operator">-</span> <span class="cm-variable-2">increments</span>)) <span class="cm-operator">||</span> ((<span class="cm-variable">window</span>.<span class="cm-property">innerHeight</span> <span class="cm-operator">+</span> <span class="cm-variable-2">travelled</span>) <span class="cm-operator">&gt;=</span> <span class="cm-variable">document</span>.<span class="cm-property">body</span>.<span class="cm-property">offsetHeight</span>) ) {
+                        <span class="cm-variable">clearInterval</span>(<span class="cm-variable">runAnimation</span>);
+                    }
+                };
+            }
+            <span class="cm-comment">// If scrolling up</span>
+            <span class="cm-keyword">else</span> {
+                <span class="cm-comment">// Stop animation when you reach the anchor OR the top of the page</span>
+                <span class="cm-variable-2">stopAnimation</span> <span class="cm-operator">=</span> <span class="cm-keyword">function</span> () {
+                    <span class="cm-keyword">var</span> <span class="cm-def">travelled</span> <span class="cm-operator">=</span> <span class="cm-variable">window</span>.<span class="cm-property">pageYOffset</span>;
+                    <span class="cm-keyword">if</span> ( <span class="cm-variable-2">travelled</span> <span class="cm-operator">&lt;=</span> (<span class="cm-variable-2">endLocation</span> <span class="cm-operator">||</span> <span class="cm-number">0</span>) ) {
+                        <span class="cm-variable">clearInterval</span>(<span class="cm-variable">runAnimation</span>);
+                    }
+                };
+            }
+
+            <span class="cm-comment">// Loop the animation function</span>
+            <span class="cm-keyword">var</span> <span class="cm-def">runAnimation</span> <span class="cm-operator">=</span> <span class="cm-variable">setInterval</span>(<span class="cm-variable-2">animateScroll</span>, <span class="cm-number">16</span>);
+       
+        };
+
+        <span class="cm-comment">// Define smooth scroll links</span>
+        <span class="cm-keyword">var</span> <span class="cm-def">scrollToggle</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelectorAll</span>(<span class="cm-string">'.scroll'</span>);
+
+        <span class="cm-comment">// For each smooth scroll link</span>
+        [].<span class="cm-property">forEach</span>.<span class="cm-property">call</span>(<span class="cm-variable-2">scrollToggle</span>, <span class="cm-keyword">function</span> (<span class="cm-def">toggle</span>) {
+
+            <span class="cm-comment">// When the smooth scroll link is clicked</span>
+            <span class="cm-variable-2">toggle</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">'click'</span>, <span class="cm-keyword">function</span>(<span class="cm-def">e</span>) {
+
+                <span class="cm-comment">// Prevent the default link behavior</span>
+                <span class="cm-variable-2">e</span>.<span class="cm-property">preventDefault</span>();
+
+                <span class="cm-comment">// Get anchor link and calculate distance from the top</span>
+                <span class="cm-keyword">var</span> <span class="cm-def">dataID</span> <span class="cm-operator">=</span> <span class="cm-variable-2">toggle</span>.<span class="cm-property">getAttribute</span>(<span class="cm-string">'href'</span>);
+                <span class="cm-keyword">var</span> <span class="cm-def">dataTarget</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-variable-2">dataID</span>);
+                <span class="cm-keyword">var</span> <span class="cm-def">dataSpeed</span> <span class="cm-operator">=</span> <span class="cm-variable-2">toggle</span>.<span class="cm-property">getAttribute</span>(<span class="cm-string">'data-speed'</span>);
+
+                <span class="cm-comment">// If the anchor exists</span>
+                <span class="cm-keyword">if</span> (<span class="cm-variable-2">dataTarget</span>) {
+                    <span class="cm-comment">// Scroll to the anchor</span>
+                    <span class="cm-variable-2">smoothScroll</span>(<span class="cm-variable-2">dataTarget</span>, <span class="cm-variable-2">dataSpeed</span> <span class="cm-operator">||</span> <span class="cm-number">500</span>);
+                }
+
+            }, <span class="cm-atom">false</span>);
+
+        });
+
+    }
+
+ })();</code></pre>
+
+        </div>
+
+
+
+    <div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+
+  <iframe allow="accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; serial *; vr *; web-share *; xr-spatial-tracking *" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Smooth scroll" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for Smooth scroll" data-src="https://codepen.io/rleve/fullembedgrid/jObeRN?animations=run&amp;type=embed" src="./jObeRN(1).html">
+  </iframe>
+
+
+</div>
+
+
+    <div id="about-box">
+
+  <div class="about-container">
+
+
+    <div class="about-user">
+
+        <a href="https://codepen.io/rleve" target="_blank" rel="noopener"><img src="./default(4).png" loading="lazy" alt="" class="about-image"></a>
+
+      <div class="about-user-info">
+
+
+        <p>
+          This Pen is owned by <a href="https://codepen.io/rleve" target="_blank" rel="noopener">Robin Leve</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+
+        </p>
+
+        <p>
+          <a href="https://codepen.io/rleve" target="_blank" rel="noopener" class="about-user-more">
+          See more by @rleve on CodePen
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+    <div id="resources-box" class="resources-box">
+
+  <h3>External CSS</h3>
+    <p>
+      This Pen doesn't use any external CSS resources.
+    </p>
+
+  <h3>External JavaScript</h3>
+    <ol class="list-of-resources">
+        <li>
+          <a href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" target="_blank">//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js</a>
+        </li>
+    </ol>
+
+</div>
+
+
+  </div>
+
+    <footer class="embed-footer" id="embed-footer">
+
+    <button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+      Resources
+    </button>
+
+    <ul class="scaling-choices bottom right">
+  <li><button class="action-button" id="zoom-button-1">1×</button></li>
+  <li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+  <li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+
+<button id="rerun-button" class="action-button rerun-button bottom right">
+  Rerun
+</button>
+
+  </footer>
+
+
+
+  <script nonce="">
+    __processedPen = {"html":"&lt;html lang=&quot;en&quot;&gt;\n&lt;head&gt;\n    &lt;meta charset=&quot;utf-8&quot;&gt;\n    &lt;title&gt;Smooth Scroll - A simple vanilla JS script to animate scrolling to anchor links.&lt;/title&gt;\n    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;\n\n    &lt;!-- HTML5 Shim for IE --&gt;\n    &lt;!--[if IE]&gt;\n        &lt;script src=&quot;https://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;\n    &lt;![endif]--&gt;\n&lt;/head&gt;\n\n&lt;body id=&quot;top&quot;&gt;\n\t&lt;section style=&quot;width: 88%; max-width: 40em; margin-left: auto; margin-right: auto;&quot;&gt;\n\n\t    &lt;h1 style=&quot;text-align: center; font-size: 3em;&quot;&gt;Smooth Scroll&lt;/h1&gt;\n\t    &lt;p style=&quot;text-align: center; font-size: 1.5em;&quot;&gt;A simple vanilla JS script to animate scrolling to anchor links.&lt;/p&gt;\n\n        &lt;p&gt;&lt;a class=&quot;scroll&quot; data-speed=&quot;2000&quot; href=&quot;#bazinga&quot;&gt;Bazinga&lt;/a&gt; &lt;a class=&quot;scroll&quot; href=&quot;#booya&quot;&gt;Booya&lt;/a&gt;&lt;/p&gt;\n\n        &lt;p&gt;\n            .&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;\n            .&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;\n            .&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.\n        &lt;/p&gt;\n\n        &lt;p id=&quot;bazinga&quot;&gt;Bazinga!&lt;/p&gt;\n\n        &lt;p&gt;\n            .&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;\n            .&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;\n            .&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.\n        &lt;/p&gt;\n\n        &lt;p id=&quot;booya&quot;&gt;Booya!&lt;/p&gt;\n\n        &lt;p&gt;&lt;a class=&quot;scroll&quot; data-speed=&quot;2000&quot; href=&quot;#top&quot;&gt;Back to the top&lt;/a&gt;&lt;/p&gt;\n\n\t&lt;/section&gt;\n&lt;/body&gt;\n&lt;/html&gt;","css":"","js":"(function () {\n\n  &#39;use strict&#39;;\n\n  // Feature Test\n  if (&#39;querySelector&#39; in document &amp;&amp; &#39;addEventListener&#39; in window &amp;&amp; Array.prototype.forEach) {\n\n    // Function to animate the scroll\n    var smoothScroll = function (anchor, duration) {\n\n      // Calculate how far and how fast to scroll\n      var startLocation = window.pageYOffset;\n      var endLocation = anchor.offsetTop;\n      var distance = endLocation - startLocation;\n      var increments = distance / (duration / 16);\n      var stopAnimation;\n\n      // Scroll the page by an increment, and check if it&#39;s time to stop\n      var animateScroll = function () {\n        window.scrollBy(0, increments);\n        stopAnimation();\n      };\n\n      // If scrolling down\n      if (increments &gt;= 0) {\n        // Stop animation when you reach the anchor OR the bottom of the page\n        stopAnimation = function () {\n          var travelled = window.pageYOffset;\n          if (travelled &gt;= endLocation - increments || window.innerHeight + travelled &gt;= document.body.offsetHeight) {\n            clearInterval(runAnimation);\n          }\n        };\n      }\n      // If scrolling up\n      else {\n          // Stop animation when you reach the anchor OR the top of the page\n          stopAnimation = function () {\n            var travelled = window.pageYOffset;\n            if (travelled &lt;= (endLocation || 0)) {\n              clearInterval(runAnimation);\n            }\n          };\n        }\n\n      // Loop the animation function\n      var runAnimation = setInterval(animateScroll, 16);\n\n    };\n\n    // Define smooth scroll links\n    var scrollToggle = document.querySelectorAll(&#39;.scroll&#39;);\n\n    // For each smooth scroll link\n    [].forEach.call(scrollToggle, function (toggle) {\n\n      // When the smooth scroll link is clicked\n      toggle.addEventListener(&#39;click&#39;, function (e) {\n\n        // Prevent the default link behavior\n        e.preventDefault();\n\n        // Get anchor link and calculate distance from the top\n        var dataID = toggle.getAttribute(&#39;href&#39;);\n        var dataTarget = document.querySelector(dataID);\n        var dataSpeed = toggle.getAttribute(&#39;data-speed&#39;);\n\n        // If the anchor exists\n        if (dataTarget) {\n          // Scroll to the anchor\n          smoothScroll(dataTarget, dataSpeed || 500);\n        }\n\n      }, false);\n\n    });\n\n  }\n\n})();"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+
+  <script src="./embed-d492f8b0f63f0a8ba679c9cd0a2fffbaa24504a7928435ba1bfc1859f904e02b.js.download"></script>
+
+
+<script nonce="">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='k5owkxqjqNk=';d.innerHTML="window.__CF$cv$params={r:'96b8045ca856cef8',t:'MTc1NDU4Mjc0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='k5owkxqjqNk=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(9).html"></iframe>
+
+</body></html>

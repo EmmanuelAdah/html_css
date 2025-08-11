@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://cdpn.io/yitengjun/fullembedgrid/yLzNQLE?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Background Parallax</title>
+
+    <link rel="canonical" href="https://codepen.io/yitengjun/pen/yLzNQLE">
+  
+  <link rel="stylesheet" href="./normalize-5.0.0.min.css">
+
+  <link rel="stylesheet" href="./locomotive-scroll.css">
+  
+<style>
+section {
+  position: relative;
+  width: 100%;
+}
+
+body {
+  color: #fff;
+  background-color: #2b2b2b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+#container {
+  position: relative;
+  z-index: 2;
+}
+
+.fv {
+  height: 100vh;
+  width: 100%;
+}
+
+.heading {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  bottom: 0;
+  padding: 1.5em 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.heading h1 {
+  font-size: 3rem;
+}
+
+.heading a {
+  font-size: 0.889rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.555em 1.5em;
+  display: block;
+  margin-top: 0.5em;
+  border-radius: 2.5em;
+  background-color: #fff;
+  color: #1f1f1f;
+  transition: 0.25s transform;
+}
+
+.heading a:hover {
+  transform: scale(1.075);
+}
+
+.bg {
+  background-image: url(https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+.fv_img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-top: 0 !important;
+}
+
+.ukiyo {
+  margin-top: 12.5em;
+}
+
+.img-size-1 {
+  margin-left: 10%;
+}
+
+.img-position-r {
+  margin-left: auto;
+  margin-right: 10%;
+}
+
+.img-size-full {
+  width: 100%;
+  height: 115vh;
+}
+
+.img-size-1 {
+  width: 33.3333%;
+  height: 75vh;
+}
+
+.img-size-2 {
+  width: 50%;
+  height: 100vh;
+}
+
+footer {
+  padding: 15em 5% 10em;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 800px) {
+  .heading {
+    width: 92.5%;
+  }
+
+  .heading a {
+    font-size: 2vw;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  .heading h1 {
+    font-size: 6vw;
+  }
+
+  .img-position-l {
+    margin-left: 0;
+  }
+
+  .img-position-r {
+    margin-right: 0;
+  }
+
+  .img-size-full {
+    height: 100vh;
+    height: 100vh;
+  }
+
+  .img-size-1 {
+    width: 75%;
+    height: 75vh;
+  }
+
+  .img-size-2 {
+    width: 75%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading a {
+    font-size: 3vw;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .heading h1 {
+    font-size: 7.5vw;
+  }
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no">
+  <div class="heading">
+  <h1>Ukiyo.js</h1>
+  <a href="https://github.com/yitengjun/ukiyojs" target="_blank">see on GitHub</a>
+</div>
+
+<div id="container">
+  <section class="fv">
+    <!-- option +scale +willchange -->
+    <div style="inset: 0px; position: absolute; width: 743px; overflow: hidden; height: 368px !important;"><img class="ukiyo fv_img1" src="./photo-1606011334315-025e4baab810" data-u-willchange="" decoding="async" style="inset: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 743px; height: 552px !important; transform: translate3d(0px, 46px, 0px);"></div>
+  </section>
+
+  <section class="content">
+    <!-- option +speed -->
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 276px !important;"><img class="ukiyo img-size-1 img-position-l" data-u-speed="1.3" src="./photo-1647613049527-851295e24918" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 557px; height: 414px !important; transform: translate3d(0px, 20.7px, 0px);"></div>
+
+    <!-- picture element -->
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 368px !important;"><picture>
+      <source srcset="https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" media="(min-width: 1000px)">
+      <source srcset="https://images.unsplash.com/photo-1647849754185-2b52aec8458b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" media="(min-width: 700px)">
+      <img class="ukiyo img-size-full" src="./photo-1504051771394-dd2e66b2e08f" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 743px; height: 552px !important; transform: translate3d(0px, 46px, 0px);">
+    </picture></div>
+
+    <!-- use background-image -->
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 368px !important;"><div class="ukiyo img-position-r img-size-2 bg" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; background-position: center center; width: 557px; height: 552px !important; transform: translate3d(0px, 46px, 0px);"></div></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 276px !important;"><img class="ukiyo img-size-1 img-position-l" src="./photo-1663094615740-322d2a238949" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 557px; height: 414px !important; transform: translate3d(0px, 34.5px, 0px);"></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 368px !important;"><img class="ukiyo img-size-full" src="./photo-1516575150278-77136aed6920" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 743px; height: 552px !important; transform: translate3d(0px, 46px, 0px);"></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 276px !important;"><img class="ukiyo img-size-1 img-position-r" src="./photo-1516575150278-77136aed6920" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 557px; height: 414px !important; transform: translate3d(0px, 34.5px, 0px);"></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 368px !important;"><img class="ukiyo img-position-l img-size-2" src="./photo-1638395976479-edd103e980bc" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 557px; height: 552px !important; transform: translate3d(0px, 28.375px, 0px);"></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 368px !important;"><img class="ukiyo img-position-r img-size-2" src="./photo-1647635423038-5ba662f9da6e" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 557px; height: 552px !important; transform: translate3d(0px, -171.845px, 0px);"></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 368px !important;"><img class="ukiyo img-size-full" data-u-scale="1.25" src="./photo-1647627573078-d8f5b48ab85a" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 743px; height: 460px !important; transform: translate3d(0px, -115px, 0px);"></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 276px !important;"><img class="ukiyo img-size-1 img-position-l" data-u-scale="1.35" src="./photo-1604882355165-4450cb6155b2" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 557px; height: 372.6px !important; transform: translate3d(0px, -120.875px, 0px);"></div>
+
+    <div style="margin-top: 200px; margin-bottom: 0px; position: relative; width: 100%; overflow: hidden; height: 368px !important;"><img class="ukiyo img-position-r img-size-2" src="./photo-1561948955-570b270e7c36" style="margin-top: 0px; margin-bottom: 0px; display: block; overflow: hidden; backface-visibility: hidden; object-fit: cover; width: 557px; height: 552px !important; transform: translate3d(0px, -213.44px, 0px);"></div>
+  </section>
+
+  <footer>
+    <div>
+      <p>Smooth Scroll : <a href="https://github.com/studio-freight/lenis" target="blank">@studio-freight/lenis</a></p>
+      <p>Image : <a href="https://unsplash.com/" target="blank">Unsplash</a></p>
+    </div>
+  </footer>
+</div>
+  <script src="./ukiyo.umd.min.js.download"></script>
+      <script id="rendered-js" type="module">
+import Lenis from "https://cdn.skypack.dev/@studio-freight/lenis@0.1.12";
+
+// parallax
+// https://github.com/yitengjun/ukiyo-js
+const els = document.querySelectorAll(".ukiyo");
+els.forEach(el => {
+  const parallax = new Ukiyo(el);
+});
+
+// smooth scroll
+const lenis = new Lenis({
+  lerp: 0.1,
+  smooth: true,
+  direction: "vertical" });
+
+
+function raf() {
+  lenis.raf();
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://cdpn.io/rleve/fullembedgrid/jObeRN?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Smooth scroll</title>
+
+    <link rel="canonical" href="https://codepen.io/rleve/pen/jObeRN">
+  
+  
+  
+  
+
+  
+  
+  
+</head>
+
+<body translate="no" id="top">
+  
+
+    
+    <title>Smooth Scroll - A simple vanilla JS script to animate scrolling to anchor links.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML5 Shim for IE -->
+    <!--[if IE]>
+        <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+
+	<section style="width: 88%; max-width: 40em; margin-left: auto; margin-right: auto;">
+
+	    <h1 style="text-align: center; font-size: 3em;">Smooth Scroll</h1>
+	    <p style="text-align: center; font-size: 1.5em;">A simple vanilla JS script to animate scrolling to anchor links.</p>
+
+        <p><a class="scroll" data-speed="2000" href="https://cdpn.io/rleve/fullembedgrid/jObeRN?animations=run&amp;type=embed#bazinga">Bazinga</a> <a class="scroll" href="https://cdpn.io/rleve/fullembedgrid/jObeRN?animations=run&amp;type=embed#booya">Booya</a></p>
+
+        <p>
+            .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+            .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+            .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
+        </p>
+
+        <p id="bazinga">Bazinga!</p>
+
+        <p>
+            .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+            .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+            .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
+        </p>
+
+        <p id="booya">Booya!</p>
+
+        <p><a class="scroll" data-speed="2000" href="https://cdpn.io/rleve/fullembedgrid/jObeRN?animations=run&amp;type=embed#top">Back to the top</a></p>
+
+	</section>
+
+
+  <script src="./jquery.min(2).js.download"></script>
+      <script id="rendered-js">
+(function () {
+
+  'use strict';
+
+  // Feature Test
+  if ('querySelector' in document && 'addEventListener' in window && Array.prototype.forEach) {
+
+    // Function to animate the scroll
+    var smoothScroll = function (anchor, duration) {
+
+      // Calculate how far and how fast to scroll
+      var startLocation = window.pageYOffset;
+      var endLocation = anchor.offsetTop;
+      var distance = endLocation - startLocation;
+      var increments = distance / (duration / 16);
+      var stopAnimation;
+
+      // Scroll the page by an increment, and check if it's time to stop
+      var animateScroll = function () {
+        window.scrollBy(0, increments);
+        stopAnimation();
+      };
+
+      // If scrolling down
+      if (increments >= 0) {
+        // Stop animation when you reach the anchor OR the bottom of the page
+        stopAnimation = function () {
+          var travelled = window.pageYOffset;
+          if (travelled >= endLocation - increments || window.innerHeight + travelled >= document.body.offsetHeight) {
+            clearInterval(runAnimation);
+          }
+        };
+      }
+      // If scrolling up
+      else {
+          // Stop animation when you reach the anchor OR the top of the page
+          stopAnimation = function () {
+            var travelled = window.pageYOffset;
+            if (travelled <= (endLocation || 0)) {
+              clearInterval(runAnimation);
+            }
+          };
+        }
+
+      // Loop the animation function
+      var runAnimation = setInterval(animateScroll, 16);
+
+    };
+
+    // Define smooth scroll links
+    var scrollToggle = document.querySelectorAll('.scroll');
+
+    // For each smooth scroll link
+    [].forEach.call(scrollToggle, function (toggle) {
+
+      // When the smooth scroll link is clicked
+      toggle.addEventListener('click', function (e) {
+
+        // Prevent the default link behavior
+        e.preventDefault();
+
+        // Get anchor link and calculate distance from the top
+        var dataID = toggle.getAttribute('href');
+        var dataTarget = document.querySelector(dataID);
+        var dataSpeed = toggle.getAttribute('data-speed');
+
+        // If the anchor exists
+        if (dataTarget) {
+          // Scroll to the anchor
+          smoothScroll(dataTarget, dataSpeed || 500);
+        }
+
+      }, false);
+
+    });
+
+  }
+
+})();
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

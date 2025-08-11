@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://cdpn.io/ReGGae/fullembedgrid/pxMJLW?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Twotwentytwo.se - smooth scroll with skew effect</title>
+
+    <link rel="canonical" href="https://codepen.io/ReGGae/pen/pxMJLW">
+  
+  <link rel="stylesheet" href="./normalize-5.0.0.min.css">
+
+  
+  
+<style>
+html, body {
+  height: 100%;
+}
+
+[data-scroll-content] {
+  padding: 10vw 0;
+}
+
+figure {
+  padding: 10vw 5vw;
+}
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no" style="height: 4078.3px;">
+  <div data-scroll="" style="position: fixed; top: 0px; left: 0px; height: 100%; width: 100%; overflow: hidden;">
+  <div data-scroll-content="" style="transform: translate3d(0px, 0px, 0px) skewY(0deg);">
+     <figure>
+       <img src="./bg_2.jpg">
+     </figure>
+     <figure>
+       <img src="./bg_2.jpg">
+     </figure>
+     <figure>
+       <img src="./bg_2.jpg">
+     </figure>
+     <figure>
+       <img src="./bg_2.jpg">
+     </figure>
+      <figure>
+       <img src="./bg_2.jpg">
+     </figure>
+     <figure>
+       <img src="./bg_2.jpg">
+     </figure>
+     <figure>
+       <img src="./bg_2.jpg">
+     </figure>
+  </div>
+</div>
+  <script src="./imagesloaded.pkgd.min.js.download"></script>
+      <script id="rendered-js">
+const math = {
+  lerp: (a, b, n) => {
+    return (1 - n) * a + n * b;
+  },
+  norm: (value, min, max) => {
+    return (value - min) / (max - min);
+  } };
+
+
+const config = {
+  height: window.innerHeight,
+  width: window.innerWidth };
+
+
+class Smooth {
+  constructor() {
+    this.bindMethods();
+
+    this.data = {
+      ease: 0.1,
+      current: 0,
+      last: 0,
+      rounded: 0 };
+
+
+    this.dom = {
+      el: document.querySelector('[data-scroll]'),
+      content: document.querySelector('[data-scroll-content]') };
+
+
+    this.rAF = null;
+
+    this.init();
+  }
+
+  bindMethods() {
+    ['scroll', 'run', 'resize'].
+    forEach(fn => this[fn] = this[fn].bind(this));
+  }
+
+  setStyles() {
+    Object.assign(this.dom.el.style, {
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      height: '100%',
+      width: '100%',
+      overflow: 'hidden' });
+
+  }
+
+  setHeight() {
+    document.body.style.height = `${this.dom.content.getBoundingClientRect().height}px`;
+  }
+
+  resize() {
+    this.setHeight();
+    this.scroll();
+  }
+
+  preload() {
+    imagesLoaded(this.dom.content, instance => {
+      this.setHeight();
+    });
+  }
+
+  scroll() {
+    this.data.current = window.scrollY;
+  }
+
+  run() {
+    this.data.last += (this.data.current - this.data.last) * this.data.ease;
+    this.data.rounded = Math.round(this.data.last * 100) / 100;
+
+    const diff = this.data.current - this.data.rounded;
+    const acc = diff / config.width;
+    const velo = +acc;
+    const skew = velo * 7.5;
+
+    this.dom.content.style.transform = `translate3d(0, -${this.data.rounded}px, 0) skewY(${skew}deg)`;
+
+    this.requestAnimationFrame();
+  }
+
+  on() {
+    this.setStyles();
+    this.setHeight();
+    this.addEvents();
+
+    this.requestAnimationFrame();
+  }
+
+  off() {
+    this.cancelAnimationFrame();
+
+    this.removeEvents();
+  }
+
+  requestAnimationFrame() {
+    this.rAF = requestAnimationFrame(this.run);
+  }
+
+  cancelAnimationFrame() {
+    cancelAnimationFrame(this.rAF);
+  }
+
+  destroy() {
+    document.body.style.height = '';
+
+    this.data = null;
+
+    this.removeEvents();
+    this.cancelAnimationFrame();
+  }
+
+  resize() {
+    this.setHeight();
+    this.data.rounded = this.data.last = this.data.current;
+  }
+
+  addEvents() {
+    window.addEventListener('resize', this.resize, { passive: true });
+    window.addEventListener('scroll', this.scroll, { passive: true });
+  }
+
+  removeEvents() {
+    window.removeEventListener('resize', this.resize, { passive: true });
+    window.removeEventListener('scroll', this.scroll, { passive: true });
+  }
+
+  init() {
+    this.preload();
+    this.on();
+  }}
+
+
+new Smooth();
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

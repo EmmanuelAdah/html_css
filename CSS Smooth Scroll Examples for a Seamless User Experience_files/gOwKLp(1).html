@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://cdpn.io/satya164/fullembedgrid/gOwKLp?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Smooth scroll with pure CSS3</title>
+
+    <link rel="canonical" href="https://codepen.io/satya164/pen/gOwKLp">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#top {
+  height: 30em;
+  padding: 1em;
+  background-color: #a3c;
+  color: #fff;
+}
+
+#middle {
+  height: 50em;
+  padding: 2em;
+  background-color: #3ca;
+  color: #fff;
+}
+
+#bottom {
+  height: 20em;
+  padding: 2em;
+  background-color: #c3a;
+  color: #fff;
+}
+
+a {
+  padding: 1em 2em;
+  margin: 1em;
+  margin-right: 0;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:focus, a:hover { background-color: #45a9ec; }
+
+a:active { background-color: #2387ca; }
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no">
+  <a href="https://cdpn.io/satya164/fullembedgrid/gOwKLp?animations=run&amp;type=embed#bottom">Go to bottom</a>
+<a href="https://cdpn.io/satya164/fullembedgrid/gOwKLp?animations=run&amp;type=embed#middle">Go to middle</a>
+<div id="top">There's something else I've always wanted to say: Allons-y, Alonso! Oh, yes. Harmless is just the word: that's why I like it! Doesn't kill, doesn't wound, doesn't maim. But I'll tell you what it does do: it is very good at opening doors! There was a war. A Time War. The Last Great Time War. My people fought a race called the Daleks, for the sake of all creation. And they lost. We lost. Everyone lost. They're all gone now. My family. My friends. Even that sky. I'm Dr. James McCrimmon from the township of Balamory.</div>
+<div id="middle">Black tie...Whenever I wear this, something bad always happens. It is! It's the city of New New York! Strictly speaking, it's the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York. Please, when Torchwood comes to write my complete history, don't tell people I travelled through time and space with her mother! I don't want to go. Blimey, trying to make an Ood laugh... You can spend the rest of your life with me, but I can't spend the rest of mine with you. I have to live on. Alone. That's the curse of the Time Lords.</div>
+<div id="bottom">I don't want to go. I'm Dr. James McCrimmon from the township of Balamory. I'd call you a genius, except I'm in the room. You can spend the rest of your life with me, but I can't spend the rest of mine with you. I have to live on. Alone. That's the curse of the Time Lords. There's something else I've always wanted to say: Allons-y, Alonso! It is! It's the city of New New York! Strictly speaking, it's the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York.</div>
+<a href="https://cdpn.io/satya164/fullembedgrid/gOwKLp?animations=run&amp;type=embed#top">Go to top</a>
+<a href="https://cdpn.io/satya164/fullembedgrid/gOwKLp?animations=run&amp;type=embed#middle">Go to middle</a>
+  <script src="./jquery.min(2).js.download"></script>
+      <script id="rendered-js">
+// Smooth scroll for in page links - http://wibblystuff.blogspot.in/2014/04/in-page-smooth-scroll-using-css3.html
+// Improvements from - https://codepen.io/kayhadrin/pen/KbalA
+
+$(function () {
+  var $window = $(window),$document = $(document),
+  transitionSupported = typeof document.body.style.transitionProperty === "string", // detect CSS transition support
+  scrollTime = 1; // scroll time in seconds
+
+  $(document).on("click", "a[href*=#]:not([href=#])", function (e) {
+    var target, avail, scroll, deltaScroll;
+
+    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+      target = $(this.hash);
+      target = target.length ? target : $("[id=" + this.hash.slice(1) + "]");
+
+      if (target.length) {
+        avail = $document.height() - $window.height();
+
+        if (avail > 0) {
+          scroll = target.offset().top;
+
+          if (scroll > avail) {
+            scroll = avail;
+          }
+        } else {
+          scroll = 0;
+        }
+
+        deltaScroll = $window.scrollTop() - scroll;
+
+        // if we don't have to scroll because we're already at the right scrolling level,
+        if (!deltaScroll) {
+          return; // do nothing
+        }
+
+        e.preventDefault();
+
+        if (transitionSupported) {
+          $("html").css({
+            "margin-top": deltaScroll + "px",
+            "transition": scrollTime + "s ease-in-out" }).
+          data("transitioning", scroll);
+        } else {
+          $("html, body").stop(true, true) // stop potential other jQuery animation (assuming we're the only one doing it)
+          .animate({
+            scrollTop: scroll + "px" },
+          scrollTime * 1000);
+
+          return;
+        }
+      }
+    }
+  });
+
+  if (transitionSupported) {
+    $("html").on("transitionend webkitTransitionEnd msTransitionEnd oTransitionEnd", function (e) {
+      var $this = $(this),
+      scroll = $this.data("transitioning");
+
+      if (e.target === e.currentTarget && scroll) {
+        $this.removeAttr("style").removeData("transitioning");
+
+        $("html, body").scrollTop(scroll);
+      }
+    });
+  }
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

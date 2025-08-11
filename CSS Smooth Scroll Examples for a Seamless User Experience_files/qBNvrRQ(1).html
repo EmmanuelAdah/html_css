@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)https://cdpn.io/cameronknight/fullembedgrid/qBNvrRQ?animations=run&type=embed -->
+<html lang="en" class="has-scroll-init"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Horizontal scroll section with GSAP ScrollTrigger &amp; Locomotive Scroll</title>
+
+    <link rel="canonical" href="https://codepen.io/cameronknight/pen/qBNvrRQ">
+  
+  <link rel="stylesheet" href="./reset-2.0.min.css">
+
+  <link rel="stylesheet" href="./skn8ash.css">
+<link rel="stylesheet" href="./locomotive-scroll(1).css">
+  
+<style>
+:root {
+  --text-color: #111;
+  --bg-color: #b9b3a9;
+}
+
+body {
+  font-family: termina, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+section:not(#sectionPin) {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+
+img {
+  height: 80vh;
+  width: auto;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 4;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
+h1 span {
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+  max-width: 400px;
+}
+
+.credit {
+  font-family: Termina, sans-serif;
+}
+.credit a {
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#sectionPin {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+}
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
+}
+
+p {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+  line-height: 1.5;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no" style="">
+  <div class="container">
+  <section data-bgcolor="#bcb8ad" data-textcolor="#032f35">
+    <div>
+      <h1 data-scroll="" data-scroll-speed="1" class="is-inview"><span>Horizontal</span> <span>scroll</span> <span>section</span></h1>
+      <p data-scroll="" data-scroll-speed="2" data-scroll-delay="0.2" class="is-inview">with GSAP ScrollTrigger &amp; Locomotive Scroll</p>
+    </div>
+
+  </section>
+
+  <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto; z-index: auto; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: auto auto auto 0px; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 364px; height: 1716px; padding: 0px 0px 1348px;"><section id="sectionPin" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 364px; width: 364px; max-height: 368px; height: 368px; padding: 0px; transform: translate(0px, 0px);">
+    <div class="pin-wrap" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+      <img src="./pexels-photo-5207262.jpeg" alt="">
+      <img src="./pexels-photo-3371358.jpeg" alt="">
+      <img src="./pexels-photo-3618545.jpeg" alt="">
+
+    </div>
+  </section></div>
+  <section data-bgcolor="#e3857a" data-textcolor="#f1dba7"><img src="./pexels-photo-4791474.jpeg" alt="">
+    <h2 data-scroll="" data-scroll-speed="1" class="credit is-inview"><a href="https://thisisadvantage.com/" target="_blank">Made by Advantage</a></h2>
+  </section>
+</div>
+  <script src="./ScrollTrigger.min.js.download"></script>
+<script src="./gsap.min.js.download"></script>
+<script src="./locomotive-scroll.min.js.download"></script>
+      <script id="rendered-js">
+gsap.registerPlugin(ScrollTrigger);
+
+const pageContainer = document.querySelector(".container");
+
+/* SMOOTH SCROLL */
+const scroller = new LocomotiveScroll({
+  el: pageContainer,
+  smooth: true });
+
+
+scroller.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(pageContainer, {
+  scrollTop(value) {
+    return arguments.length ?
+    scroller.scrollTo(value, 0, 0) :
+    scroller.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      left: 0,
+      top: 0,
+      width: window.innerWidth,
+      height: window.innerHeight };
+
+  },
+  pinType: pageContainer.style.transform ? "transform" : "fixed" });
+
+
+////////////////////////////////////
+////////////////////////////////////
+window.addEventListener("load", function () {
+  let pinBoxes = document.querySelectorAll(".pin-wrap > *");
+  let pinWrap = document.querySelector(".pin-wrap");
+  let pinWrapWidth = pinWrap.offsetWidth;
+  let horizontalScrollLength = pinWrapWidth - window.innerWidth;
+
+  // Pinning and horizontal scrolling
+
+  gsap.to(".pin-wrap", {
+    scrollTrigger: {
+      scroller: pageContainer, //locomotive-scroll
+      scrub: true,
+      trigger: "#sectionPin",
+      pin: true,
+      // anticipatePin: 1,
+      start: "top top",
+      end: pinWrapWidth },
+
+    x: -horizontalScrollLength,
+    ease: "none" });
+
+
+  ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
+
+  ScrollTrigger.refresh();
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

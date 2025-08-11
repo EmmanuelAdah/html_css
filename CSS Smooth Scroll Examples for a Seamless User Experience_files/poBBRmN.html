@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://codepen.io/anon/embed/poBBRmN?height=450&theme-id=1&slug-hash=poBBRmN&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen Embed - Parametric Surface</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="B8fzjza85hm-8R07F6AYHU2XO6PXEJRZzG1Wy70pOcsOm8YVria2vrpmV9WbaAVChfrX3dD7Bhw33cEE-yJ0HQ">
+
+  <link rel="stylesheet" href="./embed-50c8e30c86cf654903ac612e1633eecabbabaf25cd1efaeaee3733dd9834c822.css" media="all">
+
+  <style>
+    .hide {
+      display: none !important;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./highcontrast-dark-47187de4142cc38f6f5a1e9f846225ded7136f4761bf6a3ec0ed89c8ce9b7382.css" media="all">
+
+  <link rel="stylesheet" href="./maVRwd.css">
+</head>
+
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+
+  <nav class="embed-nav group" id="embed-nav">
+
+  <ul class="code-types">
+
+
+        <li class="code-type">
+          <a id="html-link" href="https://codepen.io/anon/embed/poBBRmN?height=450&amp;theme-id=1&amp;slug-hash=poBBRmN&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+              HTML
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="css-link" href="https://codepen.io/anon/embed/poBBRmN?height=450&amp;theme-id=1&amp;slug-hash=poBBRmN&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+              CSS
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="js-link" href="https://codepen.io/anon/embed/poBBRmN?height=450&amp;theme-id=1&amp;slug-hash=poBBRmN&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+              JS
+          </a>
+        </li>
+
+
+  </ul>
+
+  <ul class="result-button-list">
+    <li class="results results-type">
+      <a id="result-link" href="https://codepen.io/anon/embed/poBBRmN?height=450&amp;theme-id=1&amp;slug-hash=poBBRmN&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+        Result
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/anon/embed/poBBRmN?height=450&amp;theme-id=1&amp;slug-hash=poBBRmN&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+    </li>
+  </ul>
+
+
+    <div class="logo-wrap" id="edit-area">
+
+        <a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/wakana-k/pen/poBBRmN" title="Edit on CodePen">
+            <div class="large-logo">
+    <span id="edit-on-text" class="open-on">EDIT ON</span>
+    <svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+  <path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+  </div>
+  <div class="box-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+  <path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+  </div>
+        </a>
+
+    
+    </div>
+
+
+</nav>
+
+
+  <div id="output" data-border-style="thin" data-header="true">
+
+
+
+        <div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+
+
+          <pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-comment">&lt;!--</span>
+<span class="cm-comment">Parametric Surface</span>
+<span class="cm-comment">Copyright (c) 2024 by Wakana Y.K. (https://codepen.io/wakana-k/pen/poBBRmN)</span>
+<span class="cm-comment">--&gt;</span>
+<span class="cm-comment">&lt;!--</span>
+<span class="cm-comment">References:</span>
+<span class="cm-comment">Parametrische Flächen und Körper - http://www.3d-meier.de/tut3/Seite0.html</span>
+<span class="cm-comment">--&gt;</span>
+
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Parametric Surface<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"info"</span><span class="cm-tag cm-bracket">&gt;</span>Most of the formulas are referenced from "<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">target</span>=<span class="cm-string">"_blank"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"http://www.3d-meier.de/tut3/Seite0.html"</span><span class="cm-tag cm-bracket">&gt;</span>Parametrische Flächen und Körper<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>".<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"wrap"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">canvas</span> <span class="cm-attribute">id</span>=<span class="cm-string">"c"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">canvas</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"gallery"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Next page : "<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">target</span>=<span class="cm-string">"_parent"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://codepen.io/wakana-k/pen/BaeypJL"</span><span class="cm-tag cm-bracket">&gt;</span>Parametric Surface 2<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>"<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">br</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-comment">&lt;!-- using lenis.js --&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span>
+
+<span class="cm-comment">&lt;!-- using three.js --&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">async</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"</span> <span class="cm-attribute">crossorigin</span>=<span class="cm-string">"anonymous"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">type</span>=<span class="cm-string">"importmap"</span><span class="cm-tag cm-bracket">&gt;</span>
+  {
+    "imports": {      
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+
+        </div>
+
+
+
+        <div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+
+
+          <pre tabindex="0"><code data-lang="css" id="actual-css-code" class=" cm-s-default"><span class="cm-def">@import</span> <span class="cm-variable cm-callee">url</span>(<span class="cm-string">"https://fonts.googleapis.com/css2?family=Asap&amp;display=swap"</span>);
+* {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>;
+}
+*::<span class="cm-variable-3">before</span>,
+*::<span class="cm-variable-3">after</span> {
+  <span class="cm-property">box-sizing</span>: <span class="cm-atom">border-box</span>;
+}
+<span class="cm-tag">html</span>,
+<span class="cm-tag">body</span> {
+  <span class="cm-property cm-error">overscroll-behavior-x</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property cm-error">overscroll-behavior-y</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">scroll-behavior</span>: <span class="cm-atom">auto</span>;
+}
+<span class="cm-tag">body</span> {
+  <span class="cm-property">font-family</span>: <span class="cm-string">"Asap"</span>, <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">max-width</span>: <span class="cm-number">100vw</span>;
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">min-height</span>: <span class="cm-number">100vh</span>;
+  <span class="cm-property">text-align</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">overflow-x</span>: <span class="cm-atom">hidden</span>;
+
+  <span class="cm-property">background</span>: <span class="cm-atom">#d3dfea</span>;
+  <span class="cm-property">color</span>: <span class="cm-keyword">dimgray</span>;
+}
+<span class="cm-tag">h1</span> {
+  <span class="cm-property">padding</span>: <span class="cm-number">1rem</span> <span class="cm-number">1rem</span> <span class="cm-number">0</span>;
+}
+<span class="cm-tag">a</span> {
+  <span class="cm-property">color</span>: <span class="cm-keyword">dimgray</span>;
+}
+<span class="cm-builtin">#wrap</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-atom">auto</span>;
+}
+<span class="cm-builtin">#c</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">absolute</span>;
+  <span class="cm-property">top</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">left</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">height</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">user-select</span>: <span class="cm-atom">none</span>;
+}
+<span class="cm-builtin">#gallery</span> {
+  <span class="cm-variable-2">--size-w</span>: <span class="cm-number">200px</span>;
+  <span class="cm-variable-2">--size-h</span>: <span class="cm-variable cm-callee">calc</span>(<span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--size-w</span>) * <span class="cm-number">1.25</span>);
+
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">width</span>: <span class="cm-variable cm-callee">min</span>(<span class="cm-number">100%</span>, <span class="cm-number">1000px</span>);
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-atom">auto</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">flex</span>;
+  <span class="cm-property">flex-wrap</span>: <span class="cm-atom">wrap</span>;
+  <span class="cm-property">justify-content</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">align-content</span>: <span class="cm-atom">center</span>;
+  <span class="cm-property">align-items</span>: <span class="cm-atom">flex-start</span>;
+  <span class="cm-property">gap</span>: <span class="cm-number">10px</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">10px</span>;
+  <span class="cm-property">z-index</span>: <span class="cm-number">1</span>;
+}
+<span class="cm-qualifier">.card</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">width</span>: <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--size-w</span>);
+  <span class="cm-property">min-height</span>: <span class="cm-variable cm-callee">var</span>(<span class="cm-variable-2">--size-h</span>);
+
+  <span class="cm-property">border</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">255</span>, <span class="cm-number">255</span>, <span class="cm-number">255</span>, <span class="cm-number">0.8</span>);
+  <span class="cm-property">box-shadow</span>: <span class="cm-number">2px</span> <span class="cm-number">2px</span> <span class="cm-number">5px</span> <span class="cm-variable cm-callee">rgba</span>(<span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0</span>, <span class="cm-number">0.5</span>);
+  <span class="cm-property">border-radius</span>: <span class="cm-number">1rem</span>;
+}
+
+<span class="cm-qualifier">.geo</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">width</span>: <span class="cm-number">100%</span>;
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+  <span class="cm-string-2">aspect-ratio</span>: <span class="cm-number">1</span>/<span class="cm-number">1</span>;
+  <span class="cm-property">overflow-x</span>: <span class="cm-atom">clip</span>;
+  <span class="cm-property">overflow-y</span>: <span class="cm-atom">clip</span>;
+  <span class="cm-property">user-select</span>: <span class="cm-atom">none</span>;
+}
+<span class="cm-qualifier">.title</span> {
+  <span class="cm-property">position</span>: <span class="cm-atom">relative</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">0.2rem</span>;
+}
+<span class="cm-qualifier">.info</span> {
+  <span class="cm-property">padding</span>: <span class="cm-number">1rem</span>;
+}
+
+<span class="cm-tag">html</span><span class="cm-qualifier">.lenis</span>,
+<span class="cm-tag">html</span><span class="cm-qualifier">.lenis</span> <span class="cm-tag">body</span> {
+  <span class="cm-property">height</span>: <span class="cm-atom">auto</span>;
+}
+
+<span class="cm-qualifier">.lenis</span><span class="cm-qualifier">.lenis-smooth</span> {
+  <span class="cm-property">scroll-behavior</span>: <span class="cm-atom">auto</span> <span class="cm-keyword">!important</span>;
+}
+
+<span class="cm-qualifier">.lenis</span><span class="cm-qualifier">.lenis-smooth</span> [<span class="cm-tag">data-lenis-prevent</span>] {
+  <span class="cm-string-2">overscroll-behavior</span>: <span class="cm-atom">contain</span>;
+}
+
+<span class="cm-qualifier">.lenis</span><span class="cm-qualifier">.lenis-stopped</span> {
+  <span class="cm-property">overflow</span>: <span class="cm-atom">hidden</span>;
+}
+
+<span class="cm-qualifier">.lenis</span><span class="cm-qualifier">.lenis-scrolling</span> <span class="cm-tag">iframe</span> {
+  <span class="cm-property">pointer-events</span>: <span class="cm-atom">none</span>;
+}
+</code></pre>
+
+        </div>
+
+
+
+        <div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+
+
+          <pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">/*!</span>
+<span class="cm-comment">Parametric Surface</span>
+<span class="cm-comment">Copyright (c) 2024 by Wakana Y.K. (https://codepen.io/wakana-k/pen/poBBRmN)</span>
+<span class="cm-comment">*/</span>
+<span class="cm-string">"use strict"</span>;
+<span class="cm-keyword">import</span> <span class="cm-keyword">*</span> <span class="cm-keyword">as</span> <span class="cm-def">c</span> <span class="cm-keyword">from</span> <span class="cm-string">"three"</span>;
+<span class="cm-keyword">import</span> { <span class="cm-def">OrbitControls</span> <span class="cm-keyword">as</span> <span class="cm-def">u</span> } <span class="cm-keyword">from</span> <span class="cm-string">"three/addons/controls/OrbitControls.js"</span>;
+<span class="cm-keyword">import</span> { <span class="cm-def">ParametricGeometry</span> <span class="cm-keyword">as</span> <span class="cm-def">t</span> } <span class="cm-keyword">from</span> <span class="cm-string">"three/addons/geometries/ParametricGeometry.js"</span>;
+<span class="cm-keyword">import</span> <span class="cm-string">"three/addons/exporters/OBJExporter.js"</span>;
+{
+  <span class="cm-keyword">function</span> <span class="cm-def">l</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>) {
+    <span class="cm-variable-2">t</span>.<span class="cm-property">preventDefault</span>();
+    <span class="cm-keyword">let</span> <span class="cm-def">e</span> <span class="cm-operator">=</span> <span class="cm-atom">null</span>;
+    (<span class="cm-variable-2">e</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span>.<span class="cm-property">target</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable-2">t</span>.<span class="cm-property">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">index</span> <span class="cm-operator">?</span> <span class="cm-variable-2">t</span>.<span class="cm-property">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">index</span> : <span class="cm-variable-2">e</span>) <span class="cm-operator">&amp;&amp;</span>
+      (<span class="cm-variable">o</span>[<span class="cm-variable-2">e</span>].<span class="cm-property">children</span>[<span class="cm-number">0</span>].<span class="cm-property">material</span>.<span class="cm-property">wireframe</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">P</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span>,
+      <span class="cm-def">h</span> <span class="cm-operator">=</span>
+        ((<span class="cm-variable-2">t</span> <span class="cm-operator">+=</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>)),
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">6</span> <span class="cm-operator">-</span> (<span class="cm-number">5</span> <span class="cm-operator">/</span> <span class="cm-number">4</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>))),
+      <span class="cm-def">n</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">6</span> <span class="cm-operator">-</span> (<span class="cm-number">5</span> <span class="cm-operator">/</span> <span class="cm-number">4</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">5</span> <span class="cm-operator">/</span> <span class="cm-number">4</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>));
+    <span class="cm-keyword">return</span> (
+      (<span class="cm-variable-2">h</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">1.55</span> <span class="cm-operator">*</span> <span class="cm-variable-2">s</span>)),
+      (<span class="cm-variable-2">n</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">1.55</span> <span class="cm-operator">*</span> <span class="cm-variable-2">s</span>)),
+      (<span class="cm-variable-2">a</span> <span class="cm-operator">+=</span> <span class="cm-number">8</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">s</span>)),
+      <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">n</span>, <span class="cm-variable-2">a</span>)
+    );
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">I</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>)) <span class="cm-operator">*</span>
+        (<span class="cm-number">6</span> <span class="cm-operator">-</span> (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">6</span> <span class="cm-operator">-</span> (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>));
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">p</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">1</span> <span class="cm-operator">===</span> <span class="cm-variable-2">t</span> <span class="cm-operator">?</span> <span class="cm-number">0</span> : <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">let</span> <span class="cm-def">s</span> <span class="cm-operator">=</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>)) <span class="cm-operator">*</span>
+        (<span class="cm-number">5</span> <span class="cm-operator">-</span> (<span class="cm-number">6</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">5</span> <span class="cm-operator">-</span> (<span class="cm-number">6</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-def">n</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">6</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>));
+    <span class="cm-keyword">return</span> (
+      <span class="cm-variable-2">n</span> <span class="cm-operator">&gt;</span> <span class="cm-number">6</span> <span class="cm-operator">*</span> <span class="cm-number">1.05</span> <span class="cm-operator">&amp;&amp;</span> ((<span class="cm-variable-2">n</span> <span class="cm-operator">=</span> <span class="cm-number">6</span> <span class="cm-operator">*</span> <span class="cm-number">1.05</span>), (<span class="cm-variable-2">s</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>), (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>)),
+      (<span class="cm-variable-2">s</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">n</span> <span class="cm-operator">+</span> <span class="cm-number">3</span>) <span class="cm-operator">/</span> <span class="cm-number">6</span>)),
+      (<span class="cm-variable-2">h</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">n</span> <span class="cm-operator">+</span> <span class="cm-number">3</span>) <span class="cm-operator">/</span> <span class="cm-number">6</span>)),
+      (<span class="cm-variable-2">n</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span>),
+      <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">n</span>)
+    );
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">d</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>)) <span class="cm-operator">*</span>
+        (<span class="cm-number">5</span> <span class="cm-operator">-</span> (<span class="cm-number">5</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">5</span> <span class="cm-operator">-</span> (<span class="cm-number">5</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-number">5</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">a</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">m</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>)) <span class="cm-operator">*</span> (<span class="cm-number">6</span> <span class="cm-operator">-</span> (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>))),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">6</span> <span class="cm-operator">-</span> (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>))),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>));
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">w</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span> <span class="cm-operator">+</span> <span class="cm-number">10</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>)),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>, <span class="cm-variable-2">s</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">f</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-number">1</span> <span class="cm-operator">===</span> <span class="cm-variable-2">a</span> <span class="cm-operator">&amp;&amp;</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>), (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">1</span> <span class="cm-operator">===</span> <span class="cm-variable-2">t</span> <span class="cm-operator">?</span> <span class="cm-number">0</span> : <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">6</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span> <span class="cm-operator">+</span> <span class="cm-number">5</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>)),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>, <span class="cm-variable-2">s</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">v</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">1</span> <span class="cm-operator">===</span> <span class="cm-variable-2">t</span> <span class="cm-operator">?</span> <span class="cm-number">0</span> : <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">5</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span> <span class="cm-operator">+</span> <span class="cm-number">10</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>)),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>, <span class="cm-variable-2">s</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">D</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-number">1</span> <span class="cm-operator">-</span> <span class="cm-number">0.5</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span>
+        <span class="cm-number">0.5</span> <span class="cm-operator">*</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>) <span class="cm-operator">*</span> (<span class="cm-number">1</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>)) <span class="cm-operator">+</span>
+        <span class="cm-number">0</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+      <span class="cm-def">n</span> <span class="cm-operator">=</span>
+        <span class="cm-number">0.5</span> <span class="cm-operator">*</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>) <span class="cm-operator">*</span> (<span class="cm-number">1</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>)) <span class="cm-operator">+</span>
+        <span class="cm-number">0</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable-2">a</span> <span class="cm-operator">+</span> <span class="cm-number">0.5</span> <span class="cm-operator">*</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">n</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">g</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> ((<span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>)) <span class="cm-operator">/</span> <span class="cm-number">4</span>,
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> ((<span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>)) <span class="cm-operator">/</span> <span class="cm-number">4</span>,
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">a</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">b</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> (<span class="cm-number">2.3</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">exp</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">pow</span>(<span class="cm-number">1.5</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-number">3</span>), <span class="cm-number">2</span>)) <span class="cm-operator">-</span> <span class="cm-number">1.2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span>,
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> (<span class="cm-number">2.3</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">exp</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">pow</span>(<span class="cm-number">1.5</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>, <span class="cm-number">2</span>)) <span class="cm-operator">-</span> <span class="cm-number">1.2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">S</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">1.5</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sinh</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> (<span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">10</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cosh</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable-2">a</span>,
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">10</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> (<span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">10</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cosh</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>));
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">a</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">E</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> (<span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span> <span class="cm-operator">-</span> <span class="cm-number">0.25</span>) <span class="cm-operator">+</span> <span class="cm-number">0.25</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-number">1</span> <span class="cm-operator">/</span> <span class="cm-variable">Math</span>.<span class="cm-property">tan</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">x</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-number">20</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span> <span class="cm-operator">+</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">B</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> (<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">+</span> <span class="cm-operator">+</span><span class="cm-variable-2">t</span>,
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">X</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable-2">t</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-number">0.6</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sqrt</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">1</span>) <span class="cm-operator">*</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">2</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span>,
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-number">0.6</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sqrt</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">*</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">1</span>) <span class="cm-operator">*</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">2</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">T</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span> <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span> <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> (<span class="cm-number">5</span> <span class="cm-operator">+</span> <span class="cm-number">4.8</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>)) <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">pow</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">/</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>, <span class="cm-number">20</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> (<span class="cm-number">5</span> <span class="cm-operator">+</span> <span class="cm-number">4.8</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>)) <span class="cm-operator">+</span> <span class="cm-number">0.25</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">5</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-number">2.3</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">log</span>(<span class="cm-number">1</span> <span class="cm-operator">-</span> <span class="cm-number">0.3157</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>) <span class="cm-operator">+</span> <span class="cm-number">6</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">+</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">t</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">C</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-number">0.5</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">y</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">7</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">+</span> <span class="cm-number">2</span>,
+      <span class="cm-def">h</span> <span class="cm-operator">=</span>
+        <span class="cm-number">8</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">8</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">-</span>
+        (<span class="cm-number">7</span> <span class="cm-operator">/</span> <span class="cm-number">8</span>) <span class="cm-operator">*</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>((<span class="cm-number">9</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">n</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">s</span> <span class="cm-operator">=</span>
+        <span class="cm-number">8</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">8</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">+</span>
+        (<span class="cm-number">7</span> <span class="cm-operator">/</span> <span class="cm-number">8</span>) <span class="cm-operator">*</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-number">9</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">n</span>, <span class="cm-variable-2">s</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">L</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-number">0.25</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">**</span> <span class="cm-number">2</span>,
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-number">0.25</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-number">0.25</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">q</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">26.4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">13.2</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-number">37.4</span> <span class="cm-operator">-</span> <span class="cm-number">37.4</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sqrt</span>(<span class="cm-number">0.84</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-number">0.4</span> <span class="cm-operator">*</span> ((<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cosh</span>(<span class="cm-number">0.4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">**</span> <span class="cm-number">2</span> <span class="cm-operator">+</span> (<span class="cm-number">0.4</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)) <span class="cm-operator">**</span> <span class="cm-number">2</span>),
+      <span class="cm-def">n</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span><span class="cm-variable-2">t</span> <span class="cm-operator">+</span> (<span class="cm-number">1.68</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cosh</span>(<span class="cm-number">0.4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sinh</span>(<span class="cm-number">0.4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">/</span> <span class="cm-variable-2">h</span>,
+      <span class="cm-def">M</span> <span class="cm-operator">=</span>
+        (<span class="cm-number">2</span> <span class="cm-operator">*</span>
+          <span class="cm-variable-2">s</span> <span class="cm-operator">*</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">cosh</span>(<span class="cm-number">0.4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+          (<span class="cm-operator">-</span>(<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)) <span class="cm-operator">-</span>
+            <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>))) <span class="cm-operator">/</span>
+        <span class="cm-variable-2">h</span>,
+      <span class="cm-def">t</span> <span class="cm-operator">=</span>
+        (<span class="cm-number">2</span> <span class="cm-operator">*</span>
+          <span class="cm-variable-2">s</span> <span class="cm-operator">*</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">cosh</span>(<span class="cm-number">0.4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+          (<span class="cm-operator">-</span>(<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)) <span class="cm-operator">+</span>
+            <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>))) <span class="cm-operator">/</span>
+        <span class="cm-variable-2">h</span>;
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">n</span>, <span class="cm-variable-2">t</span>, <span class="cm-variable-2">M</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">R</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span>;
+    <span class="cm-keyword">return</span> (
+      (<span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+      (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>),
+      (<span class="cm-variable-2">s</span> <span class="cm-operator">=</span> <span class="cm-number">0.5</span> <span class="cm-operator">*</span> (<span class="cm-number">1</span> <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>)),
+      (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-number">0.5</span> <span class="cm-operator">*</span> (<span class="cm-number">1</span> <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>)),
+      (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>)),
+      <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">a</span>, <span class="cm-variable-2">t</span>)
+    );
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">V</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span>, <span class="cm-def">h</span>;
+    <span class="cm-keyword">return</span> (
+      (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">1</span> <span class="cm-operator">===</span> <span class="cm-variable-2">t</span> <span class="cm-operator">?</span> <span class="cm-number">0</span> : <span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>),
+      (<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+      (<span class="cm-variable-2">s</span> <span class="cm-operator">=</span> (<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>)),
+      (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>)),
+      (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span>
+        <span class="cm-number">1.2</span> <span class="cm-operator">*</span>
+        (<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>)),
+      <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>)
+    );
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">H</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">-</span> <span class="cm-number">0.5</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span>
+        <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span>
+        <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">t</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">N</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> (<span class="cm-variable-2">a</span> <span class="cm-operator">-</span> <span class="cm-number">0.5</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">t</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">Z</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-number">16</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">pow</span>(<span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>), <span class="cm-number">3</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span>
+        <span class="cm-operator">-</span><span class="cm-number">13</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">+</span>
+        <span class="cm-number">5</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">-</span>
+        <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">+</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-operator">-</span>(<span class="cm-number">16</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">pow</span>(<span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>), <span class="cm-number">3</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>));
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">j</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-operator">+</span><span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span> <span class="cm-operator">+</span> <span class="cm-variable-2">a</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>);
+  }
+  <span class="cm-comment">/*! from https://codepen.io/boytchev/pen/qBLKpjx */</span> <span class="cm-keyword">function</span> <span class="cm-def">G</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span> (<span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">a</span> <span class="cm-operator">*=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>)) <span class="cm-operator">**</span> <span class="cm-number">20</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">**</span> <span class="cm-number">20</span>) <span class="cm-operator">**</span> <span class="cm-operator">-</span><span class="cm-number">0.05</span>,
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> (<span class="cm-number">4</span> <span class="cm-operator">+</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">+</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>),
+      <span class="cm-def">n</span> <span class="cm-operator">=</span> (<span class="cm-number">4</span> <span class="cm-operator">+</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">+</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>),
+      <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">+</span> <span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">n</span>, <span class="cm-variable-2">s</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">J</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>;
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span>
+        (<span class="cm-number">2</span> <span class="cm-operator">+</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">*</span> <span class="cm-number">2</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span>
+        (<span class="cm-number">2</span> <span class="cm-operator">+</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>)) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>),
+      <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">a</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">W</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> (<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>), (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> (<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>) <span class="cm-operator">-</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span> <span class="cm-operator">=</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span> (<span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>)) <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+      <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">+</span> (<span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)) <span class="cm-operator">/</span> <span class="cm-number">2</span>,
+      <span class="cm-def">a</span> <span class="cm-operator">=</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">*</span>
+        (<span class="cm-number">2</span> <span class="cm-operator">+</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-variable-2">t</span>) <span class="cm-operator">-</span> (<span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">t</span>)) <span class="cm-operator">/</span> <span class="cm-number">2</span>);
+    <span class="cm-keyword">return</span> <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">a</span>);
+  }
+  <span class="cm-keyword">function</span> <span class="cm-def">k</span>(<span class="cm-def">t</span>, <span class="cm-def">a</span>, <span class="cm-def">e</span>) {
+    <span class="cm-keyword">var</span> <span class="cm-def">s</span>, <span class="cm-def">h</span>;
+    <span class="cm-keyword">return</span> (
+      (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span> <span class="cm-number">4</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+      (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>),
+      (<span class="cm-variable-2">s</span> <span class="cm-operator">=</span>
+        (<span class="cm-number">3</span> <span class="cm-operator">+</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">-</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>((<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>(<span class="cm-operator">+</span><span class="cm-variable-2">t</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>)),
+      (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span>
+        (<span class="cm-number">3</span> <span class="cm-operator">+</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">-</span>
+          <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>((<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)) <span class="cm-operator">*</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-operator">+</span><span class="cm-variable-2">t</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>)),
+      (<span class="cm-variable-2">t</span> <span class="cm-operator">=</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>((<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">a</span>) <span class="cm-operator">+</span>
+        <span class="cm-variable">Math</span>.<span class="cm-property">cos</span>((<span class="cm-number">3</span> <span class="cm-operator">*</span> <span class="cm-variable-2">t</span>) <span class="cm-operator">/</span> <span class="cm-number">2</span>) <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>)),
+      <span class="cm-variable-2">e</span>.<span class="cm-property">set</span>(<span class="cm-variable-2">s</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">t</span>)
+    );
+  }
+  <span class="cm-keyword">let</span> <span class="cm-def">a</span>,
+    <span class="cm-def">e</span>,
+    <span class="cm-def">n</span>,
+    <span class="cm-def">s</span>,
+    <span class="cm-def">h</span>,
+    <span class="cm-def">M</span>,
+    <span class="cm-def">i</span>,
+    <span class="cm-def">o</span> <span class="cm-operator">=</span> [],
+    <span class="cm-def">r</span> <span class="cm-operator">=</span> [];
+  <span class="cm-keyword">var</span> <span class="cm-def">A</span>, <span class="cm-def">K</span>, <span class="cm-def">O</span>, <span class="cm-def">z</span>, <span class="cm-def">F</span>;
+  (<span class="cm-variable-2">M</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">c</span>.<span class="cm-property">MeshNormalMaterial</span>({ <span class="cm-property">side</span>: <span class="cm-variable">c</span>.<span class="cm-property">DoubleSide</span> })),
+    ((<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">c</span>.<span class="cm-property">PerspectiveCamera</span>(<span class="cm-number">50</span>, <span class="cm-number">1</span>, <span class="cm-number">1</span>, <span class="cm-number">10</span>)).<span class="cm-property">position</span>.<span class="cm-property">z</span> <span class="cm-operator">=</span> <span class="cm-number">3</span>),
+    (<span class="cm-variable-2">a</span>.<span class="cm-property">fov</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">Math</span>.<span class="cm-property">atan</span>(<span class="cm-number">2</span> <span class="cm-operator">/</span> (<span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable-2">a</span>.<span class="cm-property">position</span>.<span class="cm-property">z</span>)) <span class="cm-operator">*</span> (<span class="cm-number">180</span> <span class="cm-operator">/</span> <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>)),
+    (<span class="cm-variable-2">i</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">"c"</span>)),
+    (<span class="cm-variable-2">n</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">c</span>.<span class="cm-property">WebGLRenderer</span>({
+      <span class="cm-property">canvas</span>: <span class="cm-variable-2">i</span>,
+      <span class="cm-property">antialias</span>: <span class="cm-operator">!</span><span class="cm-number">0</span>,
+      <span class="cm-property">alpha</span>: <span class="cm-operator">!</span><span class="cm-number">0</span>
+    })).<span class="cm-property">setPixelRatio</span>(<span class="cm-variable">window</span>.<span class="cm-property">devicePixelRatio</span>),
+    ((<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">H</span>, <span class="cm-number">25</span>, <span class="cm-number">25</span>)).<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Astroidal Ellipsoid"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">N</span>, <span class="cm-number">25</span>, <span class="cm-number">25</span>)).<span class="cm-property">rotateX</span>(<span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">rotateZ</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">8</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">j</span>, <span class="cm-number">50</span>, <span class="cm-number">50</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.5</span>, <span class="cm-number">0.5</span>, <span class="cm-number">0.5</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Sine Surface"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">L</span>, <span class="cm-number">50</span>, <span class="cm-number">50</span>)).<span class="cm-property">scale</span>(<span class="cm-number">3</span>, <span class="cm-number">3</span>, <span class="cm-number">3</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Roman Surface"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">w</span>, <span class="cm-number">50</span>, <span class="cm-number">200</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">q</span>, <span class="cm-number">50</span>, <span class="cm-number">50</span>)).<span class="cm-property">rotateZ</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">4</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.15</span>, <span class="cm-number">0.15</span>, <span class="cm-number">0.15</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"breather"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">y</span>, <span class="cm-number">100</span>, <span class="cm-number">25</span>)).<span class="cm-property">rotateZ</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.1</span>, <span class="cm-number">0.1</span>, <span class="cm-number">0.1</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"bonanJeenerKlein"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">C</span>, <span class="cm-number">20</span>, <span class="cm-number">20</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.8</span>, <span class="cm-number">0.8</span>, <span class="cm-number">0.8</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Pillow"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">B</span>, <span class="cm-number">15</span>, <span class="cm-number">15</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"twistedSphere"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">x</span>, <span class="cm-number">50</span>, <span class="cm-number">25</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">4</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.06</span>, <span class="cm-number">0.06</span>, <span class="cm-number">0.06</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"spiralWaves"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">E</span>, <span class="cm-number">25</span>, <span class="cm-number">25</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.5</span>, <span class="cm-number">0.5</span>, <span class="cm-number">0.5</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"bullet"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">S</span>, <span class="cm-number">300</span>, <span class="cm-number">2</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.4</span>, <span class="cm-number">0.4</span>, <span class="cm-number">0.4</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"tanh Spiral"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">b</span>, <span class="cm-number">25</span>, <span class="cm-number">15</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.5</span>, <span class="cm-number">0.5</span>, <span class="cm-number">0.5</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"gauss Cylinder"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">g</span>, <span class="cm-number">20</span>, <span class="cm-number">15</span>)).<span class="cm-property">rotateZ</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"fish Surface"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">D</span>, <span class="cm-number">25</span>, <span class="cm-number">50</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.8</span>, <span class="cm-number">0.8</span>, <span class="cm-number">0.8</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"seashell"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">Z</span>, <span class="cm-number">50</span>, <span class="cm-number">50</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.05</span>, <span class="cm-number">0.05</span>, <span class="cm-number">0.05</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">R</span>, <span class="cm-number">25</span>, <span class="cm-number">25</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"droplet"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">X</span>, <span class="cm-number">20</span>, <span class="cm-number">25</span>)).<span class="cm-property">scale</span>(<span class="cm-number">2</span>, <span class="cm-number">2</span>, <span class="cm-number">2</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"egg"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">V</span>, <span class="cm-number">70</span>, <span class="cm-number">30</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.2</span>, <span class="cm-number">0.2</span>, <span class="cm-number">0.2</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Julia's Parametric Heart Surface"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">T</span>, <span class="cm-number">25</span>, <span class="cm-number">25</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">4</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.1</span>, <span class="cm-number">0.1</span>, <span class="cm-number">0.1</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"apple2"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">J</span>, <span class="cm-number">50</span>, <span class="cm-number">50</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Klein Bottle1"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">W</span>, <span class="cm-number">50</span>, <span class="cm-number">50</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Klein Bottle2"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">G</span>, <span class="cm-number">50</span>, <span class="cm-number">30</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.2</span>, <span class="cm-number">0.2</span>, <span class="cm-number">0.2</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span>
+      <span class="cm-string">"Twisted Torus&lt;br&gt;(from &lt;a target='_blank' href='https://codepen.io/boytchev/pen/qBLKpjx'&gt;Pavel Boytchev&lt;/a&gt;)"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">k</span>, <span class="cm-number">50</span>, <span class="cm-number">50</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.25</span>, <span class="cm-number">0.25</span>, <span class="cm-number">0.25</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Twisted Torus2"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">I</span>, <span class="cm-number">20</span>, <span class="cm-number">70</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.12</span>, <span class="cm-number">0.12</span>, <span class="cm-number">0.12</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"Twisted Torus3"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">P</span>, <span class="cm-number">10</span>, <span class="cm-number">100</span>)).<span class="cm-property">rotateX</span>(<span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.18</span>, <span class="cm-number">0.18</span>, <span class="cm-number">0.18</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"merengue1"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">p</span>, <span class="cm-number">50</span>, <span class="cm-number">150</span>)).<span class="cm-property">rotateX</span>(<span class="cm-operator">-</span><span class="cm-variable">Math</span>.<span class="cm-property">PI</span> <span class="cm-operator">/</span> <span class="cm-number">2</span>),
+    <span class="cm-variable-2">h</span>.<span class="cm-property">scale</span>(<span class="cm-number">0.1</span>, <span class="cm-number">0.08</span>, <span class="cm-number">0.1</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"merengue2"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">m</span>, <span class="cm-number">100</span>, <span class="cm-number">100</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.2</span>, <span class="cm-number">0.2</span>, <span class="cm-number">0.2</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">d</span>, <span class="cm-number">30</span>, <span class="cm-number">100</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.1</span>, <span class="cm-number">0.1</span>, <span class="cm-number">0.1</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">v</span>, <span class="cm-number">100</span>, <span class="cm-number">100</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"twistedSphere2"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable-2">t</span>(<span class="cm-variable-2">f</span>, <span class="cm-number">100</span>, <span class="cm-number">100</span>)).<span class="cm-property">scale</span>(<span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>, <span class="cm-number">0.3</span>),
+    (<span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">=</span> <span class="cm-string">"twistedSphere3"</span>),
+    <span class="cm-variable-2">r</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">h</span>),
+    (<span class="cm-variable">A</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">"gallery"</span>)),
+    (<span class="cm-variable">K</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">IntersectionObserver</span>((<span class="cm-def">t</span>) <span class="cm-operator">=&gt;</span> {
+      <span class="cm-keyword">for</span> (<span class="cm-keyword">const</span> <span class="cm-def">a</span> <span class="cm-keyword">of</span> <span class="cm-variable-2">t</span>)
+        <span class="cm-variable-2">a</span>.<span class="cm-property">isIntersecting</span>
+          <span class="cm-operator">?</span> (<span class="cm-variable-2">a</span>.<span class="cm-property">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">inView</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-number">0</span>)
+          : (<span class="cm-variable-2">a</span>.<span class="cm-property">target</span>.<span class="cm-property">dataset</span>.<span class="cm-property">inView</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-number">1</span>);
+    }));
+  <span class="cm-keyword">for</span> (<span class="cm-keyword">let</span> <span class="cm-def">t</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>; <span class="cm-variable-2">t</span> <span class="cm-operator">&lt;</span> <span class="cm-variable-2">r</span>.<span class="cm-property">length</span>; <span class="cm-variable-2">t</span><span class="cm-operator">++</span>) {
+    <span class="cm-variable-2">e</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">c</span>.<span class="cm-property">Scene</span>();
+    (<span class="cm-variable">O</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">"article"</span>)),
+      (<span class="cm-variable">z</span> <span class="cm-operator">=</span> ((<span class="cm-variable">O</span>.<span class="cm-property">className</span> <span class="cm-operator">=</span> <span class="cm-string">"card"</span>), <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">"div"</span>))),
+      (<span class="cm-variable">F</span> <span class="cm-operator">=</span>
+        ((<span class="cm-variable">z</span>.<span class="cm-property">className</span> <span class="cm-operator">=</span> <span class="cm-string">"geo"</span>),
+        (<span class="cm-variable">z</span>.<span class="cm-property">dataset</span>.<span class="cm-property">index</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span>),
+        (<span class="cm-variable">z</span>.<span class="cm-property">dataset</span>.<span class="cm-property">inView</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-number">0</span>),
+        <span class="cm-variable">O</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">z</span>),
+        <span class="cm-variable">document</span>.<span class="cm-property">createElement</span>(<span class="cm-string">"div"</span>)));
+    (<span class="cm-variable">F</span>.<span class="cm-property">className</span> <span class="cm-operator">=</span> <span class="cm-string">"title"</span>),
+      (<span class="cm-variable">F</span>.<span class="cm-property">innerText</span> <span class="cm-operator">=</span> <span class="cm-string">"Parametric surface "</span> <span class="cm-operator">+</span> (<span class="cm-variable-2">t</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>)),
+      <span class="cm-variable">O</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">F</span>),
+      (<span class="cm-variable-2">e</span>.<span class="cm-property">userData</span>.<span class="cm-property">element</span> <span class="cm-operator">=</span> <span class="cm-variable">z</span>),
+      <span class="cm-variable">A</span>.<span class="cm-property">appendChild</span>(<span class="cm-variable">O</span>),
+      (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span>.<span class="cm-property">clone</span>()),
+      (<span class="cm-variable-2">e</span>.<span class="cm-property">userData</span>.<span class="cm-property">camera</span> <span class="cm-operator">=</span> <span class="cm-variable-2">a</span>),
+      ((<span class="cm-variable-2">s</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">u</span>(<span class="cm-variable-2">e</span>.<span class="cm-property">userData</span>.<span class="cm-property">camera</span>, <span class="cm-variable-2">e</span>.<span class="cm-property">userData</span>.<span class="cm-property">element</span>)).<span class="cm-property">autoRotate</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-number">0</span>),
+      (<span class="cm-variable-2">s</span>.<span class="cm-property">minDistance</span> <span class="cm-operator">=</span> <span class="cm-number">2</span>),
+      (<span class="cm-variable-2">s</span>.<span class="cm-property">maxDistance</span> <span class="cm-operator">=</span> <span class="cm-number">10</span>),
+      (<span class="cm-variable-2">s</span>.<span class="cm-property">enablePan</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-number">1</span>),
+      (<span class="cm-variable-2">s</span>.<span class="cm-property">enableZoom</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-number">1</span>),
+      (<span class="cm-variable-2">s</span>.<span class="cm-property">enableDamping</span> <span class="cm-operator">=</span> <span class="cm-operator">!</span><span class="cm-number">0</span>),
+      (<span class="cm-variable-2">e</span>.<span class="cm-property">userData</span>.<span class="cm-property">controls</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span>),
+      (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-variable-2">r</span>[<span class="cm-variable-2">r</span>.<span class="cm-property">length</span> <span class="cm-operator">-</span> <span class="cm-variable-2">t</span> <span class="cm-operator">-</span> <span class="cm-number">1</span>]).<span class="cm-property">computeVertexNormals</span>(),
+      <span class="cm-variable-2">h</span>.<span class="cm-property">computeBoundingBox</span>(),
+      <span class="cm-variable-2">h</span>.<span class="cm-property">computeBoundingSphere</span>(),
+      <span class="cm-variable-2">h</span>.<span class="cm-property">center</span>(),
+      (<span class="cm-variable-2">M</span> <span class="cm-operator">=</span> <span class="cm-variable-2">M</span>.<span class="cm-property">clone</span>()),
+      <span class="cm-variable-2">e</span>.<span class="cm-property">add</span>(<span class="cm-keyword">new</span> <span class="cm-variable">c</span>.<span class="cm-property">Mesh</span>(<span class="cm-variable-2">h</span>, <span class="cm-variable-2">M</span>)),
+      <span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span> <span class="cm-operator">&amp;&amp;</span> (<span class="cm-variable">F</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-variable-2">h</span>.<span class="cm-property">userData</span>.<span class="cm-property">title</span>),
+      <span class="cm-variable-2">o</span>.<span class="cm-property">push</span>(<span class="cm-variable-2">e</span>),
+      <span class="cm-variable">z</span>.<span class="cm-property">addEventListener</span>(
+        <span class="cm-string">"pointerenter"</span>,
+        (<span class="cm-def">t</span>) <span class="cm-operator">=&gt;</span> {
+          <span class="cm-variable-2">l</span>(<span class="cm-variable-2">t</span>, <span class="cm-operator">!</span><span class="cm-number">0</span>);
+        },
+        <span class="cm-operator">!</span><span class="cm-number">1</span>
+      ),
+      <span class="cm-variable">z</span>.<span class="cm-property">addEventListener</span>(
+        <span class="cm-string">"pointerleave"</span>,
+        (<span class="cm-def">t</span>) <span class="cm-operator">=&gt;</span> {
+          <span class="cm-variable-2">l</span>(<span class="cm-variable-2">t</span>, <span class="cm-operator">!</span><span class="cm-number">1</span>);
+        },
+        <span class="cm-operator">!</span><span class="cm-number">1</span>
+      ),
+      <span class="cm-variable">z</span>.<span class="cm-property">addEventListener</span>(
+        <span class="cm-string">"pointerout"</span>,
+        (<span class="cm-def">t</span>) <span class="cm-operator">=&gt;</span> {
+          <span class="cm-variable-2">l</span>(<span class="cm-variable-2">t</span>, <span class="cm-operator">!</span><span class="cm-number">1</span>);
+        },
+        <span class="cm-operator">!</span><span class="cm-number">1</span>
+      ),
+      <span class="cm-variable">z</span>.<span class="cm-property">addEventListener</span>(
+        <span class="cm-string">"pointercancel"</span>,
+        (<span class="cm-def">t</span>) <span class="cm-operator">=&gt;</span> {
+          <span class="cm-variable-2">l</span>(<span class="cm-variable-2">t</span>, <span class="cm-operator">!</span><span class="cm-number">1</span>);
+        },
+        <span class="cm-operator">!</span><span class="cm-number">1</span>
+      ),
+      <span class="cm-variable">K</span>.<span class="cm-property">observe</span>(<span class="cm-variable">z</span>);
+  }
+  <span class="cm-operator">!</span>(<span class="cm-keyword">function</span> <span class="cm-def">t</span>() {
+    <span class="cm-variable">requestAnimationFrame</span>(<span class="cm-variable-2">t</span>);
+    <span class="cm-keyword">var</span> <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">i</span>.<span class="cm-property">clientWidth</span>,
+      <span class="cm-def">e</span> <span class="cm-operator">=</span> <span class="cm-variable-2">i</span>.<span class="cm-property">clientHeight</span>;
+    (<span class="cm-variable-2">i</span>.<span class="cm-property">width</span> <span class="cm-operator">===</span> <span class="cm-variable-2">a</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable-2">i</span>.<span class="cm-property">height</span> <span class="cm-operator">===</span> <span class="cm-variable-2">e</span>) <span class="cm-operator">||</span> <span class="cm-variable-2">n</span>.<span class="cm-property">setSize</span>(<span class="cm-variable-2">a</span>, <span class="cm-variable-2">e</span>, <span class="cm-operator">!</span><span class="cm-number">1</span>),
+      <span class="cm-variable-2">n</span>.<span class="cm-property">setScissorTest</span>(<span class="cm-operator">!</span><span class="cm-number">1</span>),
+      <span class="cm-variable-2">n</span>.<span class="cm-property">clear</span>(),
+      <span class="cm-variable-2">n</span>.<span class="cm-property">setScissorTest</span>(<span class="cm-operator">!</span><span class="cm-number">0</span>),
+      <span class="cm-variable-2">o</span>.<span class="cm-property">forEach</span>(<span class="cm-keyword">function</span> (<span class="cm-def">t</span>) {
+        <span class="cm-keyword">var</span> <span class="cm-def">a</span>,
+          <span class="cm-def">e</span>,
+          <span class="cm-def">s</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span>.<span class="cm-property">userData</span>.<span class="cm-property">element</span>,
+          <span class="cm-def">h</span> <span class="cm-operator">=</span> <span class="cm-variable-2">s</span>.<span class="cm-property">getBoundingClientRect</span>();
+        <span class="cm-string">"false"</span> <span class="cm-operator">!=</span> <span class="cm-variable-2">s</span>.<span class="cm-property">dataset</span>.<span class="cm-property">inView</span> <span class="cm-operator">&amp;&amp;</span>
+          ((<span class="cm-variable-2">s</span> <span class="cm-operator">=</span> <span class="cm-variable-2">h</span>.<span class="cm-property">width</span>),
+          (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable-2">h</span>.<span class="cm-property">height</span>),
+          (<span class="cm-variable-2">s</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">ceil</span>(<span class="cm-variable-2">s</span>)),
+          (<span class="cm-variable-2">a</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">ceil</span>(<span class="cm-variable-2">a</span>)),
+          (<span class="cm-variable-2">e</span> <span class="cm-operator">=</span> <span class="cm-variable-2">h</span>.<span class="cm-property">left</span>),
+          (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span>
+            <span class="cm-variable">document</span>.<span class="cm-property">documentElement</span>.<span class="cm-property">offsetHeight</span> <span class="cm-operator">-</span>
+            <span class="cm-variable-2">h</span>.<span class="cm-property">bottom</span> <span class="cm-operator">-</span>
+            (<span class="cm-variable">document</span>.<span class="cm-property">documentElement</span>.<span class="cm-property">offsetHeight</span> <span class="cm-operator">-</span>
+              <span class="cm-variable-2">n</span>.<span class="cm-property">domElement</span>.<span class="cm-property">getBoundingClientRect</span>().<span class="cm-property">bottom</span>)),
+          (<span class="cm-variable-2">e</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">ceil</span>(<span class="cm-variable-2">e</span>)),
+          (<span class="cm-variable-2">h</span> <span class="cm-operator">=</span> <span class="cm-variable">Math</span>.<span class="cm-property">ceil</span>(<span class="cm-variable-2">h</span>)),
+          <span class="cm-variable-2">n</span>.<span class="cm-property">setViewport</span>(<span class="cm-variable-2">e</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">s</span>, <span class="cm-variable-2">a</span>),
+          <span class="cm-variable-2">n</span>.<span class="cm-property">setScissor</span>(<span class="cm-variable-2">e</span>, <span class="cm-variable-2">h</span>, <span class="cm-variable-2">s</span>, <span class="cm-variable-2">a</span>),
+          (<span class="cm-variable-2">e</span> <span class="cm-operator">=</span> <span class="cm-variable-2">t</span>.<span class="cm-property">userData</span>.<span class="cm-property">camera</span>),
+          <span class="cm-variable-2">t</span>.<span class="cm-property">userData</span>.<span class="cm-property">controls</span>.<span class="cm-property">update</span>(),
+          <span class="cm-variable-2">n</span>.<span class="cm-property">render</span>(<span class="cm-variable-2">t</span>, <span class="cm-variable-2">e</span>));
+      });
+  })();
+}
+<span class="cm-keyword">const</span> <span class="cm-def">e</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">Lenis</span>();
+<span class="cm-variable">requestAnimationFrame</span>(<span class="cm-keyword">function</span> <span class="cm-def">t</span>(<span class="cm-def">a</span>) {
+  <span class="cm-variable">e</span>.<span class="cm-property">raf</span>(<span class="cm-variable-2">a</span>), <span class="cm-variable">requestAnimationFrame</span>(<span class="cm-variable">t</span>);
+});
+</code></pre>
+
+        </div>
+
+
+
+    <div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+
+  <iframe allow="accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; serial *; vr *; web-share *; xr-spatial-tracking *" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Parametric Surface" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for Parametric Surface" data-src="https://codepen.io/wakana-k/fullembedgrid/poBBRmN?animations=run&amp;type=embed" src="./poBBRmN(1).html">
+  </iframe>
+
+
+</div>
+
+
+    <div id="about-box">
+
+  <div class="about-container">
+
+
+    <div class="about-user">
+
+        <a href="https://codepen.io/wakana-k" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+
+      <div class="about-user-info">
+
+
+        <p>
+          This Pen is owned by <a href="https://codepen.io/wakana-k" target="_blank" rel="noopener">Wakana Y.K.</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+
+        </p>
+
+        <p>
+          <a href="https://codepen.io/wakana-k" target="_blank" rel="noopener" class="about-user-more">
+          See more by @wakana-k on CodePen
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+    <div id="resources-box" class="resources-box">
+
+  <h3>External CSS</h3>
+    <p>
+      This Pen doesn't use any external CSS resources.
+    </p>
+
+  <h3>External JavaScript</h3>
+    <p>
+      This Pen doesn't use any external JavaScript resources.
+    </p>
+
+</div>
+
+
+  </div>
+
+    <footer class="embed-footer" id="embed-footer">
+
+    <button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+      Resources
+    </button>
+
+    <ul class="scaling-choices bottom right">
+  <li><button class="action-button" id="zoom-button-1">1×</button></li>
+  <li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+  <li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+
+<button id="rerun-button" class="action-button rerun-button bottom right">
+  Rerun
+</button>
+
+  </footer>
+
+
+
+  <script nonce="">
+    __processedPen = {"html":"&lt;!--\nParametric Surface\nCopyright (c) 2024 by Wakana Y.K. (https://codepen.io/wakana-k/pen/poBBRmN)\n--&gt;\n&lt;!--\nReferences:\nParametrische Flächen und Körper - http://www.3d-meier.de/tut3/Seite0.html\n--&gt;\n\n&lt;h1&gt;Parametric Surface&lt;/h1&gt;\n&lt;p class=&quot;info&quot;&gt;Most of the formulas are referenced from &quot;&lt;a target=&quot;_blank&quot; href=&quot;http://www.3d-meier.de/tut3/Seite0.html&quot;&gt;Parametrische Flächen und Körper&lt;/a&gt;&quot;.&lt;/p&gt;\n&lt;div id=&quot;wrap&quot;&gt;\n  &lt;canvas id=&quot;c&quot;&gt;&lt;/canvas&gt;\n  &lt;div id=&quot;gallery&quot;&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;p&gt;Next page : &quot;&lt;a target=&quot;_parent&quot; href=&quot;https://codepen.io/wakana-k/pen/BaeypJL&quot;&gt;Parametric Surface 2&lt;/a&gt;&quot;&lt;/p&gt;&lt;br&gt;\n\n&lt;!-- using lenis.js --&gt;\n&lt;script src=&quot;https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js&quot;&gt;&lt;/script&gt;\n\n&lt;!-- using three.js --&gt;\n&lt;script async src=&quot;https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;\n&lt;script type=&quot;importmap&quot;&gt;\n  {\n    &quot;imports&quot;: {      \n      &quot;three&quot;: &quot;https://unpkg.com/three@0.160.0/build/three.module.js&quot;,\n      &quot;three/addons/&quot;: &quot;https://unpkg.com/three@0.160.0/examples/jsm/&quot;\n    }\n  }\n&lt;/script&gt;","css":"@import url(&quot;https://fonts.googleapis.com/css2?family=Asap&amp;display=swap&quot;);\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n*::before,\n*::after {\n  box-sizing: border-box;\n}\nhtml,\nbody {\n  overscroll-behavior-x: none;\n  overscroll-behavior-y: none;\n  scroll-behavior: auto;\n}\nbody {\n  font-family: &quot;Asap&quot;, sans-serif;\n  position: relative;\n  width: 100%;\n  max-width: 100vw;\n  height: auto;\n  min-height: 100vh;\n  text-align: center;\n  overflow-x: hidden;\n\n  background: #d3dfea;\n  color: dimgray;\n}\nh1 {\n  padding: 1rem 1rem 0;\n}\na {\n  color: dimgray;\n}\n#wrap {\n  position: relative;\n  margin: 0 auto;\n}\n#c {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n#gallery {\n  --size-w: 200px;\n  --size-h: calc(var(--size-w) * 1.25);\n\n  position: relative;\n  width: min(100%, 1000px);\n  height: auto;\n  margin: 0 auto;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  align-content: center;\n  align-items: flex-start;\n  gap: 10px;\n  padding: 10px;\n  z-index: 1;\n}\n.card {\n  position: relative;\n  width: var(--size-w);\n  min-height: var(--size-h);\n\n  border: 1px solid rgba(255, 255, 255, 0.8);\n  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);\n  border-radius: 1rem;\n}\n\n.geo {\n  position: relative;\n  width: 100%;\n  height: auto;\n  aspect-ratio: 1/1;\n  overflow-x: clip;\n  overflow-y: clip;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.title {\n  position: relative;\n  padding: 0.2rem;\n}\n.info {\n  padding: 1rem;\n}\n\nhtml.lenis,\nhtml.lenis body {\n  height: auto;\n}\n\n.lenis.lenis-smooth {\n  scroll-behavior: auto !important;\n}\n\n.lenis.lenis-smooth [data-lenis-prevent] {\n  -ms-scroll-chaining: none;\n      overscroll-behavior: contain;\n}\n\n.lenis.lenis-stopped {\n  overflow: hidden;\n}\n\n.lenis.lenis-scrolling iframe {\n  pointer-events: none;\n}","js":"/*!\nParametric Surface\nCopyright (c) 2024 by Wakana Y.K. (https://codepen.io/wakana-k/pen/poBBRmN)\n*/\n&quot;use strict&quot;;\nimport * as c from &quot;three&quot;;\nimport { OrbitControls as u } from &quot;three/addons/controls/OrbitControls.js&quot;;\nimport { ParametricGeometry as t } from &quot;three/addons/geometries/ParametricGeometry.js&quot;;\nimport &quot;three/addons/exporters/OBJExporter.js&quot;;\n{\n  function l(t, a) {\n    t.preventDefault();\n    let e = null;\n    (e = t.target &amp;&amp; t.target.dataset.index ? t.target.dataset.index : e) &amp;&amp; (\n    o[e].children[0].material.wireframe = a);\n  }\n  function P(t, a, e) {\n    var s = t,\n    h = (\n    t += 3 * (a = a * Math.PI * 2),\n    Math.cos(a) * (6 - (5 / 4 + Math.sin(3 * t)) * Math.sin(t - 3 * a))),\n    n = Math.sin(a) * (6 - (5 / 4 + Math.sin(3 * t)) * Math.sin(t - 3 * a)),\n    a = -Math.sin(t - 3 * a) * (5 / 4 + Math.cos(3 * t));\n    return (\n      h *= Math.cos(1.55 * s),\n      n *= Math.cos(1.55 * s),\n      a += 8 * Math.cos(s),\n      e.set(h, n, a));\n\n  }\n  function I(t, a, e) {\n    t = t * Math.PI * 2;\n    var s =\n    Math.cos(a = a * Math.PI * 2) * (\n    6 - (2 + Math.sin(3 * t)) * Math.sin(t - 3 * a)),\n    h = Math.sin(a) * (6 - (2 + Math.sin(3 * t)) * Math.sin(t - 3 * a)),\n    a = -Math.cos(t - 3 * a) * (2 + Math.sin(3 * t));\n    return e.set(s, h, a);\n  }\n  function p(t, a, e) {\n    t = (t = 1 === t ? 0 : t) * Math.PI * 2;\n    let s =\n    Math.cos(a = a * Math.PI * 2) * (\n    5 - (6 + Math.sin(3 * t)) * Math.sin(t - 3 * a)),\n    h = Math.sin(a) * (5 - (6 + Math.sin(3 * t)) * Math.sin(t - 3 * a)),\n    n = -Math.cos(t - 3 * a) * (6 + Math.sin(3 * t));\n    return (\n      n &gt; 6 * 1.05 &amp;&amp; (n = 6 * 1.05, s = 0, h = 0),\n      s *= Math.cos((n + 3) / 6),\n      h *= Math.cos((n + 3) / 6),\n      n *= 2,\n      e.set(s, h, n));\n\n  }\n  function d(t, a, e) {\n    t = t * Math.PI * 2;\n    var s =\n    Math.cos(a = a * Math.PI * 2) * (\n    5 - (5 + Math.cos(4 * t)) * Math.cos(t - 4 * a)),\n    a = Math.sin(a) * (5 - (5 + Math.cos(4 * t)) * Math.cos(t - 4 * a)),\n    t = 5 + Math.sin(4 * t);\n    return e.set(s, a, t);\n  }\n  function m(t, a, e) {\n    t = t * Math.PI * 2;\n    var s = Math.cos(a = a * Math.PI * 2) * (6 - (2 + Math.sin(4 * t))),\n    h = Math.sin(a) * (6 - (2 + Math.sin(4 * t))),\n    a = -Math.cos(t - 4 * a) * (2 + Math.sin(4 * t));\n    return e.set(s, h, a);\n  }\n  function w(t, a, e) {\n    t = t * Math.PI * 2;\n    var s = 2 + Math.sin(3 * t + 10 * (a = a * Math.PI * 2)),\n    h = s * Math.cos(t) * Math.sin(a),\n    t = s * Math.sin(t) * Math.cos(a),\n    s = s * Math.sin(a);\n    return e.set(h, t, s);\n  }\n  function f(t, a, e) {\n    1 === a &amp;&amp; (a = 0), t = (t = 1 === t ? 0 : t) * Math.PI * 2;\n    var s = 2 + Math.sin(6 * t + 5 * (a = a * Math.PI * 2)),\n    h = s * Math.cos(t) * Math.sin(a),\n    t = s * Math.sin(t) * Math.sin(a),\n    s = s * Math.cos(a);\n    return e.set(h, t, s);\n  }\n  function v(t, a, e) {\n    t = (t = 1 === t ? 0 : t) * Math.PI * 2;\n    var s = 2 + Math.sin(5 * t + 10 * (a *= Math.PI)),\n    h = s * Math.cos(t) * Math.sin(a),\n    t = s * Math.sin(t) * Math.sin(a),\n    s = s * Math.cos(a);\n    return e.set(h, t, s);\n  }\n  function D(t, a, e) {\n    t *= 2;\n    var s = 1 - 0.5 * (a *= 2),\n    h =\n    0.5 * s * Math.cos(3 * a * Math.PI) * (1 + Math.cos(t * Math.PI)) +\n    0 * Math.cos(3 * a * Math.PI),\n    n =\n    0.5 * s * Math.sin(3 * a * Math.PI) * (1 + Math.cos(t * Math.PI)) +\n    0 * Math.sin(3 * a * Math.PI),\n    a = +a + 0.5 * s * Math.sin(t * Math.PI);\n    return e.set(h, n, a);\n  }\n  function g(t, a, e) {\n    t *= Math.PI, a = a * Math.PI * 2;\n    var s = (Math.cos(t) - Math.cos(2 * t)) * Math.cos(a) / 4,\n    a = (Math.sin(t) - Math.sin(2 * t)) * Math.sin(a) / 4,\n    t = Math.cos(t);\n    return e.set(s, a, t);\n  }\n  function b(t, a, e) {\n    t = t * Math.PI * 2;\n    var s = (2.3 * Math.exp(-Math.pow(1.5 * (a *= 3), 2)) - 1.2) * Math.cos(t),\n    h = a,\n    a = (2.3 * Math.exp(-Math.pow(1.5 * a, 2)) - 1.2) * Math.sin(t);\n    return e.set(s, h, a);\n  }\n  function S(t, a, e) {\n    t = 3 * t - 1.5, a = +a;\n    var s = Math.sinh(2 * t) / (Math.cos(10 * t) + Math.cosh(2 * t)),\n    a = +a,\n    t = Math.sin(10 * t) / (Math.cos(10 * t) + Math.cosh(2 * t));\n    return e.set(s, a, t);\n  }\n  function E(t, a, e) {\n    t *= 2 * Math.PI;\n    var s = +Math.cos(a = a * (Math.PI / 2 - 0.25) + 0.25) * Math.cos(t),\n    h = -1 / Math.tan(a),\n    a = +Math.cos(a) * Math.sin(t);\n    return e.set(s, h, a);\n  }\n  function x(t, a, e) {\n    t *= 2 * Math.PI;\n    var s = (a *= 20) * Math.cos(t),\n    h = +Math.cos(2 * t + 2 * a),\n    a = a * Math.sin(t);\n    return e.set(s, h, a);\n  }\n  function B(t, a, e) {\n    t *= 2 * Math.PI, a = a * (2 * Math.PI) - Math.PI;\n    var s = +Math.cos(t) * Math.cos(a),\n    h = +Math.sin(a) + +t,\n    t = +Math.sin(t) * Math.cos(a);\n    return e.set(s, h, t);\n  }\n  function X(t, a, e) {\n    t = +t, a *= 2 * Math.PI;\n    var s = 0.6 * Math.sqrt(t * (t - 1) * (t - 2)) * Math.sin(a),\n    h = t,\n    t = 0.6 * Math.sqrt(t * (t - 1) * (t - 2)) * Math.cos(a);\n    return e.set(s, h, t);\n  }\n  function T(t, a, e) {\n    t = t * Math.PI * 2 - Math.PI, a = a * Math.PI * 2 - Math.PI;\n    var s = Math.cos(t) * (5 + 4.8 * Math.cos(a)) + Math.pow(a / Math.PI, 20),\n    t = Math.sin(t) * (5 + 4.8 * Math.cos(a)) + 0.25 * Math.cos(5 * t),\n    a = -2.3 * Math.log(1 - 0.3157 * a) + 6 * Math.sin(a) + 2 * Math.cos(a);\n    return e.set(s, t, a);\n  }\n  function C(t, a, e) {\n    t *= Math.PI, a *= 2 * Math.PI;\n    var s = Math.cos(t),\n    h = Math.cos(a),\n    t = 0.5 * Math.sin(t) * Math.sin(a);\n    return e.set(s, h, t);\n  }\n  function y(t, a, e) {\n    t = 2 * Math.PI * t, a *= 2 * Math.PI;\n    var s = Math.sin(7 * t) + 2,\n    h =\n    8 * Math.cos(t) -\n    Math.cos(8 * t) -\n    7 / 8 * s * Math.sin(9 * t / 2) * Math.cos(a),\n    n = s * Math.sin(a),\n    s =\n    8 * Math.sin(t) -\n    Math.sin(8 * t) +\n    7 / 8 * s * Math.cos(9 * t / 2) * Math.cos(a);\n    return e.set(h, n, s);\n  }\n  function L(t, a, e) {\n    t *= Math.PI, a = a * Math.PI * 2;\n    var s = 0.25 * Math.sin(2 * t) * Math.cos(a) ** 2,\n    h = 0.25 * Math.sin(t) * Math.sin(2 * a),\n    t = 0.25 * Math.cos(t) * Math.sin(2 * a);\n    return e.set(s, h, t);\n  }\n  function q(t, a, e) {\n    t = 26.4 * t - 13.2, a = 2 * a * 37.4 - 37.4;\n    var s = Math.sqrt(0.84),\n    h = 0.4 * ((s * Math.cosh(0.4 * t)) ** 2 + (0.4 * Math.sin(s * a)) ** 2),\n    n = -t + 1.68 * Math.cosh(0.4 * t) * Math.sinh(0.4 * t) / h,\n    M =\n    2 *\n    s *\n    Math.cosh(0.4 * t) * (\n    -(s * Math.cos(a) * Math.cos(s * a)) -\n    Math.sin(a) * Math.sin(s * a)) /\n    h,\n    t =\n    2 *\n    s *\n    Math.cosh(0.4 * t) * (\n    -(s * Math.sin(a) * Math.cos(s * a)) +\n    Math.cos(a) * Math.sin(s * a)) /\n    h;\n    return e.set(n, t, M);\n  }\n  function R(t, a, e) {\n    var s;\n    return (\n      t *= Math.PI,\n      a = a * Math.PI * 2,\n      s = 0.5 * (1 - Math.cos(t)) * Math.sin(t) * Math.cos(a),\n      a = 0.5 * (1 - Math.cos(t)) * Math.sin(t) * Math.sin(a),\n      t = Math.cos(t),\n      e.set(s, a, t));\n\n  }\n  function V(t, a, e) {\n    var s, h;\n    return (\n      t = (t = 1 === t ? 0 : t) * Math.PI * 2,\n      a *= Math.PI,\n      s = (4 * Math.sin(t) - Math.sin(3 * t)) * Math.sin(a),\n      h = 2 * Math.cos(a),\n      t =\n      1.2 * (\n      4 * Math.cos(t) - Math.cos(2 * t) - Math.cos(3 * t) / 2) *\n      Math.sin(a),\n      e.set(s, h, t));\n\n  }\n  function H(t, a, e) {\n    t = t * Math.PI * 2, a = (a - 0.5) * Math.PI;\n    var s =\n    +Math.cos(t) *\n    Math.cos(t) *\n    Math.cos(t) *\n    Math.cos(a) *\n    Math.cos(a) *\n    Math.cos(a),\n    t =\n    +Math.sin(t) *\n    Math.sin(t) *\n    Math.sin(t) *\n    Math.cos(a) *\n    Math.cos(a) *\n    Math.cos(a),\n    a = +Math.sin(a) * Math.sin(a) * Math.sin(a);\n    return e.set(s, t, a);\n  }\n  function N(t, a, e) {\n    t = t * Math.PI * 2, a = (a - 0.5) * Math.PI;\n    var s = +Math.cos(t) * Math.cos(a) * Math.cos(a) * Math.cos(a),\n    t = +Math.sin(t) * Math.cos(a) * Math.cos(a) * Math.cos(a),\n    a = +Math.sin(a) * Math.sin(a) * Math.sin(a);\n    return e.set(s, t, a);\n  }\n  function Z(t, a, e) {\n    t = t * Math.PI * 2, a = a * Math.PI * 2;\n    var s = 16 * Math.pow(Math.sin(t), 3) * Math.cos(a),\n    h =\n    -13 * Math.cos(t) +\n    5 * Math.cos(2 * t) -\n    2 * Math.cos(3 * t) +\n    Math.cos(4 * t),\n    t = -(16 * Math.pow(Math.sin(t), 3) * Math.sin(a));\n    return e.set(s, h, t);\n  }\n  function j(t, a, e) {\n    t = t * Math.PI * 2, a = a * Math.PI * 2;\n    var s = +Math.sin(t),\n    h = +Math.sin(a),\n    t = +Math.sin(t + a);\n    return e.set(s, h, t);\n  }\n  /*! from https://codepen.io/boytchev/pen/qBLKpjx */function G(t, a, e) {\n    t *= 2 * Math.PI;\n    var s = (Math.cos(a *= 2 * Math.PI) ** 20 + Math.sin(a) ** 20) ** -0.05,\n    h = (4 + s * Math.cos(a + 3 * t)) * Math.cos(t),\n    n = (4 + s * Math.cos(a + 3 * t)) * Math.sin(t),\n    s = s * Math.sin(a + 3 * t);\n    return e.set(h, n, s);\n  }\n  function J(t, a, e) {\n    t = t * Math.PI * 2;\n    var s =\n    (2 +\n    Math.cos((a = a * Math.PI * 2) / 2) * Math.sin(t) -\n    Math.sin(a / 2) * Math.sin(2 * t)) *\n    Math.cos(a),\n    h =\n    (2 +\n    Math.cos(a / 2) * Math.sin(t) -\n    Math.sin(a / 2) * Math.sin(2 * t)) *\n    Math.sin(a),\n    a = Math.sin(a / 2) * Math.sin(t) + Math.cos(a / 2) * Math.sin(2 * t);\n    return e.set(s, h, a);\n  }\n  function W(t, a, e) {\n    t = t * (2 * Math.PI) - Math.PI, a = a * (2 * Math.PI) - Math.PI;\n    var s =\n    Math.cos(t) * (\n    2 + Math.sin(a) * Math.cos(t) - Math.sin(2 * a) * Math.sin(t) / 2),\n    h = Math.sin(t) * Math.sin(a) + Math.cos(t) * Math.sin(2 * a) / 2,\n    a =\n    Math.sin(t) * (\n    2 + Math.sin(a) * Math.cos(t) - Math.sin(2 * a) * Math.sin(t) / 2);\n    return e.set(s, h, a);\n  }\n  function k(t, a, e) {\n    var s, h;\n    return (\n      t = 4 * t * Math.PI,\n      a = 2 * a * Math.PI,\n      s =\n      (3 +\n      Math.cos(3 * t / 2) * Math.sin(a) -\n      Math.sin(3 * t / 2) * Math.sin(2 * a)) *\n      Math.cos(+t / 2),\n      h =\n      (3 +\n      Math.cos(3 * t / 2) * Math.sin(a) -\n      Math.sin(3 * t / 2) * Math.sin(2 * a)) *\n      Math.sin(+t / 2),\n      t =\n      Math.sin(3 * t / 2) * Math.sin(a) +\n      Math.cos(3 * t / 2) * Math.sin(2 * a),\n      e.set(s, h, t));\n\n  }\n  let a,\n  e,\n  n,\n  s,\n  h,\n  M,\n  i,\n  o = [],\n  r = [];\n  var A, K, O, z, F;\n  M = new c.MeshNormalMaterial({ side: c.DoubleSide }),\n  (a = new c.PerspectiveCamera(50, 1, 1, 10)).position.z = 3,\n  a.fov = 2 * Math.atan(2 / (2 * a.position.z)) * (180 / Math.PI),\n  i = document.getElementById(&quot;c&quot;),\n  (n = new c.WebGLRenderer({\n    canvas: i,\n    antialias: !0,\n    alpha: !0 })).\n  setPixelRatio(window.devicePixelRatio),\n  (h = new t(H, 25, 25)).userData.title = &quot;Astroidal Ellipsoid&quot;,\n  r.push(h),\n  (h = new t(N, 25, 25)).rotateX(Math.PI / 2),\n  h.rotateZ(-Math.PI / 8),\n  r.push(h),\n  (h = new t(j, 50, 50)).scale(0.5, 0.5, 0.5),\n  h.userData.title = &quot;Sine Surface&quot;,\n  r.push(h),\n  (h = new t(L, 50, 50)).scale(3, 3, 3),\n  h.userData.title = &quot;Roman Surface&quot;,\n  r.push(h),\n  (h = new t(w, 50, 200)).scale(0.3, 0.3, 0.3),\n  r.push(h),\n  (h = new t(q, 50, 50)).rotateZ(-Math.PI / 2),\n  h.rotateX(-Math.PI / 4),\n  h.scale(0.15, 0.15, 0.15),\n  h.userData.title = &quot;breather&quot;,\n  r.push(h),\n  (h = new t(y, 100, 25)).rotateZ(-Math.PI / 2),\n  h.scale(0.1, 0.1, 0.1),\n  h.userData.title = &quot;bonanJeenerKlein&quot;,\n  r.push(h),\n  (h = new t(C, 20, 20)).scale(0.8, 0.8, 0.8),\n  h.userData.title = &quot;Pillow&quot;,\n  r.push(h),\n  (h = new t(B, 15, 15)).scale(0.3, 0.3, 0.3),\n  h.userData.title = &quot;twistedSphere&quot;,\n  r.push(h),\n  (h = new t(x, 50, 25)).rotateX(-Math.PI / 4),\n  h.scale(0.06, 0.06, 0.06),\n  h.userData.title = &quot;spiralWaves&quot;,\n  r.push(h),\n  (h = new t(E, 25, 25)).scale(0.5, 0.5, 0.5),\n  h.userData.title = &quot;bullet&quot;,\n  r.push(h),\n  (h = new t(S, 300, 2)).rotateX(-Math.PI / 2),\n  h.scale(0.4, 0.4, 0.4),\n  h.userData.title = &quot;tanh Spiral&quot;,\n  r.push(h),\n  (h = new t(b, 25, 15)).scale(0.5, 0.5, 0.5),\n  h.userData.title = &quot;gauss Cylinder&quot;,\n  r.push(h),\n  (h = new t(g, 20, 15)).rotateZ(-Math.PI / 2),\n  h.userData.title = &quot;fish Surface&quot;,\n  r.push(h),\n  (h = new t(D, 25, 50)).rotateX(-Math.PI / 2),\n  h.scale(0.8, 0.8, 0.8),\n  h.userData.title = &quot;seashell&quot;,\n  r.push(h),\n  (h = new t(Z, 50, 50)).scale(0.05, 0.05, 0.05),\n  r.push(h),\n  (h = new t(R, 25, 25)).rotateX(-Math.PI / 2),\n  h.userData.title = &quot;droplet&quot;,\n  r.push(h),\n  (h = new t(X, 20, 25)).scale(2, 2, 2),\n  h.userData.title = &quot;egg&quot;,\n  r.push(h),\n  (h = new t(V, 70, 30)).rotateX(-Math.PI / 2),\n  h.scale(0.2, 0.2, 0.2),\n  h.userData.title = &quot;Julia&#39;s Parametric Heart Surface&quot;,\n  r.push(h),\n  (h = new t(T, 25, 25)).rotateX(-Math.PI / 4),\n  h.scale(0.1, 0.1, 0.1),\n  h.userData.title = &quot;apple2&quot;,\n  r.push(h),\n  (h = new t(J, 50, 50)).scale(0.3, 0.3, 0.3),\n  h.userData.title = &quot;Klein Bottle1&quot;,\n  r.push(h),\n  (h = new t(W, 50, 50)).rotateX(-Math.PI / 2),\n  h.scale(0.3, 0.3, 0.3),\n  h.userData.title = &quot;Klein Bottle2&quot;,\n  r.push(h),\n  (h = new t(G, 50, 30)).scale(0.2, 0.2, 0.2),\n  h.userData.title =\n  &quot;Twisted Torus&lt;br&gt;(from &lt;a target=&#39;_blank&#39; href=&#39;https://codepen.io/boytchev/pen/qBLKpjx&#39;&gt;Pavel Boytchev&lt;/a&gt;)&quot;,\n  r.push(h),\n  (h = new t(k, 50, 50)).scale(0.25, 0.25, 0.25),\n  h.userData.title = &quot;Twisted Torus2&quot;,\n  r.push(h),\n  (h = new t(I, 20, 70)).scale(0.12, 0.12, 0.12),\n  h.userData.title = &quot;Twisted Torus3&quot;,\n  r.push(h),\n  (h = new t(P, 10, 100)).rotateX(Math.PI / 2),\n  h.scale(0.18, 0.18, 0.18),\n  h.userData.title = &quot;merengue1&quot;,\n  r.push(h),\n  (h = new t(p, 50, 150)).rotateX(-Math.PI / 2),\n  h.scale(0.1, 0.08, 0.1),\n  h.userData.title = &quot;merengue2&quot;,\n  r.push(h),\n  (h = new t(m, 100, 100)).scale(0.2, 0.2, 0.2),\n  r.push(h),\n  (h = new t(d, 30, 100)).scale(0.1, 0.1, 0.1),\n  r.push(h),\n  (h = new t(v, 100, 100)).scale(0.3, 0.3, 0.3),\n  h.userData.title = &quot;twistedSphere2&quot;,\n  r.push(h),\n  (h = new t(f, 100, 100)).scale(0.3, 0.3, 0.3),\n  h.userData.title = &quot;twistedSphere3&quot;,\n  r.push(h),\n  A = document.getElementById(&quot;gallery&quot;),\n  K = new IntersectionObserver(t =&gt; {\n    for (const a of t)\n    a.isIntersecting ?\n    a.target.dataset.inView = !0 :\n    a.target.dataset.inView = !1;\n  });\n  for (let t = 0; t &lt; r.length; t++) {\n    e = new c.Scene();\n    O = document.createElement(&quot;article&quot;),\n    z = (O.className = &quot;card&quot;, document.createElement(&quot;div&quot;)),\n    F = (\n    z.className = &quot;geo&quot;,\n    z.dataset.index = t,\n    z.dataset.inView = !0,\n    O.appendChild(z),\n    document.createElement(&quot;div&quot;));\n    F.className = &quot;title&quot;,\n    F.innerText = &quot;Parametric surface &quot; + (t + 1),\n    O.appendChild(F),\n    e.userData.element = z,\n    A.appendChild(O),\n    a = a.clone(),\n    e.userData.camera = a,\n    (s = new u(e.userData.camera, e.userData.element)).autoRotate = !0,\n    s.minDistance = 2,\n    s.maxDistance = 10,\n    s.enablePan = !1,\n    s.enableZoom = !1,\n    s.enableDamping = !0,\n    e.userData.controls = s,\n    (h = r[r.length - t - 1]).computeVertexNormals(),\n    h.computeBoundingBox(),\n    h.computeBoundingSphere(),\n    h.center(),\n    M = M.clone(),\n    e.add(new c.Mesh(h, M)),\n    h.userData.title &amp;&amp; (F.innerHTML = h.userData.title),\n    o.push(e),\n    z.addEventListener(\n    &quot;pointerenter&quot;,\n    t =&gt; {\n      l(t, !0);\n    },\n    !1),\n\n    z.addEventListener(\n    &quot;pointerleave&quot;,\n    t =&gt; {\n      l(t, !1);\n    },\n    !1),\n\n    z.addEventListener(\n    &quot;pointerout&quot;,\n    t =&gt; {\n      l(t, !1);\n    },\n    !1),\n\n    z.addEventListener(\n    &quot;pointercancel&quot;,\n    t =&gt; {\n      l(t, !1);\n    },\n    !1),\n\n    K.observe(z);\n  }\n  !function t() {\n    requestAnimationFrame(t);\n    var a = i.clientWidth,\n    e = i.clientHeight;\n    i.width === a &amp;&amp; i.height === e || n.setSize(a, e, !1),\n    n.setScissorTest(!1),\n    n.clear(),\n    n.setScissorTest(!0),\n    o.forEach(function (t) {\n      var a,\n      e,\n      s = t.userData.element,\n      h = s.getBoundingClientRect();\n      &quot;false&quot; != s.dataset.inView &amp;&amp; (\n      s = h.width,\n      a = h.height,\n      s = Math.ceil(s),\n      a = Math.ceil(a),\n      e = h.left,\n      h =\n      document.documentElement.offsetHeight -\n      h.bottom - (\n      document.documentElement.offsetHeight -\n      n.domElement.getBoundingClientRect().bottom),\n      e = Math.ceil(e),\n      h = Math.ceil(h),\n      n.setViewport(e, h, s, a),\n      n.setScissor(e, h, s, a),\n      e = t.userData.camera,\n      t.userData.controls.update(),\n      n.render(t, e));\n    });\n  }();\n}\nconst e = new Lenis();\nrequestAnimationFrame(function t(a) {\n  e.raf(a), requestAnimationFrame(t);\n});"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+
+  <script src="./embed-d492f8b0f63f0a8ba679c9cd0a2fffbaa24504a7928435ba1bfc1859f904e02b.js.download"></script>
+
+
+<script nonce="">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='EACf44CogUk=';d.innerHTML="window.__CF$cv$params={r:'96b8045ca835cef8',t:'MTc1NDU4Mjc0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='EACf44CogUk=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(3).html"></iframe>
+
+</body></html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://cdpn.io/zutrinken/fullembedgrid/wvqdqX?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Auto-generated Scroll Nav</title>
+
+    <link rel="canonical" href="https://codepen.io/zutrinken/pen/wvqdqX">
+  
+  <link rel="stylesheet" href="./normalize-5.0.0.min.css">
+
+  
+  
+<style>
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	font-family: 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+
+h2 {
+	font-weight: 100;
+	font-size: 10em;
+	line-height: 1em;
+	text-transform: uppercase;
+  letter-spacing: .05em;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+
+.inner {
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	height: auto;
+  padding: 33% 0;
+}
+#section-one {
+	background: #73d2e5;
+}
+#section-two {
+	background: #57b8d9;
+}
+#section-three {
+	background: #3d9ccc;
+}
+#section-four {
+	background: #2680bf;
+}
+#section-five {
+	background: #1262b2;
+}
+
+
+/* ==========================================================================
+   Section Navigation
+   ========================================================================== */
+
+#section-menu {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	z-index: 3000;
+	text-transform: uppercase;
+
+	-webkit-transition: all ease 0.1s;
+	transition: all ease 0.1s;
+}
+#section-menu.freeze {
+	right: -112px;
+}
+.touch #section-menu {
+	display: none;
+}
+#section-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#section-menu li {}
+#section-menu a {
+	float: right;
+	clear: both;
+
+	display: block;
+	height: 2em;
+	line-height: 2em;
+	text-decoration: none;
+	padding: 0 16px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	white-space: nowrap;
+
+	-webkit-transition: all ease 0.1s;
+	transition: all ease 0.1s;
+}
+#section-menu.freeze a {
+	float: none;
+	width: 128px;
+}
+#section-menu a:hover,
+#section-menu a:focus {
+	background: rgba(0,0,0,0.75);
+	font-size: 1.2em;
+}
+#section-menu a span {
+	display: none;
+	font-weight: 700;
+	position: relative;
+	width: 48px;
+	left: -16px;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+}
+#section-menu a.active {
+	background: #000;
+	font-size: 1.4em;
+	font-weight: 700;
+}
+#section-menu.freeze a span {
+	display: inline-block;
+}
+#section-menu a.active span {
+	display: inline-block;
+	background: #000;
+}
+#section-menu a.active span:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background: rgba(255,255,255,0.25);
+}
+#section-menu.freeze a.active span:before {
+	display: none;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no">
+  <nav id="section-menu" class="freeze" style="margin-top: -80px;">
+  <ul><li><a id="nav_One" href="https://cdpn.io/zutrinken/fullembedgrid/wvqdqX?animations=run&amp;type=embed#section-one" class="active"><span>1</span> One</a></li><li><a id="nav_Two" href="https://cdpn.io/zutrinken/fullembedgrid/wvqdqX?animations=run&amp;type=embed#section-two"><span>2</span> Two</a></li><li><a id="nav_Three" href="https://cdpn.io/zutrinken/fullembedgrid/wvqdqX?animations=run&amp;type=embed#section-three"><span>3</span> Three</a></li><li><a id="nav_Four" href="https://cdpn.io/zutrinken/fullembedgrid/wvqdqX?animations=run&amp;type=embed#section-four"><span>4</span> Four</a></li><li><a id="nav_Five" href="https://cdpn.io/zutrinken/fullembedgrid/wvqdqX?animations=run&amp;type=embed#section-five"><span>5</span> Five</a></li></ul>
+</nav>
+<section id="section-one" class="section scroll-item resize" title="One">
+  <div class="inner">
+    <h2>One</h2>
+  </div>
+</section>
+<section id="section-two" class="section scroll-item resize" title="Two">
+  <div class="inner">
+    <h2>Two</h2>
+  </div>
+</section>
+<section id="section-three" class="section scroll-item resize" title="Three">
+  <div class="inner">
+    <h2>Three</h2>
+  </div>
+</section>
+<section id="section-four" class="section scroll-item resize" title="Four">
+  <div class="inner">
+    <h2>Four</h2>
+  </div>
+</section>
+<section id="section-five" class="section scroll-item resize" title="Five">
+  <div class="inner">
+    <h2>Five</h2>
+  </div>
+</section>
+<script type="text/javascript" src="./script.js.download"></script>
+  <script src="./jquery.min(2).js.download"></script>
+      <script id="rendered-js">
+jQuery(function ($) {
+
+  var html = $('html');
+  var viewport = $(window);
+  var viewportHeight = viewport.height();
+
+  var scrollMenu = $('#section-menu');
+  var timeout = null;
+
+  function menuFreeze() {
+    if (timeout !== null) {
+      scrollMenu.removeClass('freeze');
+      clearTimeout(timeout);
+    }
+
+    timeout = setTimeout(function () {
+      scrollMenu.addClass('freeze');
+    }, 2000);
+  }
+  scrollMenu.mouseover(menuFreeze);
+
+  /* ==========================================================================
+    Build the Scroll Menu based on Sections .scroll-item
+    ========================================================================== */
+
+  var sectionsHeight = {},
+  viewportheight,i = 0;
+  var scrollItem = $('.scroll-item');
+  var bannerHeight;
+
+  function sectionListen() {
+    viewportHeight = viewport.height();
+    bannerHeight = viewportHeight;
+    $('.section').addClass('resize');
+    scrollItem.each(function () {
+      sectionsHeight[this.title] = $(this).offset().top;
+    });
+  }
+  sectionListen();
+  viewport.resize(sectionListen);
+  viewport.bind('orientationchange', function () {
+    sectionListen();
+  });
+
+  var count = 0;
+
+  scrollItem.each(function () {
+    var anchor = $(this).attr('id');
+    var title = $(this).attr('title');
+    count++;
+    $('#section-menu ul').append('<li><a id="nav_' + title + '" href="#' + anchor + '"><span>' + count + '</span> ' + title + '</a></li>');
+  });
+
+  function menuListen() {
+    var pos = $(this).scrollTop();
+    pos = pos + viewportHeight * 0.625;
+    for (i in sectionsHeight) {
+      if (sectionsHeight[i] < pos) {
+        $('#section-menu a').removeClass('active');
+        $('#section-menu a#nav_' + i).addClass('active');;
+        var newHash = '#' + $('.scroll-item[title="' + i + '"]').attr('id');
+        if (history.pushState) {
+          history.pushState(null, null, newHash);
+        } else {
+          location.hash = newHash;
+        }
+      } else {
+        $('#section-menu a#nav_' + i).removeClass('active');
+        if (pos < viewportHeight - 72) {
+          history.pushState(null, null, ' ');
+        }
+      }
+    }
+  }
+  scrollMenu.css('margin-top', scrollMenu.height() / 2 * -1);
+
+  /* ==========================================================================
+    Smooth Scroll for Anchor Links and URL refresh
+    ========================================================================== */
+
+  scrollMenu.find('a').click(function () {
+    var href = $.attr(this, 'href');
+    $('html').animate({
+      scrollTop: $(href).offset().top },
+    500, function () {
+      window.location.hash = href;
+    });
+    return false;
+  });
+
+  /* ==========================================================================
+    Fire functions on Scroll Event
+    ========================================================================== */
+
+  function scrollHandler() {
+    menuListen();
+    menuFreeze();
+  }
+  scrollHandler();
+  viewport.on('scroll', function () {
+    scrollHandler();
+    //			window.requestAnimationFrame(scrollHandler);
+  });
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

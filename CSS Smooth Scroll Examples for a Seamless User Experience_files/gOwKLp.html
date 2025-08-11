@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://codepen.io/anon/embed/gOwKLp?height=450&theme-id=1&slug-hash=gOwKLp&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width">
+
+  <title>CodePen Embed - Smooth scroll with pure CSS3</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="a8EI8p-pXyHKxKH5Aw6V1403dDtM2ypEuxsLCCOI-6uo4z2ulWxsFGyP-UOPfdKjwkG6V2NG6GHksbntF4_VHQ">
+
+  <link rel="stylesheet" href="./embed-50c8e30c86cf654903ac612e1633eecabbabaf25cd1efaeaee3733dd9834c822.css" media="all">
+
+  <style>
+    .hide {
+      display: none !important;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #28282a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #424242;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #212121;
+      color: #ffffff;
+      box-shadow: inset 0px 3px #ff8a00;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #a9a9a9;
+    }
+
+    .embed-nav svg {
+      stroke: #a9a9a9 !important;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./highcontrast-dark-47187de4142cc38f6f5a1e9f846225ded7136f4761bf6a3ec0ed89c8ce9b7382.css" media="all">
+
+  <link rel="stylesheet" href="./maVRwd.css">
+</head>
+
+<body id="the-body" style="border: 1px solid #39231b; --borderWidth: 1px;" class="codepen-embed-body static results-active">
+
+  <nav class="embed-nav group" id="embed-nav">
+
+  <ul class="code-types">
+
+
+        <li class="code-type">
+          <a id="html-link" href="https://codepen.io/anon/embed/gOwKLp?height=450&amp;theme-id=1&amp;slug-hash=gOwKLp&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+              HTML
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="css-link" href="https://codepen.io/anon/embed/gOwKLp?height=450&amp;theme-id=1&amp;slug-hash=gOwKLp&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+              CSS
+          </a>
+        </li>
+
+
+        <li class="code-type">
+          <a id="js-link" href="https://codepen.io/anon/embed/gOwKLp?height=450&amp;theme-id=1&amp;slug-hash=gOwKLp&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+              JS
+          </a>
+        </li>
+
+
+  </ul>
+
+  <ul class="result-button-list">
+    <li class="results results-type">
+      <a id="result-link" href="https://codepen.io/anon/embed/gOwKLp?height=450&amp;theme-id=1&amp;slug-hash=gOwKLp&amp;default-tab=result#result-box" class="active" aria-pressed="true" role="button">
+        Result
+      </a>
+    </li>
+    <li>
+      <a href="https://codepen.io/anon/embed/gOwKLp?height=450&amp;theme-id=1&amp;slug-hash=gOwKLp&amp;default-tab=result#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+    </li>
+  </ul>
+
+
+    <div class="logo-wrap" id="edit-area">
+
+        <a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/satya164/pen/gOwKLp" title="Edit on CodePen">
+            <div class="large-logo">
+    <span id="edit-on-text" class="open-on">EDIT ON</span>
+    <svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+  <path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+  </div>
+  <div class="box-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+  <path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+  </div>
+        </a>
+
+    
+    </div>
+
+
+</nav>
+
+
+  <div id="output" data-border-style="thin" data-header="true">
+
+
+
+        <div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+
+
+          <pre tabindex="0"><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#bottom"</span><span class="cm-tag cm-bracket">&gt;</span>Go to bottom<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#middle"</span><span class="cm-tag cm-bracket">&gt;</span>Go to middle<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"top"</span><span class="cm-tag cm-bracket">&gt;</span>There's something else I've always wanted to say: Allons-y, Alonso! Oh, yes. Harmless is just the word: that's why I like it! Doesn't kill, doesn't wound, doesn't maim. But I'll tell you what it does do: it is very good at opening doors! There was a war. A Time War. The Last Great Time War. My people fought a race called the Daleks, for the sake of all creation. And they lost. We lost. Everyone lost. They're all gone now. My family. My friends. Even that sky. I'm Dr. James McCrimmon from the township of Balamory.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"middle"</span><span class="cm-tag cm-bracket">&gt;</span>Black tie...Whenever I wear this, something bad always happens. It is! It's the city of New New York! Strictly speaking, it's the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York. Please, when Torchwood comes to write my complete history, don't tell people I travelled through time and space with her mother! I don't want to go. Blimey, trying to make an Ood laugh... You can spend the rest of your life with me, but I can't spend the rest of mine with you. I have to live on. Alone. That's the curse of the Time Lords.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"bottom"</span><span class="cm-tag cm-bracket">&gt;</span>I don't want to go. I'm Dr. James McCrimmon from the township of Balamory. I'd call you a genius, except I'm in the room. You can spend the rest of your life with me, but I can't spend the rest of mine with you. I have to live on. Alone. That's the curse of the Time Lords. There's something else I've always wanted to say: Allons-y, Alonso! It is! It's the city of New New York! Strictly speaking, it's the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#top"</span><span class="cm-tag cm-bracket">&gt;</span>Go to top<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">a</span> <span class="cm-attribute">href</span>=<span class="cm-string">"#middle"</span><span class="cm-tag cm-bracket">&gt;</span>Go to middle<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">a</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+
+        </div>
+
+
+
+        <div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+
+
+          <pre tabindex="0"><code data-lang="css" id="actual-css-code" class=" cm-s-default"><span class="cm-tag">body</span> {
+  <span class="cm-property">margin</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">font-family</span>: <span class="cm-atom">sans-serif</span>;
+  <span class="cm-property">font-size</span>: <span class="cm-number">14px</span>;
+  <span class="cm-property">line-height</span>: <span class="cm-number">21px</span>;
+}
+
+<span class="cm-builtin">#top</span> {
+  <span class="cm-property">height</span>: <span class="cm-number">30em</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-atom">#a3c</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+}
+
+<span class="cm-builtin">#middle</span> {
+  <span class="cm-property">height</span>: <span class="cm-number">50em</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">2em</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-atom">#3ca</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+}
+
+<span class="cm-builtin">#bottom</span> {
+  <span class="cm-property">height</span>: <span class="cm-number">20em</span>;
+  <span class="cm-property">padding</span>: <span class="cm-number">2em</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-atom">#c3a</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+}
+
+<span class="cm-tag">a</span> {
+  <span class="cm-property">padding</span>: <span class="cm-number">1em</span> <span class="cm-number">2em</span>;
+  <span class="cm-property">margin</span>: <span class="cm-number">1em</span>;
+  <span class="cm-property">margin-right</span>: <span class="cm-number">0</span>;
+  <span class="cm-property">display</span>: <span class="cm-atom">inline-block</span>;
+  <span class="cm-property">border-radius</span>: <span class="cm-number">3px</span>;
+  <span class="cm-property">background-color</span>: <span class="cm-atom">#3498db</span>;
+  <span class="cm-property">color</span>: <span class="cm-atom">#fff</span>;
+  <span class="cm-property">text-decoration</span>: <span class="cm-atom">none</span>;
+  <span class="cm-property">text-transform</span>: <span class="cm-atom">uppercase</span>;
+}
+
+<span class="cm-tag">a</span>:<span class="cm-variable-3">focus</span>, <span class="cm-tag">a</span>:<span class="cm-variable-3">hover</span> { <span class="cm-property">background-color</span>: <span class="cm-atom">#45a9ec</span>; }
+
+<span class="cm-tag">a</span>:<span class="cm-variable-3">active</span> { <span class="cm-property">background-color</span>: <span class="cm-atom">#2387ca</span>; }</code></pre>
+
+        </div>
+
+
+
+        <div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+
+
+          <pre tabindex="0"><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-comment">// Smooth scroll for in page links - http://wibblystuff.blogspot.in/2014/04/in-page-smooth-scroll-using-css3.html</span>
+<span class="cm-comment">// Improvements from - https://codepen.io/kayhadrin/pen/KbalA</span>
+
+<span class="cm-variable">$</span>(<span class="cm-keyword">function</span>() {
+  <span class="cm-keyword">var</span> <span class="cm-def">$window</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-variable">window</span>), <span class="cm-def">$document</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-variable">document</span>),
+    <span class="cm-def">transitionSupported</span> <span class="cm-operator">=</span> <span class="cm-keyword">typeof</span> <span class="cm-variable">document</span>.<span class="cm-property">body</span>.<span class="cm-property">style</span>.<span class="cm-property">transitionProperty</span> <span class="cm-operator">===</span> <span class="cm-string">"string"</span>, <span class="cm-comment">// detect CSS transition support</span>
+    <span class="cm-def">scrollTime</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>; <span class="cm-comment">// scroll time in seconds</span>
+
+  <span class="cm-variable">$</span>(<span class="cm-variable">document</span>).<span class="cm-property">on</span>(<span class="cm-string">"click"</span>, <span class="cm-string">"a[href*=#]:not([href=#])"</span>, <span class="cm-keyword">function</span>(<span class="cm-def">e</span>) {
+    <span class="cm-keyword">var</span> <span class="cm-def">target</span>, <span class="cm-def">avail</span>, <span class="cm-def">scroll</span>, <span class="cm-def">deltaScroll</span>;
+    
+    <span class="cm-keyword">if</span> (<span class="cm-variable">location</span>.<span class="cm-property">pathname</span>.<span class="cm-property">replace</span>(<span class="cm-string-2">/^\//</span>, <span class="cm-string">""</span>) <span class="cm-operator">==</span> <span class="cm-keyword">this</span>.<span class="cm-property">pathname</span>.<span class="cm-property">replace</span>(<span class="cm-string-2">/^\//</span>, <span class="cm-string">""</span>) <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">location</span>.<span class="cm-property">hostname</span> <span class="cm-operator">==</span> <span class="cm-keyword">this</span>.<span class="cm-property">hostname</span>) {
+      <span class="cm-variable-2">target</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-keyword">this</span>.<span class="cm-property">hash</span>);
+      <span class="cm-variable-2">target</span> <span class="cm-operator">=</span> <span class="cm-variable-2">target</span>.<span class="cm-property">length</span> <span class="cm-operator">?</span> <span class="cm-variable-2">target</span> : <span class="cm-variable">$</span>(<span class="cm-string">"[id="</span> <span class="cm-operator">+</span> <span class="cm-keyword">this</span>.<span class="cm-property">hash</span>.<span class="cm-property">slice</span>(<span class="cm-number">1</span>) <span class="cm-operator">+</span> <span class="cm-string">"]"</span>);
+
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">target</span>.<span class="cm-property">length</span>) {
+        <span class="cm-variable-2">avail</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$document</span>.<span class="cm-property">height</span>() <span class="cm-operator">-</span> <span class="cm-variable-2">$window</span>.<span class="cm-property">height</span>();
+
+        <span class="cm-keyword">if</span> (<span class="cm-variable-2">avail</span> <span class="cm-operator">&gt;</span> <span class="cm-number">0</span>) {
+          <span class="cm-variable-2">scroll</span> <span class="cm-operator">=</span> <span class="cm-variable-2">target</span>.<span class="cm-property">offset</span>().<span class="cm-property">top</span>;
+          
+          <span class="cm-keyword">if</span> (<span class="cm-variable-2">scroll</span> <span class="cm-operator">&gt;</span> <span class="cm-variable-2">avail</span>) {
+            <span class="cm-variable-2">scroll</span> <span class="cm-operator">=</span> <span class="cm-variable-2">avail</span>;
+          }
+        } <span class="cm-keyword">else</span> {
+          <span class="cm-variable-2">scroll</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;
+        }
+
+        <span class="cm-variable-2">deltaScroll</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$window</span>.<span class="cm-property">scrollTop</span>() <span class="cm-operator">-</span> <span class="cm-variable-2">scroll</span>;
+
+        <span class="cm-comment">// if we don't have to scroll because we're already at the right scrolling level,</span>
+        <span class="cm-keyword">if</span> (<span class="cm-operator">!</span><span class="cm-variable-2">deltaScroll</span>) {
+          <span class="cm-keyword">return</span>; <span class="cm-comment">// do nothing</span>
+        }
+
+        <span class="cm-variable-2">e</span>.<span class="cm-property">preventDefault</span>();
+        
+        <span class="cm-keyword">if</span> (<span class="cm-variable-2">transitionSupported</span>) {
+          <span class="cm-variable">$</span>(<span class="cm-string">"html"</span>).<span class="cm-property">css</span>({
+            <span class="cm-string cm-property">"margin-top"</span>: <span class="cm-variable-2">deltaScroll</span> <span class="cm-operator">+</span> <span class="cm-string">"px"</span>,
+            <span class="cm-string cm-property">"transition"</span>: <span class="cm-variable-2">scrollTime</span> <span class="cm-operator">+</span> <span class="cm-string">"s ease-in-out"</span>
+          }).<span class="cm-property">data</span>(<span class="cm-string">"transitioning"</span>, <span class="cm-variable-2">scroll</span>);
+        } <span class="cm-keyword">else</span> {
+          <span class="cm-variable">$</span>(<span class="cm-string">"html, body"</span>).<span class="cm-property">stop</span>(<span class="cm-atom">true</span>, <span class="cm-atom">true</span>) <span class="cm-comment">// stop potential other jQuery animation (assuming we're the only one doing it)</span>
+          .<span class="cm-property">animate</span>({
+            <span class="cm-property">scrollTop</span>: <span class="cm-variable-2">scroll</span> <span class="cm-operator">+</span> <span class="cm-string">"px"</span>
+          }, <span class="cm-variable-2">scrollTime</span> <span class="cm-operator">*</span> <span class="cm-number">1000</span>);
+          
+          <span class="cm-keyword">return</span>;
+        }
+      }
+    }
+  });
+
+  <span class="cm-keyword">if</span> (<span class="cm-variable-2">transitionSupported</span>) {
+    <span class="cm-variable">$</span>(<span class="cm-string">"html"</span>).<span class="cm-property">on</span>(<span class="cm-string">"transitionend webkitTransitionEnd msTransitionEnd oTransitionEnd"</span>, <span class="cm-keyword">function</span>(<span class="cm-def">e</span>) {
+      <span class="cm-keyword">var</span> <span class="cm-def">$this</span> <span class="cm-operator">=</span> <span class="cm-variable">$</span>(<span class="cm-keyword">this</span>),
+        <span class="cm-def">scroll</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$this</span>.<span class="cm-property">data</span>(<span class="cm-string">"transitioning"</span>);
+      
+      <span class="cm-keyword">if</span> (<span class="cm-variable-2">e</span>.<span class="cm-property">target</span> <span class="cm-operator">===</span> <span class="cm-variable-2">e</span>.<span class="cm-property">currentTarget</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable-2">scroll</span>) {
+        <span class="cm-variable-2">$this</span>.<span class="cm-property">removeAttr</span>(<span class="cm-string">"style"</span>).<span class="cm-property">removeData</span>(<span class="cm-string">"transitioning"</span>);
+        
+        <span class="cm-variable">$</span>(<span class="cm-string">"html, body"</span>).<span class="cm-property">scrollTop</span>(<span class="cm-variable-2">scroll</span>);
+      }
+    });
+  }
+});</code></pre>
+
+        </div>
+
+
+
+    <div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+
+
+  <iframe allow="accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; serial *; vr *; web-share *; xr-spatial-tracking *" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Smooth scroll with pure CSS3" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for Smooth scroll with pure CSS3" data-src="https://codepen.io/satya164/fullembedgrid/gOwKLp?animations=run&amp;type=embed" src="./gOwKLp(1).html">
+  </iframe>
+
+
+</div>
+
+
+    <div id="about-box">
+
+  <div class="about-container">
+
+
+    <div class="about-user">
+
+        <a href="https://codepen.io/satya164" target="_blank" rel="noopener"><img src="./default(3).png" loading="lazy" alt="" class="about-image"></a>
+
+      <div class="about-user-info">
+
+
+        <p>
+          This Pen is owned by <a href="https://codepen.io/satya164" target="_blank" rel="noopener">Satyajit Sahoo</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+
+        </p>
+
+        <p>
+          <a href="https://codepen.io/satya164" target="_blank" rel="noopener" class="about-user-more">
+          See more by @satya164 on CodePen
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+    <div id="resources-box" class="resources-box">
+
+  <h3>External CSS</h3>
+    <p>
+      This Pen doesn't use any external CSS resources.
+    </p>
+
+  <h3>External JavaScript</h3>
+    <ol class="list-of-resources">
+        <li>
+          <a href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" target="_blank">//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js</a>
+        </li>
+    </ol>
+
+</div>
+
+
+  </div>
+
+    <footer class="embed-footer" id="embed-footer">
+
+    <button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+      Resources
+    </button>
+
+    <ul class="scaling-choices bottom right">
+  <li><button class="action-button" id="zoom-button-1">1×</button></li>
+  <li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+  <li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+
+<button id="rerun-button" class="action-button rerun-button bottom right">
+  Rerun
+</button>
+
+  </footer>
+
+
+
+  <script nonce="">
+    __processedPen = {"html":"&lt;a href=&quot;#bottom&quot;&gt;Go to bottom&lt;/a&gt;\n&lt;a href=&quot;#middle&quot;&gt;Go to middle&lt;/a&gt;\n&lt;div id=&quot;top&quot;&gt;There&#39;s something else I&#39;ve always wanted to say: Allons-y, Alonso! Oh, yes. Harmless is just the word: that&#39;s why I like it! Doesn&#39;t kill, doesn&#39;t wound, doesn&#39;t maim. But I&#39;ll tell you what it does do: it is very good at opening doors! There was a war. A Time War. The Last Great Time War. My people fought a race called the Daleks, for the sake of all creation. And they lost. We lost. Everyone lost. They&#39;re all gone now. My family. My friends. Even that sky. I&#39;m Dr. James McCrimmon from the township of Balamory.&lt;/div&gt;\n&lt;div id=&quot;middle&quot;&gt;Black tie...Whenever I wear this, something bad always happens. It is! It&#39;s the city of New New York! Strictly speaking, it&#39;s the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York. Please, when Torchwood comes to write my complete history, don&#39;t tell people I travelled through time and space with her mother! I don&#39;t want to go. Blimey, trying to make an Ood laugh... You can spend the rest of your life with me, but I can&#39;t spend the rest of mine with you. I have to live on. Alone. That&#39;s the curse of the Time Lords.&lt;/div&gt;\n&lt;div id=&quot;bottom&quot;&gt;I don&#39;t want to go. I&#39;m Dr. James McCrimmon from the township of Balamory. I&#39;d call you a genius, except I&#39;m in the room. You can spend the rest of your life with me, but I can&#39;t spend the rest of mine with you. I have to live on. Alone. That&#39;s the curse of the Time Lords. There&#39;s something else I&#39;ve always wanted to say: Allons-y, Alonso! It is! It&#39;s the city of New New York! Strictly speaking, it&#39;s the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York.&lt;/div&gt;\n&lt;a href=&quot;#top&quot;&gt;Go to top&lt;/a&gt;\n&lt;a href=&quot;#middle&quot;&gt;Go to middle&lt;/a&gt;","css":"body {\n  margin: 0;\n  font-family: sans-serif;\n  font-size: 14px;\n  line-height: 21px;\n}\n\n#top {\n  height: 30em;\n  padding: 1em;\n  background-color: #a3c;\n  color: #fff;\n}\n\n#middle {\n  height: 50em;\n  padding: 2em;\n  background-color: #3ca;\n  color: #fff;\n}\n\n#bottom {\n  height: 20em;\n  padding: 2em;\n  background-color: #c3a;\n  color: #fff;\n}\n\na {\n  padding: 1em 2em;\n  margin: 1em;\n  margin-right: 0;\n  display: inline-block;\n  border-radius: 3px;\n  background-color: #3498db;\n  color: #fff;\n  text-decoration: none;\n  text-transform: uppercase;\n}\n\na:focus, a:hover { background-color: #45a9ec; }\n\na:active { background-color: #2387ca; }","js":"// Smooth scroll for in page links - http://wibblystuff.blogspot.in/2014/04/in-page-smooth-scroll-using-css3.html\n// Improvements from - https://codepen.io/kayhadrin/pen/KbalA\n\n$(function () {\n  var $window = $(window),$document = $(document),\n  transitionSupported = typeof document.body.style.transitionProperty === &quot;string&quot;, // detect CSS transition support\n  scrollTime = 1; // scroll time in seconds\n\n  $(document).on(&quot;click&quot;, &quot;a[href*=#]:not([href=#])&quot;, function (e) {\n    var target, avail, scroll, deltaScroll;\n\n    if (location.pathname.replace(/^\\//, &quot;&quot;) == this.pathname.replace(/^\\//, &quot;&quot;) &amp;&amp; location.hostname == this.hostname) {\n      target = $(this.hash);\n      target = target.length ? target : $(&quot;[id=&quot; + this.hash.slice(1) + &quot;]&quot;);\n\n      if (target.length) {\n        avail = $document.height() - $window.height();\n\n        if (avail &gt; 0) {\n          scroll = target.offset().top;\n\n          if (scroll &gt; avail) {\n            scroll = avail;\n          }\n        } else {\n          scroll = 0;\n        }\n\n        deltaScroll = $window.scrollTop() - scroll;\n\n        // if we don&#39;t have to scroll because we&#39;re already at the right scrolling level,\n        if (!deltaScroll) {\n          return; // do nothing\n        }\n\n        e.preventDefault();\n\n        if (transitionSupported) {\n          $(&quot;html&quot;).css({\n            &quot;margin-top&quot;: deltaScroll + &quot;px&quot;,\n            &quot;transition&quot;: scrollTime + &quot;s ease-in-out&quot; }).\n          data(&quot;transitioning&quot;, scroll);\n        } else {\n          $(&quot;html, body&quot;).stop(true, true) // stop potential other jQuery animation (assuming we&#39;re the only one doing it)\n          .animate({\n            scrollTop: scroll + &quot;px&quot; },\n          scrollTime * 1000);\n\n          return;\n        }\n      }\n    }\n  });\n\n  if (transitionSupported) {\n    $(&quot;html&quot;).on(&quot;transitionend webkitTransitionEnd msTransitionEnd oTransitionEnd&quot;, function (e) {\n      var $this = $(this),\n      scroll = $this.data(&quot;transitioning&quot;);\n\n      if (e.target === e.currentTarget &amp;&amp; scroll) {\n        $this.removeAttr(&quot;style&quot;).removeData(&quot;transitioning&quot;);\n\n        $(&quot;html, body&quot;).scrollTop(scroll);\n      }\n    });\n  }\n});"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+
+  <script src="./embed-d492f8b0f63f0a8ba679c9cd0a2fffbaa24504a7928435ba1bfc1859f904e02b.js.download"></script>
+
+
+<script nonce="">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='c1R7OYM/rMg=';d.innerHTML="window.__CF$cv$params={r:'96b8045ca863cef8',t:'MTc1NDU4Mjc0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='c1R7OYM/rMg=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource(8).html"></iframe>
+
+</body></html>

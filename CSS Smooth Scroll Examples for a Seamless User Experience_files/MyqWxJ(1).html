@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Bootstrap Scrollspy &amp; Affix With Smooth Scroll Example</title>
+
+    <link rel="canonical" href="https://codepen.io/clint77/pen/MyqWxJ">
+  
+  
+  
+  
+
+  
+  
+  
+</head>
+
+<body translate="no" data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+
+
+  <title>Bootstrap Example</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <script src="./jquery.min(3).js.download"></script>
+  <script src="./bootstrap.min.js.download"></script>
+
+
+
+
+  <style>
+  body {
+    position: relative; 
+  }
+  .affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+  }
+    
+  #section1 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #1E88E5;
+  }
+    
+  #section2 {
+    padding-top: 50px; 
+    height:500px; 
+    color: #fff; 
+    background-color: #673ab7;
+  }
+    
+  #section3 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #ff9800;
+  }
+    
+  #section41 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #00bcd4;
+  }
+    
+  #section42 {
+    padding-top:50px;
+    height:500px;
+    color: #fff; 
+    background-color: #009688;
+  }
+  </style>
+
+  <div class="container-fluid" style="background-color: RGBA(0, 170, 168, 1); color:#fff; height:200px;">
+    <h1>Scrollspy &amp; Affix Example</h1>
+    <h3>Fixed navbar on scroll</h3>
+    <p>Scroll this page to see how the navbar behaves with data-spy="affix" and data-spy="scrollspy".</p>
+    <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels, and the links in the navbar are automatically updated based on scroll position.</p>
+  </div>
+
+  <nav id="nav" class="navbar navbar-inverse affix-top" data-spy="affix" data-offset-top="197">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand" href="https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&amp;type=embed#">WebSiteName</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&amp;type=embed#section1">Section 1</a></li>
+            <li><a href="https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&amp;type=embed#section2">Section 2</a></li>
+            <li><a href="https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&amp;type=embed#section3">Section 3</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&amp;type=embed#">Section 4 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&amp;type=embed#section41">Section 4-1</a></li>
+                <li><a href="https://cdpn.io/clint77/fullembedgrid/MyqWxJ?animations=run&amp;type=embed#section42">Section 4-2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="section1" class="container-fluid">
+    <h1>Section 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="section2" class="container-fluid">
+    <h1>Section 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="section3" class="container-fluid">
+    <h1>Section 3</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="section41" class="container-fluid">
+    <h1>Section 4 Submenu 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="section42" class="container-fluid">
+    <h1>Section 4 Submenu 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+
+
+
+  
+      <script id="rendered-js">
+$("#nav ul li a[href^='#']").on('click', function (e) {
+
+  // prevent default anchor click behavior
+  e.preventDefault();
+
+  // store hash
+  var hash = this.hash;
+
+  // animate
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top },
+  1000, function () {
+
+    // when done, add hash to url
+    // (default click behaviour)
+    window.location.hash = hash;
+  });
+
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>

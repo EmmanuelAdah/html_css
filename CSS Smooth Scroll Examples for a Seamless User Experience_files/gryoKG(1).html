@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://cdpn.io/janmez/fullembedgrid/gryoKG?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js.download"></script>
+
+
+  <title>Vertical Navigation Scroll Effect</title>
+
+    <link rel="canonical" href="https://codepen.io/janmez/pen/gryoKG">
+  
+  
+  
+  
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+html{
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #E9E8E2;
+}
+body{
+	height: 100%;
+}
+nav{
+	position: fixed;
+	top: 5%;
+	bottom: auto;
+	z-index: 10;
+}
+ul{
+	list-style: none;
+	padding: 0;
+}
+li{
+	padding: 10px 0;
+}
+span{
+	display: inline-block;
+	position:relative;
+}
+nav a{
+	display: inline-block;
+	color: #272727;
+	text-decoration: none;
+	font-size: 1em;
+}
+.circle{
+	height: 10px;
+	width: 10px;
+	left: -10px;
+	border-radius: 50%;
+	background-color: #272727;
+}
+.rect{
+	height: 3px;
+	width: 0px;
+	left: 0;
+	bottom: 4px;
+	background-color: #272727;
+	-webkit-transition: -webkit-transform 0.6s, width 1s;
+	-moz-transition: -webkit-transform 0.6s, width 1s;
+	transition: transform 0.6s, width 1s;
+}
+nav a:hover, nav .active-section{
+	color: #9b59b6;
+}
+nav a:hover span, nav .active-section span{
+	background-color: #9b59b6;
+}
+nav .active-section .rect{
+	width: 40px;
+}
+.content-section{
+	position: relative;
+	width: 80%;
+	height: 90%;
+	left: 50%;
+	background-color: #ecf1f1;
+	text-align: center;
+	-webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.content-section h1{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+	color:#9b59b6;
+	font-size: 3em;
+}
+
+/*CREDITS*/
+.about{
+	position: fixed;
+	bottom:0; 
+	left: 1%;
+}
+.about a{
+	text-decoration: none;
+	font-size: 1.5em;
+}
+.about a:visited, .about a:active, .about a:link{
+	color:#000;
+}
+.about a:hover{
+	color: red;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body translate="no">
+  <nav>
+	<ul>
+		<li>
+			<a href="https://cdpn.io/janmez/fullembedgrid/gryoKG?animations=run&amp;type=embed#section1" class="active-section">
+				<span class="rect"></span>
+				<span class="circle"></span>
+				ONE
+			</a>
+		</li>
+		<li>
+			<a href="https://cdpn.io/janmez/fullembedgrid/gryoKG?animations=run&amp;type=embed#section2">
+				<span class="rect"></span>
+				<span class="circle"></span>
+				TWO
+			</a>
+		</li>
+		<li>
+			<a href="https://cdpn.io/janmez/fullembedgrid/gryoKG?animations=run&amp;type=embed#section3">
+				<span class="rect"></span>
+				<span class="circle"></span>
+				THREE
+			</a>
+		</li>
+		<li>
+			<a href="https://cdpn.io/janmez/fullembedgrid/gryoKG?animations=run&amp;type=embed#section4">
+				<span class="rect"></span>
+				<span class="circle"></span>
+				FOUR
+			</a>
+		</li>
+		<li>
+			<a href="https://cdpn.io/janmez/fullembedgrid/gryoKG?animations=run&amp;type=embed#section5">
+				<span class="rect"></span>
+				<span class="circle"></span>
+				FIVE
+			</a>
+		</li>
+	</ul>
+</nav>
+<section id="section1" class="content-section">
+	<h1>SECTION ONE</h1>
+</section>
+<section id="section2" class="content-section">
+	<h1>SECTION TWO</h1>
+</section>
+<section id="section3" class="content-section">
+	<h1>SECTION THREE</h1>
+</section>
+<section id="section4" class="content-section">
+	<h1>SECTION FOUR</h1>
+</section>
+<section id="section5" class="content-section">
+	<h1>SECTION FIVE</h1>
+</section>
+	<div class="about"><a href="http://janetmndz.com/" target="_blank">♡</a></div>
+
+  <script src="./jquery.min(5).js.download"></script>
+      <script id="rendered-js">
+$(document).ready(function () {
+  var contentSection = $('.content-section');
+  var navigation = $('nav');
+
+  //when a nav link is clicked, smooth scroll to the section
+  navigation.on('click', 'a', function (event) {
+    event.preventDefault(); //prevents previous event
+    smoothScroll($(this.hash));
+  });
+
+  //update navigation on scroll...
+  $(window).on('scroll', function () {
+    updateNavigation();
+  });
+  //...and when the page starts
+  updateNavigation();
+
+  /////FUNCTIONS
+  function updateNavigation() {
+    contentSection.each(function () {
+      var sectionName = $(this).attr('id');
+      var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+      if ($(this).offset().top - $(window).height() / 2 < $(window).scrollTop() &&
+      $(this).offset().top + $(this).height() - $(window).height() / 2 > $(window).scrollTop())
+      {
+        navigationMatch.addClass('active-section');
+      } else
+      {
+        navigationMatch.removeClass('active-section');
+      }
+    });
+  }
+  function smoothScroll(target) {
+    $('body,html').animate({
+      scrollTop: target.offset().top },
+    800);
+  }
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+  <script src="./iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js.download"></script>
+
+
+
+</body></html>
