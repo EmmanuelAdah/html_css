@@ -111,8 +111,13 @@
     border-style: none;
 }
 
-.active, .third-nav button.hover {
+.third-nav button:hover {
     background-color: white;
+    border-radius: 0 0 0 0;
+    .third-nav button:hover a{
+        color: rgb(184, 32, 95);
+        text-decoration: none;
+    }
 }
 
 .third-nav button a{
@@ -145,11 +150,10 @@
     font-weight: bold;
     font-size: 18px;
     transition: 0.4s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 50%;
     user-select: none;
 
 }
-
 
 .next {
     right: 0;
@@ -159,10 +163,12 @@
 
 .prev {
     margin-left: 10px;
+    border-radius: 0 3px 3px 0;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(109, 102, 102, 0.8);
+    border-radius: 0 3px 3px 0;
 }
 
 /* dot- bullet -indicators*/
@@ -172,9 +178,9 @@
     width: 15px;
     margin: 0 2px;
     background-color: #bbb;
-    border-radius: 50%;
+    border-radius: 20%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.4s ease;
 }
 
 /* Fading animation */
@@ -205,7 +211,7 @@
     gap: 10px;
 }
 
-.first_grid img{
+.first_grid a img{
     display: flex;
     width: 200px;
     height: 221px;
@@ -218,7 +224,7 @@
     padding-top: 10px;
 }
 
-.second_grid img{
+.second_grid a img{
     display: flex;
     width: 200px;
     height: 221px;
