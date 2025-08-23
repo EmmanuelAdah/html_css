@@ -38,7 +38,8 @@
 .second-nav{
     display: flex;
     background-color: rgb(235, 53, 122);
-    height: 60px;
+    height: 50px;
+    gap: 20px;
 }
 
 .logo a img{
@@ -50,13 +51,35 @@
 }
 
 .second-nav ul{
+    display: flex;
+    list-style:  none;
     height: 100%;
     gap: 40px;
+    align-items: center;
+
 }
 
-.second-nav ul button{
+.second-nav button{
+    width: 130px;
     height: 100%;
     background-color: transparent;
+    border-style: none;
+    border-color: transparent;
+}
+
+.second-nav button:hover{
+    background-color: white;
+    transition: 0.4s;
+}
+
+.second-nav button a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.second-nav button a:hover{
+    color: black;
 }
 
 .nav-item li{
@@ -65,6 +88,13 @@
     justify-content: space-around;
     align-items: center;
     padding: 15px;
+}
+
+nav-item button{
+    width: 60px;
+    height: 100%;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .nav-item li a{
@@ -79,13 +109,16 @@
     justify-content: space-around;
     align-items: center;
     padding: 15px;
+    gap: 15px;
 }
 
 .third-nav{
     background-color: rgb(184, 32, 95);
     display: flex;
-    height: 50px;
+    height: 60px;
     width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .third-nav ul{
@@ -114,15 +147,15 @@
 .third-nav button:hover {
     background-color: white;
     border-radius: 0 0 0 0;
-    .third-nav button:hover a{
-        color: rgb(184, 32, 95);
-        text-decoration: none;
-    }
+    transition: 0.4s;
 }
 
 .third-nav button a{
     color: white;
     text-decoration: none;
+}
+.third-nav button a:hover{
+    color: rgb(30, 4, 15);
 }
 
 .slideshow-container {
@@ -143,7 +176,7 @@
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     color: white;
@@ -174,10 +207,11 @@
 /* dot- bullet -indicators*/
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     margin: 0 2px;
-    background-color: #bbb;
+    padding-top: 2px;
+    background-color: #757070;
     border-radius: 20%;
     display: inline-block;
     transition: background-color 0.4s ease;
