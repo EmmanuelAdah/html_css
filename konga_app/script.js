@@ -26,6 +26,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 
 }
+
 function displayImages() {
     let index = 0;
     const images = document.getElementsByClassName("mySlides");
