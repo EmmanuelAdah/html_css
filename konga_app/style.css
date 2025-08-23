@@ -25,23 +25,19 @@
     justify-content: center;
     width: 90px;
 }
-
 .first-nav ul li{
     align-items: center;
     list-style: none;
 }
-
 .cart{
     background-color: rgb(151, 100, 199);
 }
-
 .second-nav{
     display: flex;
     background-color: rgb(235, 53, 122);
     height: 50px;
     gap: 20px;
 }
-
 .logo a img{
     width: 50%;
     padding: 5px;
@@ -49,16 +45,13 @@
     justify-content: center;
     align-items: center;
 }
-
 .second-nav ul{
     display: flex;
     list-style:  none;
     height: 100%;
     gap: 40px;
     align-items: center;
-
 }
-
 .second-nav button{
     width: 130px;
     height: 100%;
@@ -66,22 +59,17 @@
     border-style: none;
     border-color: transparent;
 }
-
 .second-nav button:hover{
     background-color: white;
     transition: 0.4s;
 }
-
 .second-nav button a{
     color: white;
     text-decoration: none;
-
 }
-
 .second-nav button a:hover{
     color: black;
 }
-
 .nav-item li{
     list-style: none;
     display: flex;
@@ -89,21 +77,18 @@
     align-items: center;
     padding: 15px;
 }
-
 nav-item button{
     width: 60px;
     height: 100%;
     background-color: transparent;
     border-color: transparent;
 }
-
 .nav-item li a{
     text-decoration: none;
     color: aliceblue;
     display: flex;
     justify-content: space-between;
 }
-
 .nav-item{
     display: flex;
     justify-content: space-around;
@@ -111,7 +96,6 @@ nav-item button{
     padding: 15px;
     gap: 15px;
 }
-
 .third-nav{
     background-color: rgb(184, 32, 95);
     display: flex;
@@ -120,7 +104,6 @@ nav-item button{
     overflow-x: scroll;
     overflow-y: hidden;
 }
-
 .third-nav ul{
     display: flex;
     list-style: none;
@@ -131,7 +114,6 @@ nav-item button{
     overflow-x: auto;
     overflow-y: hidden;
 }
-
 .third-nav button {
     background-color: transparent;
     border-color: transparent;
@@ -143,13 +125,11 @@ nav-item button{
     align-items: center;
     border-style: none;
 }
-
 .third-nav button:hover {
     background-color: white;
     border-radius: 0 0 0 0;
     transition: 0.4s;
 }
-
 .third-nav button a{
     color: white;
     text-decoration: none;
@@ -157,22 +137,18 @@ nav-item button{
 .third-nav button a:hover{
     color: rgb(30, 4, 15);
 }
-
 .slideshow-container {
     position: relative;
     margin: auto;
 }
-
 .mySlides {
     display: none;
     width: 70%;
 }
-
 .mySlides img {
     width: 140%;
     height: 100%;
 }
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -185,15 +161,12 @@ nav-item button{
     transition: 0.4s ease;
     border-radius: 50%;
     user-select: none;
-
 }
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
     margin-right: 25px;
 }
-
 .prev {
     margin-left: 10px;
     border-radius: 0 3px 3px 0;
@@ -203,7 +176,6 @@ nav-item button{
     background-color: rgba(109, 102, 102, 0.8);
     border-radius: 0 3px 3px 0;
 }
-
 /* dot- bullet -indicators*/
 .dot {
     cursor: pointer;
@@ -216,14 +188,12 @@ nav-item button{
     display: inline-block;
     transition: background-color 0.4s ease;
 }
-
 /* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 0.2s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
-
 }
 
 @keyframes fade {
@@ -235,31 +205,45 @@ nav-item button{
     display: flex;
     padding: 10px;
 }
-
-.side-image {
-
-}
-
 .first_grid {
     display: flex;
     gap: 10px;
 }
-
 .first_grid a img{
     display: flex;
     width: 200px;
     height: 221px;
     justify-content: space-between;
 }
-
 .second_grid {
     display: flex;
     gap: 10px;
     padding-top: 10px;
 }
-
 .second_grid a img{
     display: flex;
     width: 200px;
     height: 221px;
+}
+.tags{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.tags button a img{
+    display: flex;
+    width: 180px;
+}
+.footer{
+    padding: 20px 20px 0 20px;
+    border-radius: 10px;
+}
+.footer-top{
+    background-color: purple;
+    width: 100%;
+    height: 40px;
+    display: flex;
 }
