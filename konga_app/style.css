@@ -45,12 +45,25 @@
     justify-content: center;
     align-items: center;
 }
+.search{
+    display: flex;
+    background-color: rgb(237, 19, 12);
+
+}
+.search_icon a img{
+    width: 15px;
+}
 .second-nav ul{
     display: flex;
     list-style:  none;
     height: 100%;
     gap: 40px;
     align-items: center;
+}
+.second-nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
 }
 .second-nav button{
     width: 130px;
@@ -119,7 +132,7 @@ nav-item button{
     border-color: transparent;
     width: 100%;
     height: 100%;
-    margin: 0 10px;
+    margin: 0 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,10 +196,10 @@ nav-item button{
     width: 8px;
     margin: 0 2px;
     padding-top: 2px;
-    background-color: #757070;
+    background-color: #1e040f;
     border-radius: 20%;
     display: inline-block;
-    transition: background-color 0.4s ease;
+    transition: background-color 0.1s ease;
 }
 /* Fading animation */
 .fade {
@@ -235,15 +248,16 @@ nav-item button{
 }
 .tags button a img{
     display: flex;
-    width: 180px;
+    width: 200px;
+    shape-margin: 10px;
 }
 .footer{
     padding: 20px 20px 0 20px;
-    border-radius: 10px;
 }
 .footer-top{
-    background-color: purple;
+    background-color: #d17bd1;
     width: 100%;
     height: 40px;
     display: flex;
+    border-radius: 5px 5px 0 0;
 }
