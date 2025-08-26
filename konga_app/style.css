@@ -37,6 +37,7 @@
     background-color: rgb(235, 53, 122);
     height: 50px;
     gap: 20px;
+    align-items: center;
 }
 .logo a img{
     width: 50%;
@@ -47,10 +48,8 @@
 }
 .search{
     display: flex;
-}
-.placeholder{
-    width: 100px;
-    height: 40px;
+    width: 150px;
+    height: 20px;
 }
 .search_icon{
     display: flex;
@@ -91,6 +90,26 @@
 }
 .second-nav button:hover a{
     color: black;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+}
+.cart a img{
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+.cart a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    gap: 10px;
 }
 .nav-item li{
     list-style: none;
