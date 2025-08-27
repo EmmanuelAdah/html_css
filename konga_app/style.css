@@ -94,16 +94,29 @@
 .cart{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: green;
+    background-color: #39cc39;
     width: 120px;
     height: 40px;
     border-radius: 5px;
+}
+.cart ul li{
+    gap: 3px;
 }
 .cart a img{
     display: flex;
     width: 20px;
     height: 20px;
+}
+.item-count{
+    background-color: #ffffff;
+    width: 14px;
+    height: 20px;
+    align-items: center;
+    border-radius: 3px;
+}
+.item-count li a{
+    color: black;
+    padding: 3px;
 }
 .cart a {
     text-decoration: none;
