@@ -32,13 +32,6 @@
 .cart{
     background-color: rgb(151, 100, 199);
 }
-.second-nav{
-    display: flex;
-    background-color: rgb(235, 53, 122);
-    height: 50px;
-    gap: 20px;
-    align-items: center;
-}
 .logo a img{
     width: 50%;
     padding: 5px;
@@ -48,24 +41,45 @@
 }
 .search{
     display: flex;
-    width: 150px;
-    height: 20px;
-}
-.search_icon{
-    display: flex;
-    background-color: rgb(237, 19, 12);
-    width: 20px;
-    height: 20px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 0;
+    padding-left: 10px;
 
 }
-.search_icon a img{
-    width: 15px;
+.search input{
+    width: 450px;
+    border-radius: 5px 0 0 5px;
+    border-style: none;
+}
+.search a{
+    display: flex;
+    background-color: orangered;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    padding-left: -4px;
+}
+.search a img{
+    align-self: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+.second-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 53, 122);
+    height: 50px;
 }
 .second-nav ul{
     display: flex;
     list-style:  none;
     height: 100%;
-    gap: 40px;
+    gap: 10px;
     align-items: center;
 }
 .second-nav ul li a{
@@ -97,10 +111,12 @@
     background-color: #39cc39;
     width: 120px;
     height: 40px;
+    gap: 10px;
     border-radius: 5px;
 }
-.cart ul li{
-    gap: 3px;
+.cart ul{
+    gap: 5px;
+    padding-left: 8px;
 }
 .cart a img{
     display: flex;
@@ -110,13 +126,16 @@
 .item-count{
     background-color: #ffffff;
     width: 14px;
-    height: 20px;
+    height: 18px;
     align-items: center;
     border-radius: 3px;
 }
-.item-count li a{
+.item-count li{
+    position: relative;
+    align-items: center;
+    justify-content: center;
     color: black;
-    padding: 3px;
+    padding-left: 2px;
 }
 .cart a {
     text-decoration: none;
@@ -308,4 +327,17 @@ nav-item button{
     height: 40px;
     display: flex;
     border-radius: 5px 5px 0 0;
+}
+.footer-top ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+.footer-top ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
