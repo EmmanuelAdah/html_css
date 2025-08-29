@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 25px;
+    padding: 25px;
+    gap: 100px;
+}
+.options img {
+    width: 170px;
+    height: 65px;
+}
+.options ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 50px;
+}
+.options ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+.sign-up{
+    width: 90px;
+    height: 25px;
+    color: black;
+}
+.sign-up a{
+    text-decoration: none;
+    background-color: #3eaaed;
+    color: black;
+    float: right;
+}
+hr {
+    width: 95%;
+    height: 0;
+}
+main {
+    align-items: center;
+    justify-content: center;
+}
+.top-content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 90%;
+    height: 80vh;
+    background-color: transparent;
+    padding-left: 80px;
+}
+.word {
+    color: dodgerblue;
+}
+.text a{
+    text-decoration: none;
+    color: black;
+    width: 480px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+#heading {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+.about-us {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 0 0 8%;
+}
+#service-text{
+    width: 80%;
+}
+#service-text h1 {
+    font-family: "Asap", sans-serif;
+    color: dodgerblue;
+}
+#service-text button {
+
+}
+#services-text button{
+    background-color: dodgerblue;
+    text-decoration: none;
+}
+#get-started a{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 5%;
+}
+#get-started a span {
+    background-color: dodgerblue;
+    color: white;
+    align-content: center;
+    justify-content: center;
+    border-radius: 0;
+    width: 110px;
+    height: 35px;
+    padding-left: 8px;
+}
