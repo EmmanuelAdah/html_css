@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="calculator.css">
+    <title>calculator</title>
+</head>
+<body>
+<div class="calculator">
+    <input id="display" readonly>
+
+    <div id="keys">
+        <button onclick="clearItem()" class = "operator">C</button>
+        <button onclick="deleteItem()" >Del</button>
+        <button onclick="addToDisplay('.')">.</button>
+        <button onclick="addToDisplay('%')" class = "operator">%</button>
+        <button onclick="addToDisplay('7')">7</button>
+        <button onclick="addToDisplay('8')">8</button>
+        <button onclick="addToDisplay('9')">9</button>
+        <button onclick="addToDisplay('*')" class = "operator">*</button>
+        <button onclick="addToDisplay('4')">4</button>
+        <button onclick="addToDisplay('5')">5</button>
+        <button onclick="addToDisplay('6')">6</button>
+        <button onclick="addToDisplay('-')" class = "operator">-</button>
+        <button onclick="addToDisplay('1')">1</button>
+        <button onclick="addToDisplay('2')">2</button>
+        <button onclick="addToDisplay('3')">3</button>
+        <button onclick="addToDisplay('/')" class = "operator">/</button>
+        <button onclick="addToDisplay('00')">00</button>
+        <button onclick="addToDisplay('0')">0</button>
+        <button onclick="calculate()" class = "operator">=</button>
+        <button onclick="addToDisplay('+')" class = "operator">+</button>
+    </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
