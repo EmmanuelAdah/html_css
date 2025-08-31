@@ -55,12 +55,13 @@ if (value !== "") {
 // }
 
 const searchBook = document.getElementById("search-books");
-searchBook.addEventListener("keydown", (event) => {
+searchBook.addEventListener("keyup", (event) => {
     const value = event.target.value.trim();
 
     const lists = document.querySelectorAll("li")
     lists.forEach(li => {
-        (li.textContent.toLowerCase().includes(value.toLowerCase())) ? li.style.display = "" : li.style.display = "none";
+        (li.textContent.toLowerCase().includes(value.toLowerCase()))
+            ? li.style.display = "" : li.style.display = "none";
         })
 })
 
