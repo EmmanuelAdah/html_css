@@ -151,6 +151,31 @@ main {
     gap: 100px;
     padding: 5% 0 0 8%;
 }
+.helping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    gap: 100px;
+    background-color: #0d66c2;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+#special-help img {
+    padding-top: 40px;
+}
+#special-help {
+    width: 30%;
+    height: auto;
+}
+#special-help h1 {
+    color: white;
+    font-family: "Asap", sans-serif;
+    font-size: 30px;
+    padding: 0 0 0 10%;
+}
 .details {
     justify-content: center;
     border-color: #0d66c2;
@@ -226,6 +251,8 @@ span {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    margin: auto;
+    padding: 20px 0 0 0;
 }
 .last-tag {
     display: flex;
