@@ -1,25 +1,37 @@
-*{
+body{
+    align-content: center;
+    justify-content: center;
     box-sizing: border-box;
+}
+.main {
+    align-content: center;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
 }
 .options{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 80%;
+    justify-content: space-between;
+    width: 90%;
     height: 25px;
-    padding: 25px;
-    gap: 100px;
+    padding: 25px 25px 25px 70px;
+    margin: auto;
 }
 .options img {
     width: 170px;
     height: 65px;
+    float: left;
 }
 .options ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
-    padding-left: 50px;
+    padding-right: 20%;
 }
 .options ul li a{
     list-style: none;
@@ -27,17 +39,22 @@
 }
 .sign-up{
     width: 90px;
-    height: 25px;
-    color: black;
+    height: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    align-content: center;
+    justify-content: center;
+    padding-right: -100px;
 }
 .sign-up a{
     text-decoration: none;
-    background-color: #3eaaed;
     color: black;
-    float: right;
+    align-items: center;
+    padding: 10px 0 0 20px;
 }
 hr {
-    width: 95%;
+    width: 100%;
     height: 0;
 }
 main {
@@ -113,4 +130,107 @@ main {
     width: 110px;
     height: 35px;
     padding-left: 8px;
+}
+.the-elderly {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    gap: 100px;
+    padding: 5% 0 0 8%;
+}
+.the-elderly img {
+    width: 50%;
+    height: auto;
+}
+.buying-cloth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    gap: 100px;
+    padding: 5% 0 0 8%;
+}
+.details {
+    justify-content: center;
+    border-color: #0d66c2;
+    border-style: solid;
+    border-width: 2px;
+    width: 70%;
+    height: 60vh;
+    align-content: center;
+    padding: 0 0 0 4%;
+    margin: auto;
+}
+.details button {
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+    height: 30px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 0;
+    border-color: dodgerblue;
+    border-style: solid;
+    border-width: 1px;
+}
+#user {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+span {
+    width: 60%;
+}
+.input-field input{
+    width: 150%;
+    height: 30px;
+    border-color: #0d66c2;
+    border-style: solid;
+    border-width: 1px;
+}
+.input-field select{
+    width: 150%;
+    height: 30px;
+    border-color: #0d66c2;
+    border-style: solid;
+    border-width: 1px;
+}
+.buttom-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: dodgerblue;
+}
+.address {
+    display: inline-block;
+    width: 32%;
+    height: auto;
+    line-height: 30px;
+    padding-right: 10px;
+}
+.address input{
+    width: 100%;
+    height: 30px;
+    border-color: #0d66c2;
+    border-style: solid;
+    border-width: 1px;
+}
+.address p a {
+    text-decoration: none;
+}
+.buttom-tag {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.last-tag {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 50%;
+    height: auto;
 }
