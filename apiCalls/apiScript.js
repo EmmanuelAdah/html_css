@@ -20,11 +20,10 @@ const getProducts = async (url) => {
     }
 };
 
-getProducts(PRODUCT_URL);
-
 const productTag = document.querySelector(".products");
 
 const displayProducts = (products) => {
+
     products.forEach(product => {
         const {image, title, price} = product;
         const productWrapper = document.createElement("div");
@@ -38,3 +37,7 @@ const displayProducts = (products) => {
         productTag.appendChild(productWrapper)
     })
 }
+
+getProducts(PRODUCT_URL);
+
+const search = document.querySelector(".search");
