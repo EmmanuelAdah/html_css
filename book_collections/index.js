@@ -55,7 +55,7 @@ if (value !== "") {
 // }
 
 const searchBook = document.getElementById("search-books");
-searchBook.addEventListener("keyup", (event) => {
+searchBook.addEventListener("keydown", (event) => {
     const value = event.target.value.trim();
 
     const lists = document.querySelectorAll("li")
