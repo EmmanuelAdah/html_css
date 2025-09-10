@@ -28,6 +28,8 @@ addBookForm.addEventListener("submit", (event) => {
         addClassNames(check_box, firstSpan, dateTime, secondSpan)
         addTextContent(check_box, firstSpan, dateTime, value, secondSpan)
         addChild(newList, check_box, firstSpan, dateTime, secondSpan)
+        saveToStorage();
+        addBookForm.reset();
     } else {
         alert("Please enter schedule");
     }
@@ -117,3 +119,45 @@ function dateTime(){
         minute: '2-digit'
     });
 }
+
+function saveToStorage(){
+    const items = [];
+    const lists = document.querySelectorAll("li")
+    lists.forEach(li => {
+        items.push(
+            li.querySelector(".name").textContent)
+            li.querySelector(".dateTime").textContent
+    })
+    localStorage.setItem("booklist", JSON.stringify(items));
+}
+
+function getFromStorage(){
+    const items = localStorage.getItem("booklist");
+    items.forEach(item => {
+        const li = document.createElement("li");
+        const check_box = document.createElement("input");
+        check_box.type = "checkbox";
+        check_box.className = "check-box";
+
+        const firstSpan = document.createElement("span");
+        firstSpan.className = "name";
+        firstSpan.textContent = item;
+
+        const dateTime = document.createElement("span");
+        dateTime.className = "dateTime";
+        dateTime.textContent = dateTime();
+
+        const secondSpan = document.createElement("span");
+        secondSpan.className = "delete";
+        secondSpan.textContent = "delete";
+
+
+        li.appendChild(check_box);
+        li.appendChild(firstSpan);
+        li.appendChild(dateTime);
+        li.appendChild(secondSpan);
+        booklist.append(li);
+    });
+}
+
+getFromStorage();
